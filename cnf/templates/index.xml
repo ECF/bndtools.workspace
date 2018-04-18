@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1524087733319" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1524088284689" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.0.4.201804182141"/>
+      <attribute name="version" type="Version" value="1.0.5.201804182151"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="f073d12e981e8e9bc89d7a0ededf07dc36454bab9347188bafbd95a3dd6ee292"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.4.jar"/>
-      <attribute name="size" type="Long" value="9457"/>
+      <attribute name="osgi.content" value="96b977ef4f50a2763867aaf93b3cbd8daa63dada161259a8eb172ed6c7ccf74a"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.5.jar"/>
+      <attribute name="size" type="Long" value="9429"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.4.201804182141"/>
+      <attribute name="bundle-version" type="Version" value="1.0.5.201804182151"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.4.201804182141"/>
+      <attribute name="bundle-version" type="Version" value="1.0.5.201804182151"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="org.bndtools.template" value="project"/>
@@ -27,7 +27,6 @@
       <attribute name="dir" value="templates/rsapi"/>
       <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
       <attribute name="help" value="templates/rsapi/rsapihelp.xml"/>
-      <attribute name="engine" value="moustache"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="org.bndtools.template" value="project"/>
@@ -36,7 +35,6 @@
       <attribute name="dir" value="templates/rsimpl"/>
       <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
       <attribute name="help" value="templates/rsimpl/rsimplhelp.xml"/>
-      <attribute name="engine" value="moustache"/>
       <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.xml"/>
     </capability>
     <requirement namespace="osgi.ee">
