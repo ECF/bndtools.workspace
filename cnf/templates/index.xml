@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1524088284689" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1524088677349" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.0.5.201804182151"/>
+      <attribute name="version" type="Version" value="1.0.6.201804182157"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="96b977ef4f50a2763867aaf93b3cbd8daa63dada161259a8eb172ed6c7ccf74a"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.5.jar"/>
-      <attribute name="size" type="Long" value="9429"/>
+      <attribute name="osgi.content" value="9a0ccdae75f05da1f45573284161f0d69e01f8bce2bd4ab85666a2179bfa5fdd"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.6.jar"/>
+      <attribute name="size" type="Long" value="8857"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.5.201804182151"/>
+      <attribute name="bundle-version" type="Version" value="1.0.6.201804182157"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.5.201804182151"/>
+      <attribute name="bundle-version" type="Version" value="1.0.6.201804182157"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="org.bndtools.template" value="project"/>
