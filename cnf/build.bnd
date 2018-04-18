@@ -11,13 +11,23 @@
 		pretty = true; \
 		local = ${build}/local
 
--plugin.3.Templates: \
+-plugin.3.ECFATCENTRAL: \
+	aQute.bnd.deployer.repository.wrapper.Plugin; \
+		location = "${build}/cache/wrapper"; \
+		reindex = true, \
+	aQute.bnd.jpm.Repository; \
+		includeStaged = true; \
+		name = ECF At Maven Central; \
+		location = ~/.bnd/shacache; \
+		index = ${build}/ecfatcentral.json
+		
+-plugin.4.Templates: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Templates; \
 		pretty = true; \
 		local = ${build}/templates
 
--plugin.4.Release: \
+-plugin.5.Release: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Release; \
 		pretty = true; \
