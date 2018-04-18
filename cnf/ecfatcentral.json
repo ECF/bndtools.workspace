@@ -1,0 +1,11 @@
+{
+ "revisionRefs":[{
+  "artifactId":"org.eclipse.core.jobs","baseline":"3.9.2","bsn":"org.eclipse.core.jobs","created":1494160860000,"description":"Eclipse Jobs Mechanism","groupId":"org.eclipse.platform","md5":"D8631DCD6F7631E0437692319D7C6F76","name":"org.eclipse.core.jobs","phase":"MASTER","qualifier":"v20171030-1027","revision":"9A829A21F69DA7077A193507F08060322CBB0800","size":107364,"urls":["https://search.maven.org/remotecontent?filepath=org/eclipse/platform/org.eclipse.core.jobs/3.9.2/org.eclipse.core.jobs-3.9.2.jar"],"version":"3.9.2"
+ },{
+  "artifactId":"org.eclipse.equinox.common","baseline":"3.9.0","bsn":"org.eclipse.equinox.common","created":1494160860000,"description":"Common Eclipse Runtime","groupId":"org.eclipse.platform","md5":"D770EDA2F43872BA17D6F0140CA0A42C","name":"org.eclipse.equinox.common","phase":"MASTER","qualifier":"v20170207-1454","revision":"A22125896FF8E25CE913371F54898AF733953ECB","size":121509,"urls":["https://search.maven.org/remotecontent?filepath=org/eclipse/platform/org.eclipse.equinox.common/3.9.0/org.eclipse.equinox.common-3.9.0.jar"],"version":"3.9.0"
+ },{
+  "artifactId":"org.eclipse.equinox.concurrent","baseline":"1.1.0","bsn":"org.eclipse.equinox.concurrent","created":1494160860000,"description":"Equinox Concurrent API","groupId":"org.eclipse.platform","md5":"B4F18EAC43008648E2F222867D1587B1","name":"org.eclipse.equinox.concurrent","phase":"MASTER","qualifier":"v20130327-1442","revision":"BE72CDFD3F44FF6C2AB84A13C56672ED848F75F5","size":25493,"urls":["https://search.maven.org/remotecontent?filepath=org/eclipse/platform/org.eclipse.equinox.concurrent/1.1.0/org.eclipse.equinox.concurrent-1.1.0.jar"],"version":"1.1.0"
+ },{
+  "artifactId":"org.eclipse.equinox.supplement","baseline":"1.7.0","bsn":"org.eclipse.equinox.supplement","created":1494160860000,"description":"Equinox Supplemental Functionality","groupId":"org.eclipse.platform","md5":"DBF5DCA57D995FA850602E5260EA6510","name":"org.eclipse.equinox.supplement","phase":"MASTER","qualifier":"v20170329-1416","revision":"472FAA9800908DF4A69CA554C1D365604597EA9C","size":109196,"urls":["https://search.maven.org/remotecontent?filepath=org/eclipse/platform/org.eclipse.equinox.supplement/1.7.0/org.eclipse.equinox.supplement-1.7.0.jar"],"version":"1.7.0"
+ }]
+}
