@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1524095041763" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1524095743093" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.0.9.201804182343"/>
+      <attribute name="version" type="Version" value="1.0.9.201804182355"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="94bb00aa8dc1113c067bafce9ee9c8b2ed8f85fde13e08ba8e3fc12f145c29d8"/>
+      <attribute name="osgi.content" value="8c09b7be259da0c104d5ce45f6a556b4069f64e9cf9bc6ac6d5666a75ffc9933"/>
       <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.9.jar"/>
-      <attribute name="size" type="Long" value="11222"/>
+      <attribute name="size" type="Long" value="11202"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.9.201804182343"/>
+      <attribute name="bundle-version" type="Version" value="1.0.9.201804182355"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.9.201804182343"/>
+      <attribute name="bundle-version" type="Version" value="1.0.9.201804182355"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="org.bndtools.template" value="project"/>
@@ -26,7 +26,7 @@
       <attribute name="category" value="bbb/OSGi Remote Service Templates"/>
       <attribute name="dir" value="templates/rsapi"/>
       <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="help" value="templates/rsapi/rsapihelp.xml"/>
+      <attribute name="help" value="templates/rsapihelp.xml"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="org.bndtools.template" value="project"/>
