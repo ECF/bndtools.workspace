@@ -1,5 +1,1214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1524095628837" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1524535033120" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="4e4a747131dad7c98598d39b31bad4b0a9dd75f4f3a9964d473dd8c59d8b546a"/>
+      <attribute name="url" value="ch.ethz.iks.r_osgi.remote/ch.ethz.iks.r_osgi.remote-1.1.0.jar"/>
+      <attribute name="size" type="Long" value="150206"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi"/>
+      <attribute name="version" type="Version" value="1.0.9"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.channels"/>
+      <attribute name="version" type="Version" value="1.0.1"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.messages"/>
+      <attribute name="version" type="Version" value="1.0.1"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.service_discovery"/>
+      <attribute name="version" type="Version" value="1.0.1"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.types"/>
+      <attribute name="version" type="Version" value="1.0.1"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.util"/>
+      <attribute name="version" type="Version" value="1.0.1"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180417-2218"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=1.0.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.objectweb.asm)(version&gt;=5.0.1)(!(version&gt;=6.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.packageadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="ch.ethz.iks.slp"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.200.v20180302-0250"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="974e2a5a97ebb51850969feaea56753b129aaa6647eb74dacb3b67ccc214f478"/>
+      <attribute name="url" value="ch.ethz.iks.slp/ch.ethz.iks.slp-1.1.200.jar"/>
+      <attribute name="size" type="Long" value="123108"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="ch.ethz.iks.slp"/>
+      <attribute name="bundle-version" type="Version" value="1.1.200.v20180302-0250"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="ch.ethz.iks.slp"/>
+      <attribute name="bundle-version" type="Version" value="1.1.200.v20180302-0250"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="ch.ethz.iks.slp"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="ch.ethz.iks.slp"/>
+      <attribute name="bundle-version" type="Version" value="1.1.200.v20180302-0250"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="javax.servlet"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.1.0.v201410161800"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="d61478cfaa42043742203975d77ccda655a4a94367226bfe3cc0ad457b8a061d"/>
+      <attribute name="url" value="javax.servlet/javax.servlet-3.1.0.jar"/>
+      <attribute name="size" type="Long" value="105237"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="javax.servlet"/>
+      <attribute name="bundle-version" type="Version" value="3.1.0.v201410161800"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="javax.servlet"/>
+      <attribute name="bundle-version" type="Version" value="3.1.0.v201410161800"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="javax.servlet"/>
+      <attribute name="bundle-version" type="Version" value="3.1.0.v201410161800"/>
+      <directive name="uses" value="javax.servlet.descriptor,javax.servlet.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.servlet.annotation"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="javax.servlet"/>
+      <attribute name="bundle-version" type="Version" value="3.1.0.v201410161800"/>
+      <directive name="uses" value="javax.servlet"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.servlet.descriptor"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="javax.servlet"/>
+      <attribute name="bundle-version" type="Version" value="3.1.0.v201410161800"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.servlet.http"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="javax.servlet"/>
+      <attribute name="bundle-version" type="Version" value="3.1.0.v201410161800"/>
+      <directive name="uses" value="javax.servlet"/>
+    </capability>
+    <capability namespace="osgi.contract">
+      <attribute name="osgi.contract" value="JavaServlet"/>
+      <attribute name="version" type="List&lt;Version&gt;" value="2.5.0,3.0.0,3.1.0"/>
+      <directive name="uses" value="javax.servlet,javax.servlet.annotation,javax.servlet.descriptor,javax.servlet.http"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=3.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.annotation)(version&gt;=3.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.descriptor)(version&gt;=3.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=3.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.commons.codec"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.9.0.v20170208-1614"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="be876710d29103c430226db106e3420f60a478a37197eb7feea45838cba3ddb1"/>
+      <attribute name="url" value="org.apache.commons.codec/org.apache.commons.codec-1.9.0.jar"/>
+      <attribute name="size" type="Long" value="291075"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec"/>
+      <attribute name="version" type="Version" value="1.9.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.binary"/>
+      <attribute name="version" type="Version" value="1.9.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+      <directive name="uses" value="org.apache.commons.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.digest"/>
+      <attribute name="version" type="Version" value="1.9.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.language"/>
+      <attribute name="version" type="Version" value="1.9.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+      <directive name="uses" value="org.apache.commons.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.language.bm"/>
+      <attribute name="version" type="Version" value="1.9.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+      <directive name="uses" value="org.apache.commons.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.net"/>
+      <attribute name="version" type="Version" value="1.9.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.codec"/>
+      <attribute name="bundle-version" type="Version" value="1.9.0.v20170208-1614"/>
+      <directive name="uses" value="org.apache.commons.codec"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.codec)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.codec.binary)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.commons.logging"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.1.v201101211721"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="b6d909e4b897d78fdd62635ae828dfd811110be475cffd70d3739c532509c364"/>
+      <attribute name="url" value="org.apache.commons.logging/org.apache.commons.logging-1.1.1.jar"/>
+      <attribute name="size" type="Long" value="73633"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.commons.logging"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1.v201101211721"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.commons.logging"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1.v201101211721"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.logging"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.logging"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1.v201101211721"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.commons.logging.impl"/>
+      <attribute name="version" type="Version" value="1.1.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.commons.logging"/>
+      <attribute name="bundle-version" type="Version" value="1.1.1.v201101211721"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(|(&amp;(osgi.ee=CDC/Foundation)(version=1.0))(&amp;(osgi.ee=JavaSE)(version=1.3)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="1281c8948a30e1f33ba745dd57185275f13c43788b6a323b2c5d1783e8731e07"/>
+      <attribute name="url" value="org.apache.hadoop.zookeeper/org.apache.hadoop.zookeeper-3.3.3.jar"/>
+      <attribute name="size" type="Long" value="638038"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.jute"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.jute.compiler"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.jute.compiler.generated"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.common"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.data"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.jmx"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.proto"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server.auth"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server.persistence"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server.quorum"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server.quorum.flexible"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server.upgrade"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.server.util"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.txn"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.version"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.zookeeper.version.util"/>
+      <attribute name="version" type="Version" value="3.3.3"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.hadoop.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="3.3.3.v201105210832"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.log4j)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.5.2.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="2bf3527947a74dff6859ddcde6c29b33405d3c811106676892fd88d5c1552467"/>
+      <attribute name="url" value="org.apache.httpcomponents.httpclient/org.apache.httpcomponents.httpclient-4.5.2.jar"/>
+      <attribute name="size" type="Long" value="1006005"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.auth"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.auth.params"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.cache"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.client.protocol,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.config"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.entity"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.entity"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.fluent"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.concurrent,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.impl.client"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.methods"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.client.config,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.message,org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.params"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.auth.params,org.apache.http.client.config,org.apache.http.conn.params,org.apache.http.cookie.params,org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.protocol"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.client.utils"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.client,org.apache.http.client.methods,org.apache.http.conn.routing,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="javax.net.ssl,org.apache.http,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.params,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn.params"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.conn.routing,org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn.routing"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn.scheme"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.conn,org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn.socket"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn.ssl"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="javax.net.ssl,org.apache.http,org.apache.http.conn,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.conn.util,org.apache.http.params,org.apache.http.protocol,org.apache.http.ssl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.conn.util"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.cookie"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.cookie.params"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.entity.mime"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.entity,org.apache.http.entity.mime.content"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.entity.mime.content"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http.entity"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.auth"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.params,org.apache.http.protocol,org.apache.http.util,org.ietf.jgss"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.client"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.entity,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.socket,org.apache.http.conn.ssl,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.impl,org.apache.http.impl.auth,org.apache.http.impl.execchain,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.client.cache"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.client,org.apache.http.client.cache,org.apache.http.client.methods,org.apache.http.client.protocol,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.impl.client,org.apache.http.impl.execchain,org.apache.http.params,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.client.cache.ehcache"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="net.sf.ehcache,org.apache.http.client.cache,org.apache.http.impl.client.cache"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.client.cache.memcached"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="net.spy.memcached,org.apache.http.client.cache,org.apache.http.impl.client.cache"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.conn"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="javax.net.ssl,org.apache.commons.logging,org.apache.http,org.apache.http.config,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.socket,org.apache.http.entity,org.apache.http.impl,org.apache.http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.pool,org.apache.http.protocol,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.conn.tsccm"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http.conn,org.apache.http.conn.params,org.apache.http.conn.routing,org.apache.http.conn.scheme,org.apache.http.impl.conn,org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.cookie"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.conn.util,org.apache.http.cookie,org.apache.http.message,org.apache.http.params,org.apache.http.protocol,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.execchain"/>
+      <attribute name="version" type="Version" value="4.5.2"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpclient"/>
+      <attribute name="bundle-version" type="Version" value="4.5.2.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.client,org.apache.http.client.methods,org.apache.http.client.protocol,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.protocol"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.auth)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.auth.params)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.cache)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.config)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.entity)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.methods)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.params)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.protocol)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.utils)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.params)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.routing)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.scheme)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.socket)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.ssl)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.util)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.cookie)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.cookie.params)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.entity.mime.content)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.auth)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.client)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.client.cache)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.conn)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.cookie)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.execchain)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.concurrent)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.config)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.entity)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.entity)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.io)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.io)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.message)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.params)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.pool)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.protocol)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.ssl)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.util)(version&gt;=4.4.6)(!(version&gt;=4.5.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.codec.binary)(version&gt;=1.9.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.logging)(version&gt;=1.1.1))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.directory)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.ldap)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.x500)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=net.sf.ehcache)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=net.spy.memcached)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.ietf.jgss)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.fluent)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.entity.mime)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.client.cache.ehcache)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.client.cache.memcached)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.conn.tsccm)(version&gt;=4.5.0)(!(version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="4.4.6.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="393bbac6febf6a83e489ffa5e33063e11614f182498b126ce8271149b9e036c2"/>
+      <attribute name="url" value="org.apache.httpcomponents.httpcore/org.apache.httpcomponents.httpcore-4.4.6.jar"/>
+      <attribute name="size" type="Long" value="354656"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http.params,org.apache.http.protocol,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.annotation"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.concurrent"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.config"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.entity"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.config,org.apache.http.entity,org.apache.http.impl.entity,org.apache.http.io,org.apache.http.params,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.bootstrap"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="javax.net,javax.net.ssl,org.apache.http,org.apache.http.config,org.apache.http.impl,org.apache.http.protocol"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.entity"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.entity,org.apache.http.io"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.io"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.config,org.apache.http.io,org.apache.http.message,org.apache.http.params,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.impl.pool"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="javax.net,javax.net.ssl,org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.pool"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.io"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.config,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.message"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.params,org.apache.http.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.params"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.config"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.pool"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.protocol"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http,org.apache.http.params"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.ssl"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="javax.net.ssl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.http.util"/>
+      <attribute name="version" type="Version" value="4.4.6"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.httpcomponents.httpcore"/>
+      <attribute name="bundle-version" type="Version" value="4.4.6.v20170210-0925"/>
+      <directive name="uses" value="org.apache.http"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.concurrent)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.config)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.entity)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.entity)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.io)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.io)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.message)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.params)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.pool)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.protocol)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.util)(version&gt;=4.4.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.log4j"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="02b23d50a1477308c5b385628c1412857271a6792987ebbc715d6c162d17bf44"/>
+      <attribute name="url" value="org.apache.log4j/org.apache.log4j-1.2.15.jar"/>
+      <attribute name="size" type="Long" value="415047"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.chainsaw"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.config"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.helpers"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.jdbc"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.jmx"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.lf5"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.lf5.util"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.lf5.viewer"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.lf5.viewer.categoryexplorer"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.lf5.viewer.configure"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.net"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.nt"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.or"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.or.jms"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.or.sax"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.spi"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.varia"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.log4j.xml"/>
+      <attribute name="version" type="Version" value="1.2.15"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.log4j"/>
+      <attribute name="bundle-version" type="Version" value="1.2.15.v201012070815"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
+    </requirement>
+  </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.console"/>
@@ -7,9 +1216,9 @@
       <attribute name="version" type="Version" value="1.1.0.v20180307-2220"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="dd939831b98ff9be100d52d7de0808a4ec89b493a4f11e1d96440fc2a5183863"/>
+      <attribute name="osgi.content" value="a414d5344988b7da4e5214ca8af47f6a5df88800c7fb8a444ca30038901a8966"/>
       <attribute name="url" value="org.eclipse.ecf.console/org.eclipse.ecf.console-1.1.0.jar"/>
-      <attribute name="size" type="Long" value="15260"/>
+      <attribute name="size" type="Long" value="15258"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -75,15 +1284,73 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.datashare"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.0.200.v20180302-0300"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="66b72c7a95b1ce0b84164aaad5eb219f3ce14cc0c4d2d67ec2f216fc203f4bfc"/>
+      <attribute name="url" value="org.eclipse.ecf.datashare/org.eclipse.ecf.datashare-3.0.200.jar"/>
+      <attribute name="size" type="Long" value="26794"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.datashare"/>
+      <attribute name="bundle-version" type="Version" value="3.0.200.v20180302-0300"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.datashare"/>
+      <attribute name="bundle-version" type="Version" value="3.0.200.v20180302-0300"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.datashare"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.datashare"/>
+      <attribute name="bundle-version" type="Version" value="3.0.200.v20180302-0300"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.datashare.events"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.datashare"/>
+      <attribute name="bundle-version" type="Version" value="3.0.200.v20180302-0300"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.datashare.mergeable"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.datashare"/>
+      <attribute name="bundle-version" type="Version" value="3.0.200.v20180302-0300"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.datashare.service"/>
+      <attribute name="version" type="Version" value="3.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.datashare"/>
+      <attribute name="bundle-version" type="Version" value="3.0.200.v20180302-0300"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.discovery"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="5.0.300.v20180306-0211"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="45f0b61b8aabbc53ba2084214638bc8afbd14bfc66fe7233169cc5393f999353"/>
+      <attribute name="osgi.content" value="6e3db67683326cf9018cd45b02fc19498c743e3cd2ef28103c4edbd76ad21c1a"/>
       <attribute name="url" value="org.eclipse.ecf.discovery/org.eclipse.ecf.discovery-5.0.300.jar"/>
-      <attribute name="size" type="Long" value="54861"/>
+      <attribute name="size" type="Long" value="54865"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -146,15 +1413,109 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.0.100.v20180301-0132"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="0566e7739d49f040ac09e52058d1ddc20863ccf17b3c4a63402d32cb4ea654d9"/>
+      <attribute name="url" value="org.eclipse.ecf.filetransfer/org.eclipse.ecf.filetransfer-5.0.100.jar"/>
+      <attribute name="size" type="Long" value="53282"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="version" type="Version" value="5.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.filetransfer.events"/>
+      <attribute name="version" type="Version" value="5.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.filetransfer.events.socket"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+      <directive name="version" value="1.0"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.filetransfer.events.socketfactory"/>
+      <attribute name="version" type="Version" value="5.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.filetransfer.identity"/>
+      <attribute name="version" type="Version" value="5.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.filetransfer.service"/>
+      <attribute name="version" type="Version" value="5.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.filetransfer"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="5.0.100.v20180301-0132"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.2)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.registry)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.identity"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="3.9.0.v20180412-2356"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="4ab4d73c63d24d718d77666b2ed5290d3588c9182b3acafccb54e3addfdf1e2c"/>
+      <attribute name="osgi.content" value="caff3dd21054d931be38c5e31ec583684bde79fc22f9c7782c70638a08e4c47a"/>
       <attribute name="url" value="org.eclipse.ecf.identity/org.eclipse.ecf.identity-3.9.0.jar"/>
-      <attribute name="size" type="Long" value="64808"/>
+      <attribute name="size" type="Long" value="64804"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -222,9 +1583,9 @@
       <attribute name="version" type="Version" value="2.1.200.v20180301-0016"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="6df6df9cc8a22913cf323cadf6193bdbf9ed823f5666f16d31fd0429b3e083b5"/>
+      <attribute name="osgi.content" value="31a560c764538986c3d0f962e05b67504b6cfe2bbb759aed87a111ab4dd96bcd"/>
       <attribute name="url" value="org.eclipse.ecf.osgi.services.distribution/org.eclipse.ecf.osgi.services.distribution-2.1.200.jar"/>
-      <attribute name="size" type="Long" value="12647"/>
+      <attribute name="size" type="Long" value="12648"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -281,9 +1642,9 @@
       <attribute name="version" type="Version" value="1.0.0.v20180307-2227"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="6f793a1d3e80fadc0bf1fffea09e8b9bc97b7b5b365c6ab3a6a14b3bb85931f2"/>
+      <attribute name="osgi.content" value="670d4a02c1aa30f457e197aede636fbadd7b7cff025e1b2323697d75b50a6518"/>
       <attribute name="url" value="org.eclipse.ecf.osgi.services.remoteserviceadmin.console/org.eclipse.ecf.osgi.services.remoteserviceadmin.console-1.0.0.jar"/>
-      <attribute name="size" type="Long" value="17657"/>
+      <attribute name="size" type="Long" value="17663"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -352,9 +1713,9 @@
       <attribute name="version" type="Version" value="1.0.100.v20180301-0016"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e92510e9be50cbda8d8cf1b5fa6c37331fb3008c89dffc717f6e5b0b151296d8"/>
+      <attribute name="osgi.content" value="2871a1f52f9f7bd402a41efc45de12c769ab5a74bdc40c056a87ba7cd3365956"/>
       <attribute name="url" value="org.eclipse.ecf.osgi.services.remoteserviceadmin.proxy/org.eclipse.ecf.osgi.services.remoteserviceadmin.proxy-1.0.100.jar"/>
-      <attribute name="size" type="Long" value="7089"/>
+      <attribute name="size" type="Long" value="7090"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -373,34 +1734,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="4.6.300.v20180417-2217"/>
+      <attribute name="version" type="Version" value="4.6.500.v20180424-0121"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="75249e96c8da87b466a16510a827faec4d3503779c7cadfe8447c4957cfe0cff"/>
-      <attribute name="url" value="org.eclipse.ecf.osgi.services.remoteserviceadmin/org.eclipse.ecf.osgi.services.remoteserviceadmin-4.6.300.jar"/>
-      <attribute name="size" type="Long" value="225137"/>
+      <attribute name="osgi.content" value="15b3e60d0654e1edb5f7aecdbb66ba88fcf8aec19c045a196d46dd773824554b"/>
+      <attribute name="url" value="org.eclipse.ecf.osgi.services.remoteserviceadmin/org.eclipse.ecf.osgi.services.remoteserviceadmin-4.6.500.jar"/>
+      <attribute name="size" type="Long" value="225272"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.300.v20180417-2217"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180424-0121"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.300.v20180417-2217"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180424-0121"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.osgi.services.remoteserviceadmin"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.300.v20180417-2217"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180424-0121"/>
       <directive name="x-internal" value="true"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
       <attribute name="version" type="Version" value="1.3.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.300.v20180417-2217"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180424-0121"/>
     </capability>
     <capability namespace="osgi.extender">
       <attribute name="osgi.extender" value="osgi.remoteserviceadmin"/>
@@ -502,15 +1863,384 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.dnssd"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.200.v20180302-2006"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="50d8ed19e187316aaac27e11d993f197e1bb3cb544e235a3e442a8e9e59a44e2"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.dnssd/org.eclipse.ecf.provider.dnssd-1.2.200.jar"/>
+      <attribute name="size" type="Long" value="43138"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.dnssd"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.dnssd"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.dnssd"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.dnssd"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.discovery">
+      <attribute name="protocols" type="List&lt;String&gt;" value="DNSSD,ecf.discovery.dnssd.locator,ecf.discovery.dnssd.advertiser"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.events)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.provider)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.security)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.discovery)(version&gt;=4.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.discovery.identity)(version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.1))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.xbill.dns)(bundle-version&gt;=2.0.8))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl"/>
+      <attribute name="type" value="osgi.fragment"/>
+      <attribute name="version" type="Version" value="1.1.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="158a509d8f4292f35c3d78568eb02cab5e7a64c4a6a372b565d46f7b8124894c"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl/org.eclipse.ecf.provider.filetransfer.httpclient4.ssl-1.1.100.jar"/>
+      <attribute name="size" type="Long" value="14229"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <requirement namespace="osgi.wiring.host">
+      <directive name="filter" value="(&amp;(osgi.wiring.host=org.eclipse.ecf.provider.filetransfer.httpclient4)(bundle-version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.filetransfer.httpclient4"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.300.v20180301-0132"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="79ac49905956c33a15f7f685ed9f5b066b8da734df029acfb0e62b895ee04ca8"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.filetransfer.httpclient4/org.eclipse.ecf.provider.filetransfer.httpclient4-1.1.300.jar"/>
+      <attribute name="size" type="Long" value="75554"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.filetransfer.httpclient4"/>
+      <attribute name="bundle-version" type="Version" value="1.1.300.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.filetransfer.httpclient4"/>
+      <attribute name="bundle-version" type="Version" value="1.1.300.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.provider.filetransfer.httpclient4"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer.httpclient4"/>
+      <attribute name="bundle-version" type="Version" value="1.1.300.v20180301-0132"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.httpclient4"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer.httpclient4"/>
+      <attribute name="bundle-version" type="Version" value="1.1.300.v20180301-0132"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.auth)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.methods)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.protocol)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.params)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.scheme)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.ssl)(version&gt;=4.3.6))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.conn.util)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.entity)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.client)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.conn)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.cookie)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.entity)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.io)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.io)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.message)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.params)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.protocol)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.util)(version&gt;=4.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.url)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.2))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider.filetransfer)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.filetransfer)(bundle-version&gt;=5.0.0)(!(bundle-version&gt;=6.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.filetransfer.ssl"/>
+      <attribute name="type" value="osgi.fragment"/>
+      <attribute name="version" type="Version" value="1.0.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="2d69a2e45c1ea0e882397a0ae7a0681fb0f1d62fa3460eb11eab9d0b525fbd5a"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.filetransfer.ssl/org.eclipse.ecf.provider.filetransfer.ssl-1.0.100.jar"/>
+      <attribute name="size" type="Long" value="9933"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.host">
+      <directive name="filter" value="(&amp;(osgi.wiring.host=org.eclipse.ecf.provider.filetransfer)(bundle-version&gt;=2.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.2.400.v20180306-0429"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="dbbfe3686f551de8ae1a2df8fb23b1ac01cffa784108192fd267d3457380c33d"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.filetransfer/org.eclipse.ecf.provider.filetransfer-3.2.400.jar"/>
+      <attribute name="size" type="Long" value="129431"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.provider.filetransfer"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+      <directive name="x-friends" value="org.eclipse.equinox.p2.repository"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.browse"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.events.socket"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+      <directive name="x-friends" value="org.eclipse.ecf.provider.filetransfer.httpclient"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.identity"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.outgoing"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.retrieve"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.filetransfer.util"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.filetransfer"/>
+      <attribute name="bundle-version" type="Version" value="3.2.400.v20180306-0429"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.net.proxy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.filetransfer.events.socket)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.2)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.filetransfer)(bundle-version&gt;=5.0.0)(!(bundle-version&gt;=6.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.registry)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jmdns"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="4.3.200.v20180306-0429"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="ca5f56b3328084fcc00170549927b410b99079daaa810d70ad668dd1e0efcc4c"/>
+      <attribute name="osgi.content" value="b7d565628beb5cd570095783e1973432652dc45470b8ddb8765d38c2cae82cbe"/>
       <attribute name="url" value="org.eclipse.ecf.provider.jmdns/org.eclipse.ecf.provider.jmdns-4.3.200.jar"/>
-      <attribute name="size" type="Long" value="114278"/>
+      <attribute name="size" type="Long" value="114277"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -568,13 +2298,153 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jslp"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.2.200.v20180302-2006"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="b12d85e043a16ee16ea4571ec2446f0f304b5830d9373255538b6bac9ab9fcdb"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jslp/org.eclipse.ecf.provider.jslp-3.2.200.jar"/>
+      <attribute name="size" type="Long" value="44232"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jslp"/>
+      <attribute name="bundle-version" type="Version" value="3.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jslp"/>
+      <attribute name="bundle-version" type="Version" value="3.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.provider.jslp"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jslp"/>
+      <attribute name="bundle-version" type="Version" value="3.2.200.v20180302-2006"/>
+      <directive name="x-friends" value="org.eclipse.ecf.tests.provider.jslp"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jslp.container"/>
+      <attribute name="version" type="Version" value="3.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jslp"/>
+      <attribute name="bundle-version" type="Version" value="3.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jslp.identity"/>
+      <attribute name="version" type="Version" value="3.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jslp"/>
+      <attribute name="bundle-version" type="Version" value="3.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.discovery">
+      <attribute name="protocols" type="List&lt;String&gt;" value="SLP,JSLP,ecf.discovery.jslp,ecf.discovery.jslp.locator,ecf.discovery.jslp.advertiser"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=ch.ethz.iks.slp)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.discovery)(bundle-version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.identity)(bundle-version&gt;=2.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=2.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(|(&amp;(osgi.ee=CDC/Foundation)(version=1.1))(&amp;(osgi.ee=JavaSE)(version=1.4)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.r_osgi"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.6.0.v20180314-1732"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="46ee0b9832d80cdf6df04c1ff898b7a5355ca3ab249af2c627b12297e2da1a93"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.r_osgi/org.eclipse.ecf.provider.r_osgi-3.6.0.jar"/>
+      <attribute name="size" type="Long" value="60662"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.r_osgi"/>
+      <attribute name="bundle-version" type="Version" value="3.6.0.v20180314-1732"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.r_osgi"/>
+      <attribute name="bundle-version" type="Version" value="3.6.0.v20180314-1732"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.r_osgi.identity"/>
+      <attribute name="version" type="Version" value="3.2.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.r_osgi"/>
+      <attribute name="bundle-version" type="Version" value="3.6.0.v20180314-1732"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" type="List&lt;String&gt;" value="ecf.r_osgi.peer,ecf.r_osgi.peer.ws,ecf.r_osgi.peer.wss"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=ch.ethz.iks.r_osgi)(version&gt;=1.0.1)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.util.reflection)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=1.0.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.wiring)(version&gt;=1.2.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.3)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.1.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider)(bundle-version&gt;=4.0.0)(!(bundle-version&gt;=5.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.remoteservice)(bundle-version&gt;=8.0.0)(!(bundle-version&gt;=10.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.remoteservice"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="4.4.0.v20180406-1915"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="4883eeb5dd2f0915cb9b272e1d86998e39fcdc113ffba9e7ead88d4d5872fc2b"/>
+      <attribute name="osgi.content" value="cacf6f282b3de833cba096c692aaf3c592d0e7c6351bd859f18d28073fc91bbb"/>
       <attribute name="url" value="org.eclipse.ecf.provider.remoteservice/org.eclipse.ecf.provider.remoteservice-4.4.0.jar"/>
       <attribute name="size" type="Long" value="76891"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
@@ -646,15 +2516,128 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.200.v20180302-2006"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="0f080a8f8e56e6f191f38d827d002e4a5bfa6dc6987b0d2833b63777a69c6f24"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.zookeeper/org.eclipse.ecf.provider.zookeeper-1.2.200.jar"/>
+      <attribute name="size" type="Long" value="86346"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.zookeeper.core"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.zookeeper.core.internal"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.zookeeper.node.internal"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.zookeeper.util"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.zookeeper"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.discovery">
+      <attribute name="protocols" type="List&lt;String&gt;" value="ZOOKEEPER,ecf.discovery.zoodiscovery,ecf.discovery.zoodiscovery.locator,ecf.discovery.zoodiscovery.advertiser"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.zookeeper)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.zookeeper.data)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.zookeeper.server)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.zookeeper.server.persistence)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.zookeeper.server.quorum)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.provider)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.security)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.4.2))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.discovery)(bundle-version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.apache.hadoop.zookeeper)(bundle-version&gt;=3.3.3)(!(bundle-version&gt;=3.4.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="4.8.0.v20180402-2103"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e5f90a877dfef9d0b76d972386041911f2f43c18a9c516335b77b9876d777525"/>
+      <attribute name="osgi.content" value="30d43a7e08e4aea775ba1534862e08da1b19f03e0e46f17105a9ab6f7587774a"/>
       <attribute name="url" value="org.eclipse.ecf.provider/org.eclipse.ecf.provider-4.8.0.jar"/>
-      <attribute name="size" type="Long" value="162385"/>
+      <attribute name="size" type="Long" value="162384"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -728,12 +2711,48 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
       <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.1.0.v20180311-0310"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="b613c6b8a5b279a46643e93af2130526c52a55f18a19d04d0c3cb200d218e0e5"/>
+      <attribute name="url" value="org.eclipse.ecf.remoteservice.asyncproxy/org.eclipse.ecf.remoteservice.asyncproxy-1.1.0.jar"/>
+      <attribute name="size" type="Long" value="13594"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180311-0310"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180311-0310"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+      <attribute name="bundle-version" type="Version" value="1.1.0.v20180311-0310"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.equinox.concurrent.future)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+      <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="2.1.0.v20180409-2248"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="0f79db5cf5778c4dea765bc92eba1d2bfd7ab3298e7f6f8b90ff99db1cf4f451"/>
+      <attribute name="osgi.content" value="6010452ff60ef1882b050b6014de6c35d5ce14710f16a4d7e54d5febf7329e22"/>
       <attribute name="url" value="org.eclipse.ecf.remoteservice.asyncproxy/org.eclipse.ecf.remoteservice.asyncproxy-2.1.0.jar"/>
-      <attribute name="size" type="Long" value="14081"/>
+      <attribute name="size" type="Long" value="14089"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -765,14 +2784,299 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="a953e288d1b0417fb18106363c202aacd2f51de3b98ea757d9f0b7bbc1e9dd72"/>
+      <attribute name="url" value="org.eclipse.ecf.remoteservice.eventadmin/org.eclipse.ecf.remoteservice.eventadmin-1.2.200.jar"/>
+      <attribute name="size" type="Long" value="28357"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.remoteservice.eventadmin"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="version" type="Version" value="1.1.100"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.eventadmin.serialization"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.eventadmin"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180302-2006"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.sharedobject.events)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.framework.eventmgr)(version&gt;=1.2.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.2.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.4.2))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(|(&amp;(osgi.ee=CDC/Foundation)(version=1.1))(&amp;(osgi.ee=JavaSE)(version=1.4)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.7.200.v20180227-0153"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="9b3d26cb8d8ef284d16e3b23671454c3638856304fdb8408d294d470ecc141dd"/>
+      <attribute name="url" value="org.eclipse.ecf.remoteservice.rest/org.eclipse.ecf.remoteservice.rest-2.7.200.jar"/>
+      <attribute name="size" type="Long" value="49893"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.remoteservice.rest"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="version" type="Version" value="2.5.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.rest.client"/>
+      <attribute name="version" type="Version" value="2.6.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.rest.identity"/>
+      <attribute name="version" type="Version" value="2.5.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.rest.util"/>
+      <attribute name="version" type="Version" value="2.5.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.rest"/>
+      <attribute name="bundle-version" type="Version" value="2.7.200.v20180227-0153"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" type="List&lt;String&gt;" value="ecf.rest.client"/>
+      <attribute name="version" type="Version" value="1.1.0"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.eclipse.ecf.remoteservice.rest.util.IDSPresent"/>
+      <directive name="uses" value="org.eclipse.ecf.remoteservice.rest.util"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.auth)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.config)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.entity)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.methods)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.params)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.client.utils)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.entity)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.auth)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.impl.client)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.message)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.params)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.http.protocol)(version&gt;=4.3.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.http.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=6.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.log)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.identity)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.remoteservice.servlet"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.100.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="5074e2e2816d2aef04fbd68753a861a525e82fc0416ce95e2b374dfe3325a4a5"/>
+      <attribute name="url" value="org.eclipse.ecf.remoteservice.servlet/org.eclipse.ecf.remoteservice.servlet-1.0.100.jar"/>
+      <attribute name="size" type="Long" value="17498"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.remoteservice.servlet"/>
+      <attribute name="bundle-version" type="Version" value="1.0.100.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.remoteservice.servlet"/>
+      <attribute name="bundle-version" type="Version" value="1.0.100.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.servlet"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.remoteservice.servlet"/>
+      <attribute name="bundle-version" type="Version" value="1.0.100.v20180302-2006"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet.http)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)(version&gt;=2.2.100))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.generic)(version&gt;=4.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.remoteservice.generic)(version&gt;=4.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.1))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.remoteservice"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="8.13.0.v20180406-1915"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="dd1a5c99fd4a1721cc00399651dc046539ee618d2a943b5021ead4c56f325392"/>
+      <attribute name="osgi.content" value="e4e2320673d0ee5c3303fa0113065d2ec5810df4dc33602c9a666578f2c1f181"/>
       <attribute name="url" value="org.eclipse.ecf.remoteservice/org.eclipse.ecf.remoteservice-8.13.0.jar"/>
-      <attribute name="size" type="Long" value="176675"/>
+      <attribute name="size" type="Long" value="176678"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -856,13 +3160,156 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="8.0.100.v20180302-2006"/>
+      <directive name="singleton" value="true"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="19914d38fbcb82d2e2c18f5c274f7de382f925e977c1eef264539cecdc075c9c"/>
+      <attribute name="url" value="org.eclipse.ecf.server.generic/org.eclipse.ecf.server.generic-8.0.100.jar"/>
+      <attribute name="size" type="Long" value="102740"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="bundle-version" type="Version" value="8.0.100.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="bundle-version" type="Version" value="8.0.100.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.server.generic"/>
+      <attribute name="version" type="Version" value="6.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="bundle-version" type="Version" value="8.0.100.v20180302-2006"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="version" type="Version" value="7.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="bundle-version" type="Version" value="8.0.100.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.server.generic.app"/>
+      <attribute name="version" type="Version" value="6.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.server.generic"/>
+      <attribute name="bundle-version" type="Version" value="8.0.100.v20180302-2006"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.log)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.sharedobject)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.provider)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.discovery)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider.remoteservice)(bundle-version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.remoteservice)(bundle-version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.registry)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.app)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.server"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.1.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="20a6e054f6bdc7becc4fa5dc949e392c923c4a45e40635ede2286fd178e6c5d0"/>
+      <attribute name="url" value="org.eclipse.ecf.server/org.eclipse.ecf.server-2.1.200.jar"/>
+      <attribute name="size" type="Long" value="12199"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.server"/>
+      <attribute name="bundle-version" type="Version" value="2.1.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.server"/>
+      <attribute name="bundle-version" type="Version" value="2.1.200.v20180302-2006"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.server"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.server"/>
+      <attribute name="bundle-version" type="Version" value="2.1.200.v20180302-2006"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.server"/>
+      <attribute name="version" type="Version" value="2.1.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.server"/>
+      <attribute name="bundle-version" type="Version" value="2.1.200.v20180302-2006"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.security)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.core.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(|(&amp;(osgi.ee=CDC/Foundation)(version=1.1))(&amp;(osgi.ee=JavaSE)(version=1.4)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.sharedobject"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="2.6.0.v20180404-2345"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="a8f3dad65bf7aadb4d70af52a7f4952446e0ff9c9f1bfa47fb913c81580786ae"/>
+      <attribute name="osgi.content" value="066e287d947c790f0554e553a4d75253b6555825975b197d29e06497493573f0"/>
       <attribute name="url" value="org.eclipse.ecf.sharedobject/org.eclipse.ecf.sharedobject-2.6.0.jar"/>
       <attribute name="size" type="Long" value="108399"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
@@ -952,15 +3399,50 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.ssl"/>
+      <attribute name="type" value="osgi.fragment"/>
+      <attribute name="version" type="Version" value="1.2.100.v20180301-0132"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="22a2159d63d233b1d05e1f70349ede9d3a1f2b13e194c9748d7e8be87612057f"/>
+      <attribute name="url" value="org.eclipse.ecf.ssl/org.eclipse.ecf.ssl-1.2.100.jar"/>
+      <attribute name="size" type="Long" value="14836"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.ssl"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.ssl"/>
+      <attribute name="bundle-version" type="Version" value="1.2.100.v20180301-0132"/>
+      <directive name="x-internal" value="true"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.security)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.host">
+      <directive name="filter" value="(&amp;(osgi.wiring.host=org.eclipse.ecf)(bundle-version&gt;=0.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="3.9.0.v20180402-2015"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="66a21e486b4be904ce3d31e68be6e00df1760df0a803656a48d1090f658a8622"/>
+      <attribute name="osgi.content" value="d9213ee89c841a27b72ae7e4b7b8b3896c673af8c358ea39c6816c95ba8b7bcd"/>
       <attribute name="url" value="org.eclipse.ecf/org.eclipse.ecf-3.9.0.jar"/>
-      <attribute name="size" type="Long" value="124105"/>
+      <attribute name="size" type="Long" value="124108"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -1083,9 +3565,9 @@
       <attribute name="version" type="Version" value="1.6.200.v20180301-0016"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="712aca09598d5bda3b0f207eb479eed62eacbc9795112a094b25d9e0971594ee"/>
+      <attribute name="osgi.content" value="5fda8cce48d9061c91f4c6bfc1ce4ea6573b31324ef8fa0bcc912aa0f02134dd"/>
       <attribute name="url" value="org.eclipse.osgi.services.remoteserviceadmin/org.eclipse.osgi.services.remoteserviceadmin-1.6.200.jar"/>
-      <attribute name="size" type="Long" value="39340"/>
+      <attribute name="size" type="Long" value="39338"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -1119,6 +3601,120 @@
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.json"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.v201011060100"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="f6174afcb2c9baa919563719c552c987d306aaa996c5852c584a57fa5c61b8f9"/>
+      <attribute name="url" value="org.json/org.json-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="57499"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.json"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.v201011060100"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.json"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.v201011060100"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.json"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.json"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.v201011060100"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(|(&amp;(osgi.ee=CDC/Foundation)(version=1.1))(&amp;(osgi.ee=JavaSE)(version=1.4)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.objectweb.asm"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.0.1.v201404251740"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="4adeabe834eda79abb3449d16eaaf23f3ce6408ba2946f508e32e1dee0fd3919"/>
+      <attribute name="url" value="org.objectweb.asm/org.objectweb.asm-5.0.1.jar"/>
+      <attribute name="size" type="Long" value="63419"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.objectweb.asm"/>
+      <attribute name="bundle-version" type="Version" value="5.0.1.v201404251740"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.objectweb.asm"/>
+      <attribute name="bundle-version" type="Version" value="5.0.1.v201404251740"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objectweb.asm"/>
+      <attribute name="version" type="Version" value="5.0.1"/>
+      <attribute name="bundle-symbolic-name" value="org.objectweb.asm"/>
+      <attribute name="bundle-version" type="Version" value="5.0.1.v201404251740"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.objectweb.asm.signature"/>
+      <attribute name="version" type="Version" value="5.0.1"/>
+      <attribute name="bundle-symbolic-name" value="org.objectweb.asm"/>
+      <attribute name="bundle-version" type="Version" value="5.0.1.v201404251740"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.xbill.dns"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="74055756851d162675d47a9c29fa4213f545d007da522a0b342a1e51ab5e867a"/>
+      <attribute name="url" value="org.xbill.dns/org.xbill.dns-2.0.8.jar"/>
+      <attribute name="size" type="Long" value="281252"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.xbill.dns"/>
+      <attribute name="bundle-version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.xbill.dns"/>
+      <attribute name="bundle-version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.xbill.DNS"/>
+      <attribute name="version" type="Version" value="2.0.8"/>
+      <attribute name="bundle-symbolic-name" value="org.xbill.dns"/>
+      <attribute name="bundle-version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.xbill.DNS.spi"/>
+      <attribute name="version" type="Version" value="2.0.8"/>
+      <attribute name="bundle-symbolic-name" value="org.xbill.dns"/>
+      <attribute name="bundle-version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.xbill.DNS.utils"/>
+      <attribute name="version" type="Version" value="2.0.8"/>
+      <attribute name="bundle-symbolic-name" value="org.xbill.dns"/>
+      <attribute name="bundle-version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.xbill.DNS.windows"/>
+      <attribute name="version" type="Version" value="2.0.8"/>
+      <attribute name="bundle-symbolic-name" value="org.xbill.dns"/>
+      <attribute name="bundle-version" type="Version" value="2.0.8.v201112050911"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.4))"/>
     </requirement>
   </resource>
 </repository>
