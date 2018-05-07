@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1525711702090" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1525721845233" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="ch.ethz.iks.r_osgi.remote"/>
@@ -1734,34 +1734,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="4.6.500.v20180507-1550"/>
+      <attribute name="version" type="Version" value="4.6.500.v20180507-1838"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="784fc0fd155c5a610fab5549d4ebd8244a49b8dfb2e624dd24929ac93d26a0d1"/>
+      <attribute name="osgi.content" value="295127c4aebc59f480e023a5c45bb7d87306f5b8eacbcd9980d6ad7189f3bc9f"/>
       <attribute name="url" value="org.eclipse.ecf.osgi.services.remoteserviceadmin/org.eclipse.ecf.osgi.services.remoteserviceadmin-4.6.500.jar"/>
-      <attribute name="size" type="Long" value="225271"/>
+      <attribute name="size" type="Long" value="225201"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1550"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1838"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1550"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1838"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.osgi.services.remoteserviceadmin"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1550"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1838"/>
       <directive name="x-internal" value="true"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
       <attribute name="version" type="Version" value="1.3.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1550"/>
+      <attribute name="bundle-version" type="Version" value="4.6.500.v20180507-1838"/>
     </capability>
     <capability namespace="osgi.extender">
       <attribute name="osgi.extender" value="osgi.remoteserviceadmin"/>
@@ -1946,47 +1946,47 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.etcd"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="version" type="Version" value="1.3.200.201805071151"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e72ac9cb8826758a75efcd4d4db6ee38cbe7c855ea3ce2c97a1434672f7a2866"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.etcd/org.eclipse.ecf.provider.etcd-1.3.100.jar"/>
-      <attribute name="size" type="Long" value="47900"/>
+      <attribute name="osgi.content" value="d23b93740cfda5a077c0cf81d5e3ccf48cf8e24658125755e950299add4dbce3"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.etcd/org.eclipse.ecf.provider.etcd-1.3.200.jar"/>
+      <attribute name="size" type="Long" value="47731"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.etcd"/>
-      <attribute name="bundle-version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="bundle-version" type="Version" value="1.3.200.201805071151"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.etcd"/>
-      <attribute name="bundle-version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="bundle-version" type="Version" value="1.3.200.201805071151"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.provider.etcd"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.etcd"/>
-      <attribute name="bundle-version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="bundle-version" type="Version" value="1.3.200.201805071151"/>
       <directive name="x-internal" value="true"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.internal.provider.etcd.protocol"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.etcd"/>
-      <attribute name="bundle-version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="bundle-version" type="Version" value="1.3.200.201805071151"/>
       <directive name="x-internal" value="true"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.etcd"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.etcd"/>
-      <attribute name="bundle-version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="bundle-version" type="Version" value="1.3.200.201805071151"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.etcd.identity"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.etcd"/>
-      <attribute name="bundle-version" type="Version" value="1.3.100.201803031808"/>
+      <attribute name="bundle-version" type="Version" value="1.3.200.201805071151"/>
     </capability>
     <capability namespace="osgi.remoteserviceadmin.discovery">
       <attribute name="protocols" type="List&lt;String&gt;" value="ETCD,ecf.discovery.etcd,ecf.discovery.etcd.locator,ecf.discovery.etcd.advertiser"/>
