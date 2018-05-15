@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1525756822890" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1526426156876" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="ch.ethz.iks.r_osgi.remote"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="9bdde11e501615aeab22b8e7ebcc43e61ef958c05874378ccd5da64b6701678e"/>
-      <attribute name="url" value="ch.ethz.iks.r_osgi.remote/ch.ethz.iks.r_osgi.remote-1.2.0.jar"/>
-      <attribute name="size" type="Long" value="150207"/>
+      <attribute name="osgi.content" value="317c098da46e1dea09e1bde24d86d7e7a20d6a1caa4ac86094fb9fcfd1b64cd8"/>
+      <attribute name="url" value="ch.ethz.iks.r_osgi.remote/ch.ethz.iks.r_osgi.remote-1.2.200.jar"/>
+      <attribute name="size" type="Long" value="150285"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi"/>
       <attribute name="version" type="Version" value="1.0.9"/>
       <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.channels"/>
       <attribute name="version" type="Version" value="1.0.1"/>
       <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.messages"/>
       <attribute name="version" type="Version" value="1.0.1"/>
       <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.service_discovery"/>
       <attribute name="version" type="Version" value="1.0.1"/>
       <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="ch.ethz.iks.r_osgi.types"/>
       <attribute name="version" type="Version" value="1.0.1"/>
       <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="ch.ethz.iks.util"/>
       <attribute name="version" type="Version" value="1.0.1"/>
       <attribute name="bundle-symbolic-name" value="ch.ethz.iks.r_osgi.remote"/>
-      <attribute name="bundle-version" type="Version" value="1.2.0.v20180426-1849"/>
+      <attribute name="bundle-version" type="Version" value="1.2.200.v20180515-1646"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.3.0))"/>
@@ -2471,28 +2471,28 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.r_osgi"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="3.6.0.v20180314-1732"/>
+      <attribute name="version" type="Version" value="3.6.100.v20180515-0346"/>
       <directive name="singleton" value="true"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="46ee0b9832d80cdf6df04c1ff898b7a5355ca3ab249af2c627b12297e2da1a93"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.r_osgi/org.eclipse.ecf.provider.r_osgi-3.6.0.jar"/>
-      <attribute name="size" type="Long" value="60662"/>
+      <attribute name="osgi.content" value="f052c337843587a9611b6760ffaafab321ce9af61304b3b3ec97308961d0f922"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.r_osgi/org.eclipse.ecf.provider.r_osgi-3.6.100.jar"/>
+      <attribute name="size" type="Long" value="60712"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.r_osgi"/>
-      <attribute name="bundle-version" type="Version" value="3.6.0.v20180314-1732"/>
+      <attribute name="bundle-version" type="Version" value="3.6.100.v20180515-0346"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.r_osgi"/>
-      <attribute name="bundle-version" type="Version" value="3.6.0.v20180314-1732"/>
+      <attribute name="bundle-version" type="Version" value="3.6.100.v20180515-0346"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.r_osgi.identity"/>
       <attribute name="version" type="Version" value="3.2.0"/>
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.r_osgi"/>
-      <attribute name="bundle-version" type="Version" value="3.6.0.v20180314-1732"/>
+      <attribute name="bundle-version" type="Version" value="3.6.100.v20180515-0346"/>
     </capability>
     <capability namespace="osgi.remoteserviceadmin.distribution">
       <attribute name="configs" type="List&lt;String&gt;" value="ecf.r_osgi.peer,ecf.r_osgi.peer.ws,ecf.r_osgi.peer.wss"/>
