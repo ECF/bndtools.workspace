@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1526425723671" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1526428593038" name="Templates" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="1.0.21.201805152307"/>
+      <attribute name="version" type="Version" value="1.0.22.201805152355"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e7db6ea9fc8f921f45ac2136711efe8399e4ec75a653c68dc630b3f258860145"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.21.jar"/>
-      <attribute name="size" type="Long" value="22134"/>
+      <attribute name="osgi.content" value="2b6ece27616f055affe528c9dd102e2829e13793c9ef9ef00ca8b3cf1541418e"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.0.22.jar"/>
+      <attribute name="size" type="Long" value="22161"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.21.201805152307"/>
+      <attribute name="bundle-version" type="Version" value="1.0.22.201805152355"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="bundle-version" type="Version" value="1.0.21.201805152307"/>
+      <attribute name="bundle-version" type="Version" value="1.0.22.201805152355"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="org.bndtools.template" value="project"/>
