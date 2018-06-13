@@ -35,19 +35,25 @@
 		pretty = true; \
 		local = ${build}/ecf-examples/py4jhello
 
--plugin.7.Local: \
+-plugin.7.ECFXMLRPC: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Xmlrpc Distribution Provider; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/xmlrpc
+
+-plugin.8.Local: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Local; \
 		pretty = true; \
 		local = ${build}/Local
 
--plugin.8.Templates: \
+-plugin.9.Templates: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Templates; \
 		pretty = true; \
 		local = ${build}/templates
 
--plugin.9.Release: \
+-plugin.10.Release: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Release; \
 		pretty = true; \
