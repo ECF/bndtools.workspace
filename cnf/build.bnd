@@ -5,29 +5,43 @@
 		index=${.}/central.maven; \
 		name="Central"
 
--plugin.2.Local: \
+-plugin.2.ECFATCENTRAL: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository; \
+		releaseUrl=https://repo1.maven.org/maven2/; \
+		index=${.}/ecfatcentral.maven; \
+		name="ECF Remote Services"
+
+-plugin.3.ECFTIMESVCEXAMPLE: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Timeservice Example; \
+		pretty = true; \
+		local = ${build}/ecf-examples/timeservice
+
+-plugin.4.ECFPY4J: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Py4j Distribution Provider; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/py4j
+
+-plugin.5.ECFPY4JHELLO: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Py4j Hello Example; \
+		pretty = true; \
+		local = ${build}/ecf-examples/py4jhello
+
+-plugin.6.Local: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Local; \
 		pretty = true; \
-		local = ${build}/local
+		local = ${build}/Local
 
--plugin.3.ECFATCENTRAL: \
-	aQute.bnd.deployer.repository.wrapper.Plugin; \
-		location = "${build}/cache/wrapper"; \
-		reindex = true, \
-	aQute.bnd.jpm.Repository; \
-		includeStaged = true; \
-		name = ECF At Maven Central; \
-		location = ~/.bnd/shacache; \
-		index = ${build}/ecfatcentral.json
-		
--plugin.4.Templates: \
+-plugin.6.Templates: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Templates; \
 		pretty = true; \
 		local = ${build}/templates
 
--plugin.5.Release: \
+-plugin.7.Release: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Release; \
 		pretty = true; \
