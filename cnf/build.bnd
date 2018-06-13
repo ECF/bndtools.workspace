@@ -11,37 +11,43 @@
 		index=${.}/ecfatcentral.maven; \
 		name="ECF Remote Services"
 
--plugin.3.ECFTIMESVCEXAMPLE: \
+-plugin.3.ETCDDISCOVERY: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Etcd Discovery Provider; \
+		pretty = true; \
+		local = ${build}/ecf-discovery/etcd
+
+-plugin.4.ECFTIMESVCEXAMPLE: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Timeservice Example; \
 		pretty = true; \
 		local = ${build}/ecf-examples/timeservice
 
--plugin.4.ECFPY4J: \
+-plugin.5.ECFPY4J: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Py4j Distribution Provider; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/py4j
 
--plugin.5.ECFPY4JHELLO: \
+-plugin.6.ECFPY4JHELLO: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Py4j Hello Example; \
 		pretty = true; \
 		local = ${build}/ecf-examples/py4jhello
 
--plugin.6.Local: \
+-plugin.7.Local: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Local; \
 		pretty = true; \
 		local = ${build}/Local
 
--plugin.6.Templates: \
+-plugin.8.Templates: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Templates; \
 		pretty = true; \
 		local = ${build}/templates
 
--plugin.7.Release: \
+-plugin.9.Release: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Release; \
 		pretty = true; \
