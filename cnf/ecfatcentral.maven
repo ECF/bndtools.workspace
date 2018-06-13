@@ -33,6 +33,6 @@ org.eclipse.ecf:org.eclipse.ecf.server:2.1.200
 org.eclipse.ecf:org.eclipse.ecf.server.generic:8.0.100
 org.eclipse.ecf:org.eclipse.ecf.provider.zookeeper:1.2.200
 org.eclipse.ecf:org.apache.hadoop.zookeeper:3.3.3.v201105210832
-org.eclipse.ecf:org.eclipse.provider.jmdns:4.3.200
+org.eclipse.ecf:org.eclipse.ecf.provider.jmdns:4.3.200
 org.eclipse.ecf:org.eclipse.ecf.provider.jslp:3.2.200
 org.eclipse.ecf:ch.ethz.iks.slp:1.2.0
