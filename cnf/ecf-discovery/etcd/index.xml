@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Etcd Discovery Provider" increment="1528866505316">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Etcd Discovery Provider" increment="1528951993508">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.etcd"/>
