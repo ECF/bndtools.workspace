@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Python.Java Hello Example" increment="1529000142761">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Python.Java Hello Example" increment="1529094528821">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.examples.protobuf.hello.javahost"/>
@@ -245,10 +245,10 @@
     </capability>
     <capability namespace="osgi.remoteserviceadmin.distribution"/>
     <capability namespace="osgi.content">
-      <attribute name="size" value="7068" type="Long"/>
+      <attribute name="size" value="5643" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.protobuf.hello.provider/org.eclipse.ecf.examples.protobuf.hello.provider-1.2.3.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="23C7FFFF28BB159336F0EEFEB3530F656BEE414DDE3219882CE3A948B753E0A3"/>
+      <attribute name="osgi.content" value="74B721B25CD0175FBA6880F038F9BD91984AB87C67C59FF25A739B2357691712"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity))"/>
