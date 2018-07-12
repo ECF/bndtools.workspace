@@ -59,6 +59,12 @@
 		pretty = true; \
 		local = ${build}/release
 
+-plugin.11.ECFJAXRS: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Jaxrs Distribution Providers; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/jaxrs
+
 -releaserepo: Release
 -baselinerepo: Release
 
