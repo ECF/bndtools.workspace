@@ -1,5 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Timeservice Example" increment="1528951994409">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Timeservice Example" increment="1550701008236">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.mycorp.examples.timeservice.async"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.1.0.v20180314-1732" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.timeservice.async"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.mycorp.examples.timeservice.async"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="2.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.timeservice"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="8596" type="Long"/>
+      <attribute name="url" value="com.mycorp.examples.timeservice.async/com.mycorp.examples.timeservice.async-2.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="AFE1651877C14C5B6C2EE50ECE3A233493F20515E67E80EB975E57F0B94843B1"/>
+    </capability>
+  </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="com.mycorp.examples.timeservice.host"/>
@@ -29,31 +54,6 @@
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.1.0))"/>
     </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.mycorp.examples.timeservice.async"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.1.0.v20180314-1732" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.timeservice.async"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.mycorp.examples.timeservice.async"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="2.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.mycorp.examples.timeservice"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="8596" type="Long"/>
-      <attribute name="url" value="com.mycorp.examples.timeservice.async/com.mycorp.examples.timeservice.async-2.1.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="AFE1651877C14C5B6C2EE50ECE3A233493F20515E67E80EB975E57F0B94843B1"/>
-    </capability>
   </resource>
   <resource>
     <capability namespace="osgi.identity">

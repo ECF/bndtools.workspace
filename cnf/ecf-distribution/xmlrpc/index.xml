@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Xmlrpc Distribution Provider" increment="1528951994074">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Xmlrpc Distribution Provider" increment="1550701000204">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.xmlrpc"/>
