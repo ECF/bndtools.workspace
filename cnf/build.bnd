@@ -1,65 +1,93 @@
 # Configure Repositories
--plugin.1.Central: \
+-plugin.1.R7.API: \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
+		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
+		releaseUrls=https://repo.maven.apache.org/maven2/; \
+		revision=org.osgi.enroute:osgi-api:7.0.0; \
+		readOnly=true; \
+		name="OSGi R7 API"
+-plugin.2.R7.Impl: \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
+		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
+		releaseUrls=https://repo.maven.apache.org/maven2/; \
+		revision=org.osgi.enroute:impl-index:7.0.0; \
+		readOnly=true; \
+		name="OSGi R7 Reference Implementations"
+-plugin.3.Test: \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
+		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
+		releaseUrls=https://repo.maven.apache.org/maven2/; \
+		revision=org.osgi.enroute:test-bundles:7.0.0; \
+		readOnly=true; \
+		name="Testing Bundles"
+-plugin.4.Debug: \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
+		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
+		releaseUrls=https://repo.maven.apache.org/maven2/; \
+		revision=org.osgi.enroute:debug-bundles:7.0.0; \
+		readOnly=true; \
+		name="Debug Bundles"
+-plugin.5.Central: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository; \
 		releaseUrl=https://repo.maven.apache.org/maven2/; \
 		index=${.}/central.maven; \
-		name="Central"
-
--plugin.2.ECFATCENTRAL: \
-	aQute.bnd.repository.maven.provider.MavenBndRepository; \
-		releaseUrl=https://repo1.maven.org/maven2/; \
-		index=${.}/ecfatcentral.maven; \
-		name="ECF Remote Services"
-
--plugin.3.ETCDDISCOVERY: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Etcd Discovery Provider; \
-		pretty = true; \
-		local = ${build}/ecf-discovery/etcd
-
--plugin.4.ECFTIMESVCEXAMPLE: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Timeservice Example; \
-		pretty = true; \
-		local = ${build}/ecf-examples/timeservice
-
--plugin.5.ECFPYTHONJAVA: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Python.Java Distribution Provider; \
-		pretty = true; \
-		local = ${build}/ecf-distribution/pythonjava
-
--plugin.6.ECFPYTHONJAVAHELLO: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Python.Java Hello Example; \
-		pretty = true; \
-		local = ${build}/ecf-examples/pythonjavahello
-
--plugin.7.ECFXMLRPC: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Xmlrpc Distribution Provider; \
-		pretty = true; \
-		local = ${build}/ecf-distribution/xmlrpc
-
--plugin.8.Local: \
+		readOnly=true; \
+		name="Maven Central"
+-plugin.6.Local: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Local; \
 		pretty = true; \
-		local = ${build}/Local
+		local = ${build}/local
 
--plugin.9.Templates: \
+-plugin.7.Templates: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Templates; \
 		pretty = true; \
 		local = ${build}/templates
 
--plugin.10.Release: \
+-plugin.8.Release: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = Release; \
 		pretty = true; \
 		local = ${build}/release
 
--plugin.11.ECFJAXRS: \
+-plugin.9.ECFATCENTRAL: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository; \
+		releaseUrl=https://repo1.maven.org/maven2/; \
+		index=${.}/ecfatcentral.maven; \
+		name="ECF Remote Services"
+
+-plugin.10.ETCDDISCOVERY: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Etcd Discovery Provider; \
+		pretty = true; \
+		local = ${build}/ecf-discovery/etcd
+
+-plugin.11.ECFTIMESVCEXAMPLE: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Timeservice Example; \
+		pretty = true; \
+		local = ${build}/ecf-examples/timeservice
+
+-plugin.12.ECFPYTHONJAVA: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Python.Java Distribution Provider; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/pythonjava
+
+-plugin.13.ECFPYTHONJAVAHELLO: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Python.Java Hello Example; \
+		pretty = true; \
+		local = ${build}/ecf-examples/pythonjavahello
+
+-plugin.14.ECFXMLRPC: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Xmlrpc Distribution Provider; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/xmlrpc
+
+-plugin.15.ECFJAXRS: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Jaxrs Distribution Providers; \
 		pretty = true; \
