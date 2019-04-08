@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1554614926026">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1554685368796">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.3.3.201904070528" type="Version"/>
+      <attribute name="version" value="1.4.0.201904080102" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.3.3.201904070528" type="Version"/>
+      <attribute name="bundle-version" value="1.4.0.201904080102" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.3.3.201904070528" type="Version"/>
+      <attribute name="bundle-version" value="1.4.0.201904080102" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -91,6 +91,14 @@
       <attribute name="org.bndtools.template" value="project"/>
       <attribute name="category" value="bbb/Remote Service Project Templates"/>
       <attribute name="dir" value="templates/rsconsumerasync"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/hellopythonexamples.xml"/>
+      <attribute name="name" value="Python.Java Hello Remote Service Examples"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/hellopythonexamples"/>
     </capability>
     <capability namespace="org.bndtools.template">
       <attribute name="name" value="Generic Distribution Provider with Zeroconf Discovery"/>
@@ -183,10 +191,10 @@
       <attribute name="dir" value="templates/launch/jaxrscxfclient"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="43432" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.3.3.jar"/>
+      <attribute name="size" value="53867" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.4.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="3FAB5C7BA73EB01D6966F7172D190AB955C290CCC6CDB9BB7E1B826ABC8FEBE5"/>
+      <attribute name="osgi.content" value="DDEE3430CBE25DF8B83A14B03C90C4D58B405B9A5FBFD40014B18F53D473A1F0"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
