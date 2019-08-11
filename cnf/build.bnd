@@ -93,6 +93,12 @@
 		pretty = true; \
 		local = ${build}/ecf-distribution/jaxrs
 
+-plugin.15.ECFHAZELCAST: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF Hazelcast Distribution Providers; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/hazelcast
+
 -releaserepo: Release
 -baselinerepo: Release
 
