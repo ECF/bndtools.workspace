@@ -93,30 +93,36 @@
 		pretty = true; \
 		local = ${build}/ecf-distribution/jaxrs
 
--plugin.15.ECFHAZELCAST: \
+-plugin.16.ECFHAZELCAST: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Hazelcast Distribution Provider; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/hazelcast
 
--plugin.16.ECFJMS: \
+-plugin.17.ECFJMS: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF JMS Distribution Provider Support; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/jms
 
--plugin.17.ECFACTIVEMQ: \
+-plugin.18.ECFACTIVEMQ: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF ActiveMQ Distribution Provider; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/activemq
 
--plugin.17.ECFMQTT: \
+-plugin.19.ECFMQTT: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF MQTT Dstribution Provider; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/mqtt
 
+-plugin.20.ECFJGROUPS: \
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+		name = ECF JGroups (JavaGroups) Dstribution Provider; \
+		pretty = true; \
+		local = ${build}/ecf-distribution/jgroups
+		
 -releaserepo: Release
 -baselinerepo: Release
 
