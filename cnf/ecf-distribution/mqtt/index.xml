@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF MQTT Dstribution Provider" increment="1565739232764">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF MQTT Dstribution Provider" increment="1565761433418">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jms.mqtt"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.3.0.201806161001" type="Version"/>
+      <attribute name="version" value="1.3.1.201908132239" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.3.0.201806161001" type="Version"/>
+      <attribute name="bundle-version" value="1.3.1.201908132239" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jms.mqtt"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.3.0.201806161001" type="Version"/>
+      <attribute name="bundle-version" value="1.3.1.201908132239" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jms.mqtt"/>
     </capability>
     <capability namespace="osgi.wiring.package">
@@ -27,10 +27,10 @@
       <attribute name="version" value="1.1.0" type="Version"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="30273" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.jms.mqtt/org.eclipse.ecf.provider.jms.mqtt-1.3.0.jar"/>
+      <attribute name="size" value="29255" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jms.mqtt/org.eclipse.ecf.provider.jms.mqtt-1.3.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="8DF613035C748BD55BB3A8FA6DE243D9DD70CA4A4EA17BEBF7F1E00C30CCDC22"/>
+      <attribute name="osgi.content" value="EF810EF2FBF6AE09359A4D71999A62A8B47B080A29C2529031D423E615430DF6"/>
     </capability>
     <requirement namespace="osgi.wiring.bundle">
       <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
@@ -89,37 +89,37 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.paho.client.mqttv3"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.1.1" type="Version"/>
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.paho.client.mqttv3"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.1.1" type="Version"/>
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.paho.client.mqttv3"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3.logging"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3.persist"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3.util"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="210400" type="Long"/>
-      <attribute name="url" value="org.eclipse.paho.client.mqttv3/org.eclipse.paho.client.mqttv3-1.1.1.jar"/>
+      <attribute name="size" value="237777" type="Long"/>
+      <attribute name="url" value="org.eclipse.paho.client.mqttv3/org.eclipse.paho.client.mqttv3-1.2.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="0B1E58AF61C81BBE7C372529663759A7B7F2A981FA93D2533F4FFFFB2F722387"/>
+      <attribute name="osgi.content" value="364E9F617C9B77C269E0A797078B193A2C8C3D34B8EC468E7CD71202D0FED615"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.net))"/>
