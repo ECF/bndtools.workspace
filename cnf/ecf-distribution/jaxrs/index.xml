@@ -46,7 +46,7 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="description" value="Java(TM) Servlet 3.1 API Design Specification"/>
+      <attribute name="description" value="bundleDescription"/>
       <attribute name="osgi.identity" value="javax.servlet"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="3.1.0.v201410161800" type="Version"/>
