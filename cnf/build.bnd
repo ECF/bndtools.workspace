@@ -141,12 +141,6 @@
 		pretty = true; \
 		local = ${build}/ecf-distribution/jgroups
 	
--plugin.23.ECFTP: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Basic Topology Manager; \
-		pretty = true; \
-		local = ${build}/ecf-distribution/topologymanager
-
 -releaserepo: Release
 -baselinerepo: Release
 
