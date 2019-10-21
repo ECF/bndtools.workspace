@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Hazelcast Distribution Provider" increment="1571626086351">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Hazelcast Distribution Provider" increment="1571633106413">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -2089,10 +2089,10 @@
       <attribute name="osgi.wiring.package" value="com.hazelcast.spi.impl.operationservice.impl.responses"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="13366140" type="Long"/>
+      <attribute name="size" value="13356856" type="Long"/>
       <attribute name="url" value="com.hazelcast/com.hazelcast-3.12.3.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="3E93F76AA2D5B1108229A29809CE50511F52E528CFFD24DA87B6E52C929241C0"/>
+      <attribute name="osgi.content" value="808C5A52C9794E8CC21CB01C1C62F86D1EBCCD965731C341E4979E0F8714C5AB"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.cache.integration)(&amp;(version&gt;=1.1.0)(!(version&gt;=2.0.0))))"/>
