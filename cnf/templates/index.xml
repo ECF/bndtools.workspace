@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1570843891498">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1572584201459">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.bndtools.templates.osgi"/>
@@ -97,14 +97,14 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.8.1.201910120130" type="Version"/>
+      <attribute name="version" value="1.8.3.201911010455" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.8.1.201910120130" type="Version"/>
+      <attribute name="bundle-version" value="1.8.3.201911010455" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.8.1.201910120130" type="Version"/>
+      <attribute name="bundle-version" value="1.8.3.201911010455" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -317,10 +317,10 @@
       <attribute name="dir" value="templates/launch/hazelcasthazelcast"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="77150" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.8.1.jar"/>
+      <attribute name="size" value="88861" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.8.3.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="561EA64E0A7D982E25013534C2B40DC5E5B3CF29B61D327B2471399817927720"/>
+      <attribute name="osgi.content" value="16F419033CB996B7C104F2811BC617D726DC8E94224AB06A1A9FE39390CBF9FE"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
