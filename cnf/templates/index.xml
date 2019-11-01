@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1572647658380">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1572649194522">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.9.0.201911012227" type="Version"/>
+      <attribute name="version" value="1.9.1.201911012250" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.9.0.201911012227" type="Version"/>
+      <attribute name="bundle-version" value="1.9.1.201911012250" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.9.0.201911012227" type="Version"/>
+      <attribute name="bundle-version" value="1.9.1.201911012250" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -238,10 +238,10 @@
       <attribute name="dir" value="templates/launch/dubboclient"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="92914" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.9.0.jar"/>
+      <attribute name="size" value="95322" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.9.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="008D269B8741C9C73247E986D6B18C9C01A98A4A2D58A845FB7EBC93936903F8"/>
+      <attribute name="osgi.content" value="020632DEBFBDF3266B8246EECEF6BFCB42463E9FC7CA3C01CA375FE556772B8C"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
