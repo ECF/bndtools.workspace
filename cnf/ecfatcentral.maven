@@ -18,7 +18,7 @@ org.eclipse.ecf:org.eclipse.ecf.provider:4.8.200
 org.eclipse.ecf:org.eclipse.ecf.provider.remoteservice:4.4.101
 org.eclipse.ecf:ch.ethz.iks.r_osgi.remote:1.2.201
 org.eclipse.ecf:org.eclipse.ecf.provider.r_osgi:3.6.201
-org.eclipse.ecf:org.objectweb.asm
+org.eclipse.ecf:org.objectweb.asm:5.0.1.v201404251740
 org.eclipse.ecf:javax.servlet:3.1.0.v201410161800
 org.eclipse.ecf:org.apache.commons.codec:1.9.0.v20170208-1614
 org.eclipse.ecf:org.apache.commons.logging:1.1.1.v201101211721
