@@ -6,6 +6,34 @@
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.7.28" type="Version"/>
     </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" value="1.7.28" type="Version"/>
+      <attribute name="version" value="1.7.28" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+      <attribute name="bnd.hashes" value="-1574625391,1542098343,-2013470288,971415866,1165,-1316383414,76172,-1997438886,-206827696" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" value="1.7.28" type="Version"/>
+      <attribute name="version" value="1.7.28" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.spi"/>
+      <attribute name="bnd.hashes" value="999291513,-210874492,718830627,-21867238" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" value="1.7.28" type="Version"/>
+      <attribute name="version" value="1.7.28" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.helpers"/>
+      <attribute name="bnd.hashes" value="1165,-878893391,652059112,-1175473662,1408872259,366798586,-22532957,1262883103,1146947307,-1106355182,1284350074,1258974954,-319512896,-1730907278,2647074" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" value="1.7.28" type="Version"/>
+      <attribute name="version" value="1.7.28" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.event"/>
+      <attribute name="bnd.hashes" value="-468363275,755169383,73313124,-754233701,589596757" type="List&lt;Long&gt;"/>
+    </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.7.28" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="slf4j.api"/>
@@ -13,22 +41,6 @@
     <capability namespace="osgi.wiring.host">
       <attribute name="bundle-version" value="1.7.28" type="Version"/>
       <attribute name="osgi.wiring.host" value="slf4j.api"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.7.28" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.slf4j"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.7.28" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.slf4j.spi"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.7.28" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.slf4j.helpers"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.7.28" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.slf4j.event"/>
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="41117" type="Long"/>
@@ -38,6 +50,7 @@
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.impl)(version&gt;=1.6.0))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.impl"/>
     </requirement>
   </resource>
   <resource>
@@ -47,8 +60,11 @@
       <attribute name="version" value="1.7.28" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="slf4j.jdk14"/>
+      <attribute name="bundle-version" value="1.7.28" type="Version"/>
       <attribute name="version" value="1.7.28" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.slf4j.impl"/>
+      <attribute name="bnd.hashes" value="-1619348533,-1560723066,579679496,1614616456,-705254350" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="8510" type="Long"/>
@@ -56,20 +72,25 @@
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="FC1E0BA3114B3F8B007B6F9FCC2B87C05C9FE12EBC58DE66993A24DA19D94ED3"/>
     </capability>
-    <requirement namespace="osgi.wiring.host">
-      <directive name="filter" value="(osgi.wiring.host=slf4j.api)"/>
-    </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.28))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.7.28))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.spi"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.helpers)(version&gt;=1.7.28))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.helpers"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.event)(version&gt;=1.7.28))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.event"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.host">
+      <directive name="filter" value="(osgi.wiring.host=slf4j.api)"/>
+      <directive name="cardinality" value="multiple"/>
     </requirement>
   </resource>
   <resource>
@@ -77,6 +98,20 @@
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jgroups"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="4.1.0.201908121811" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jgroups"/>
+      <attribute name="bundle-version" value="4.1.0.201908121811" type="Version"/>
+      <attribute name="version" value="4.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jgroups.container"/>
+      <attribute name="bnd.hashes" value="1165,1166,-1417288646,-884583067,-886217205,-444454430,-1472781732,1165327956,-978699289,-556053928,-502829311,-388483825,1913152333,1476894258,981209292" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jgroups"/>
+      <attribute name="bundle-version" value="4.1.0.201908121811" type="Version"/>
+      <attribute name="version" value="4.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jgroups.identity"/>
+      <attribute name="bnd.hashes" value="-36620199,1189758013" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="4.1.0.201908121811" type="Version"/>
@@ -86,95 +121,110 @@
       <attribute name="bundle-version" value="4.1.0.201908121811" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jgroups"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="4.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jgroups.container"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="4.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jgroups.identity"/>
-    </capability>
-    <capability namespace="osgi.remoteserviceadmin.distribution">
-      <attribute name="configs" value="ecf.jgroups.manager,ecf.jgroups.client" type="List&lt;String&gt;"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="52190" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.provider.jgroups/org.eclipse.ecf.provider.jgroups-4.1.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="9B125C32DAE604896E5018567F81872876826E765359212EFC9424CEE8B35339"/>
     </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.jgroups.manager,ecf.jgroups.client" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.events)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.events"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.security)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.sharedobject"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.5.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.comm"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm.tcp)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.comm.tcp"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.generic)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.generic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.remoteservice.generic)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.remoteservice.generic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.3.0)(!(version&gt;=10.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.2.0)(!(version&gt;=9.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.blocks)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.blocks"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.conf)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.conf"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.stack)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.stack"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.3)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
     <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(&amp;(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.events)(&amp;(version&gt;=3.1.0)(!(version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(&amp;(version&gt;=3.3.0)(!(version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(&amp;(version&gt;=3.1.0)(!(version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.security)(&amp;(version&gt;=3.1.0)(!(version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)(&amp;(version&gt;=2.3.0)(!(version&gt;=3.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(&amp;(version&gt;=3.5.0)(!(version&gt;=4.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm)(&amp;(version&gt;=4.3.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm.tcp)(&amp;(version&gt;=4.3.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.generic)(&amp;(version&gt;=4.3.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.remoteservice.generic)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(&amp;(version&gt;=7.3.0)(!(version&gt;=10.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(&amp;(version&gt;=8.2.0)(!(version&gt;=9.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(&amp;(version&gt;=1.1.0)(!(version&gt;=2.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.blocks)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.conf)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.stack)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jgroups.util)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.4.0)(!(version&gt;=2.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(&amp;(version&gt;=1.3.3)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
     </requirement>
   </resource>
   <resource>
@@ -185,6 +235,251 @@
       <attribute name="version" value="4.1.2.Final" type="Version"/>
       <attribute name="documentation" value="http://www.jboss.org"/>
     </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups.annotations,org.jgroups.conf,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups"/>
+      <attribute name="bnd.hashes" value="516961236,1752140393,1110854349,-1891363613,817212087,-946510447,67338874,2135814083,-2137403731,1165,-1772417703,-368236092,1685931379,653222902,213268170,-663906595,35439024,-1398256814,-1675388953,1148447163,-1319650563,-744075761,-1239626176,-1073742779,1714793523,231445305,-251377669,968911887,2016261304,2666181,-1732764992" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups.conf"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.annotations"/>
+      <attribute name="bnd.hashes" value="-240242424,1817824603,-694011550,1879738921,73177501,227746269,1877363880,-928497163,1716505109,-1851361179,-310588667,35869054,-1000144719" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.crypto,javax.security.auth,javax.security.auth.callback,javax.security.auth.login,org.ietf.jgss,org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.auth"/>
+      <attribute name="bnd.hashes" value="-840411887,878077391,1371132479,-1532917024,-1543578190,-1423515877,-692478115,238714695,-899181581" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.security.auth,javax.security.auth.callback,javax.security.sasl,org.jgroups,org.jgroups.protocols"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.auth.sasl"/>
+      <attribute name="bnd.hashes" value="-755121006,-136497992,233781491,-941812387,-542741912,-386759963,-283238486,-438273667,303194498,1479978865" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.management,org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.blocks"/>
+      <attribute name="bnd.hashes" value="1165,-1504097848,34260755,1113069485,64864098,-1029211277,382289410,1160097457,-1494400860,1683372647,910584624,1097764526,1722823107,-1907074902,1689866715,35869054,1077008843,566921983,798100214,-1945666349,2059147758,1269973759,833008313,944754139,-1888722948,477659216,1845487946,771843141,-1070417824,1520783667,-1213020369,-1035005303,-140124045,1965729505,-760231484,35680326,-370110543,-2047129759,808297145,-1534621073,-252042287,-1503400634,977215114,-369352635,2071388408,2129631707,187353391,-275679135,1603341732,-2035448244,-902145401,408963968" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.protocols"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.atomic"/>
+      <attribute name="bnd.hashes" value="-1672483364,1381654841" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.nio,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.cs"/>
+      <attribute name="bnd.hashes" value="34260755,1161878932,2021122027,1217813246,-778459694,1569235247,-1473040760,813746911,1165,34249223,1110854349,-1417106446,1265632855,-744075761,-1239626176,-1509939179,1874498284,-1387926989,-1454004865,-1968583068,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.logging,org.jgroups.protocols,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.executor"/>
+      <attribute name="bnd.hashes" value="-188318391,2140213025,1165,-242479376,293526600,35839199,-1564715390,468322478,942763165,-1358873866,-1761987461,-1494858393,-1214552706" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.protocols,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.locking"/>
+      <attribute name="bnd.hashes" value="-1275406588,1973646489,608140758,1150928919,1329794607,-1160893718" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.net,javax.net.ssl,org.jgroups.annotations,org.jgroups.logging"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.client"/>
+      <attribute name="bnd.hashes" value="1165,1166,1661911175,766952696,-1732601361" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.logging,org.jgroups.util,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.conf"/>
+      <attribute name="bnd.hashes" value="1026729133,-1942904843,1190382379,1697736632,1526119805,2055840043,-693468057,-1776265171,-1752851800,1084830211,1819270430,-1901954555,1165,-38449972" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.crypto,javax.management,javax.swing,org.jgroups,org.jgroups.annotations,org.jgroups.blocks,org.jgroups.blocks.cs,org.jgroups.blocks.executor,org.jgroups.blocks.locking,org.jgroups.client,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.demos"/>
+      <attribute name="bnd.hashes" value="2099064,1165,1166,-276459844,-643195044,2138468,1760312647,1575457958,46358208,1327125868,-1302312928,2076476923,189321976,-189675759,11212781,50643258,-1217666492,-895734840,1891454734,-2014920440,-1563034496,1961818439,-1881262913,1999823860,1261332817,940034716,1479659710,1461321995,-125570634,-131407626,1167,1168,1169,-732524759,-732485355,-886823281,-22061254,-207193708,-919791901,1273234058,1260009032" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.demos.applets"/>
+      <attribute name="bnd.hashes" value="1165,1386011358" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.blocks"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.demos.wb"/>
+      <attribute name="bnd.hashes" value="-117909086,-34548362,-1198213105,2433570,2038353680,-1504631327,-2040319875" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.conf,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.fork"/>
+      <attribute name="bnd.hashes" value="-1556336191,-320454972,871395738,-1589620466,-1903138402" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.management,org.jgroups,org.jgroups.logging,org.jgroups.stack"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.jmx"/>
+      <attribute name="bnd.hashes" value="-1394687130,1104792394,1569323659,-255300486,1589440413,2587532,-1083586035,-1509101177" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.logging.log4j,org.slf4j"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.logging"/>
+      <attribute name="bnd.hashes" value="487752599,-437115917,76580,1227895212,-1120498362,1024199041" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.nio"/>
+      <attribute name="bnd.hashes" value="-1569625859,1892650003,-1294613370" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.crypto,javax.crypto.spec,javax.net.ssl,javax.security.auth,javax.security.auth.callback,javax.sql,javax.swing,org.jgroups,org.jgroups.annotations,org.jgroups.auth,org.jgroups.auth.sasl,org.jgroups.blocks,org.jgroups.blocks.atomic,org.jgroups.blocks.cs,org.jgroups.blocks.executor,org.jgroups.blocks.locking,org.jgroups.conf,org.jgroups.fork,org.jgroups.jmx,org.jgroups.logging,org.jgroups.protocols.pbcast,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols"/>
+      <attribute name="bnd.hashes" value="1165,-800195560,1097764526,35869054,64591,-2145046953,401411532,-1810606997,2020776,834560409,1015714867,-636048779,384839575,63408308,-90309633,-1652736781,1899984912,-830910339,1973127637,1037414653,1814036949,-884349485,183360354,-282958669,1862805445,-1762248093,-1014021659,164345720,669640864,1937217004,-1076400674,1044251346,300197797,769130987,297061964,1077008843,-1124991067,1506288380,-919530363,-369013409,1502116625,-1303972167,-1715497641,-621537342,-1306422514,-1713988226,1675813340,-38215375,758323547,-361862385,-1965100663,1050993025,64930147,-1472966600,1871800437,-500892674,891293122,-569530189,-1905617794,-1766045011,2107119,-1738141765,2110029,1608078610,1882760592,638726867,-604988086,-154714314,57395781,-191622862,-588621180,1107261679,1571664539,912992978,-1176185822,1057993322,1807406383,1217635478,2238,930577893,1245885837,-388286376,2069735040,-262723150,-1743002888,933578218,469293946,-344868171,-1007410597,-262511479,1692632381,854928144,-262184283,1023097349,1499746901,-452673229,2163906,-943520786,1833854059,179806495,-430968356,1286167405,2166258,67154048,67154049,1563753930,-187919313,-2093221298,-132381889,1847679928,2212925,738992275,-1901581258,-1899599486,1392285900,-1465037094,1312896276,155876382,-749806976,-2073246636,-98431406,2003359415,-350427997,1985648009,896708551,1883263521,2017177414,-2024286437,76234,-2023786423,73567039,1764138200,-1229841986,-252042287,-1999498104,-1464090865,818872330,79055,-1665683942,2452201,2455922,-364036004,-1828598081,-1043097589,-1986130888,-34752394,-947078334,626912553,-1387926989,-1848456774,-251442536,616154163,77859441,-116809820,1368106604,2525371,234593443,-1264537760,-337736508,-1879897106,-2020927681,-408974546,984569330,875521659,1000507948,846947351,1817176657,-537511181,-102496884,775171647,-1602386370,1523237837,-2023808336,921880208,484183898,-704621357,-1645967933,1112708845,-2096328687,2537767,-779059731,-630941190,1672908977,320570785,-2081851712,1853226021,-1670707892,-1504652583,2545665,79048334,-791151928,-809350250,79219839,-1464748338,952073762,1098788777,-98142650,910716794,79233073,1497537485,1593720751,-625295590,-1429358803,-1683872606,-1915163398,1106422846,600969389,-576736588,571534010,1569235247,-120423249,-666125054,82881,-604110992,-764611405,2080847484,2684,80083237,-1609657929,1589514718,-1809218456,-1154059191,1025241482,817582043,83873,83922,-1794753215,2128844287,252623692,-1428815751,1110854349,474656260,108578871,1547605674,-1228421871" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.protocols,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.dns"/>
+      <attribute name="bnd.hashes" value="-974266660,1592010608,-53342161,1224238824,1165,1224422254" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.conf,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.pbcast"/>
+      <attribute name="bnd.hashes" value="1371898274,-2059347080,2056711773,1165,1175429101,1600243135,66994916,-545863611,-130729610,70701,1077008843,1817317357,233960613,-664450078,1973180447,851474969,-1993748646,201045486,252623692,-1856994847,749521300,410578298,1170641558,-1123347406,85655532,-1385029980,-1839169733,-2113297586,79219825,1708252905,287045330,-1412559942,-1522828295,1926950698,-1440607688,771928698,-1943861051" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols.relay.config,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.relay"/>
+      <attribute name="bnd.hashes" value="1165,-344471566,-1881324575,-411573043,-1539815714,79151657,-406980273,-1041330547,2108752041,795349655,739849122" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.stack,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.relay.config"/>
+      <attribute name="bnd.hashes" value="335464047,-1077042013,2128347653,-741315006,1569488045,1960978707" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.rules"/>
+      <attribute name="bnd.hashes" value="-1980781868,1765379952,2558748,-1212137624,2136569830" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.tom"/>
+      <attribute name="bnd.hashes" value="2033821945,1146447505,-2114102599,1806507724,1519524670,563954498,1165,449693592,591438275,939146552,1723747800,1424733902,83238,1022174035" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.blocks.cs,org.jgroups.conf,org.jgroups.jmx,org.jgroups.logging,org.jgroups.protocols,org.jgroups.protocols.pbcast,org.jgroups.util,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.stack"/>
+      <attribute name="bnd.hashes" value="35099999,215917770,1335045973,1982685118,264575006,823512281,1165,1097764526,1535108280,824011881,-656966483,1919371752,-704315770,348035096,-1852500948,2084745506,-924519752,325009403,168597869,1495650992,-1918166776,154187232,-1139800319,-1372183625,88322773,-1457178634,1703062090" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.blocks,org.jgroups.protocols,org.jgroups.stack,org.jgroups.tests.rt,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.tests"/>
+      <attribute name="bnd.hashes" value="-1892810395,369685329,1165,902643833,35726622,1803330224,435384888,-1780186401,701730289,-685728415,931710599,37765,36336326,38059,1134600331,1183897,38239,38335,-930830621,1164975304,-272317898,-1992052865,-1174873155,-1533384329,414358911,-1014831481,451741188,-1387926989,-244399539,666113748,1579104915,916623147,-677068804,-1786365814,63265657,460979217,-154357102,-1355145575,-446280449,-363665238,1625462731,-81616968,639140575,-1028728065,77387664,-1850559427,1998930611,1941516854,420355634,776422431,1012288161,-1199428467,-565907126,2016130129,1493597753,1379856127,-531628934,967309633,477659216,-2109197084,853849265,1569235247,-2109195552,326933221,1545021697,97623,34249223,3026363,3026364,3026365,3026366,3026367,103709996" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.blocks,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.tests.perf"/>
+      <attribute name="bnd.hashes" value="70824531,1165,-2078226474,1711472434,-1974235041,34802017,63265657,1110854363,73595094,-818930067,2038206767,-385563514,1941516854,1078862642,1649556629,-1478533112,1410113834,80983262,-1387926989,1097234986" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.tests.rt"/>
+      <attribute name="bnd.hashes" value="1110365809,415079143" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.jgroups,org.jgroups.blocks.cs,org.jgroups.logging,org.jgroups.tests.rt,org.jgroups.util"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.tests.rt.transports"/>
+      <attribute name="bnd.hashes" value="990504459,-1387926989,200988565,1040390918,-1324222360,1302876296" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.management,javax.xml.parsers,javax.xml.transform,org.jgroups,org.jgroups.annotations,org.jgroups.blocks,org.jgroups.blocks.cs,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.w3c.dom"/>
+      <attribute name="bundle-symbolic-name" value="org.jgroups"/>
+      <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
+      <attribute name="version" value="4.1.2.Final" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.jgroups.util"/>
+      <attribute name="bnd.hashes" value="-1963699676,1165,674119302,-1675393325,951756231,-1014357342,1033205245,64110095,1713896742,-1938616795,1982630255,2070822,1093194837,820278321,281285819,2000715872,-701281393,500272348,15359810,1241313161,-968392468,44604614,-1679274875,1142656251,2026542873,-1616473213,-1112391990,-214011530,-596690177,1097764526,-923857538,2046921188,587647996,2117841391,219113620,275861994,523329186,-779059731,-127279764,-380170313,-418067822,-1835006106,-1640459255,-680687579,-182856596,2121965196,703419966,-27246152,1189901899,247806950,-1676667053,-1586301948,35650535,-1149098093,924236906,1645595611,-1083554921,310338753,304518043,926166977,-1901763844,-1290439590,-1907148398,-66075634,76612243,259682989,-2141943869,-1593059817,-1681521096,2493500,780543390,-937619447,-1489533344,1355436283,-593688171,78727453,448076714,1456860831,623021298,1324085876,-1495018796,473206687,-400600788,950174929,1407109390,43881522,1916494512,1595006562,648546704,1119926004,34802017,35869054,412214746,82479,-1135954067,-1835938992,79773248,-1468950730,2096799208,698106622,171766493,-1415749050,36843,-1028168907,-1490395173,215032311,-563060286,509875897,799080698,-1197629196,-492366353,-1454802672,841694841,1113069485,1790128557,1103962560,2106897455,1983408127,1050765474,-405541411,1073151914,-933460840,80563118,-167646336,35846089,-1626172338,687238206,-989335901,1128265125,60842760,-1781598082,81172392,2616251,-1555543804,2647074,97934220,-1283104453" type="List&lt;Long&gt;"/>
+    </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.jgroups"/>
@@ -193,157 +488,9 @@
       <attribute name="bundle-version" value="4.1.2.Final" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.jgroups"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups.annotations,org.jgroups.conf,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
+    <capability namespace="bnd.mainclass">
+      <attribute name="bnd.mainclass" value="org.jgroups.Version"/>
       <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups.conf"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.annotations"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.crypto,javax.security.auth,javax.security.auth.callback,javax.security.auth.login,org.ietf.jgss,org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.auth"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.security.auth,javax.security.auth.callback,javax.security.sasl,org.jgroups,org.jgroups.protocols"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.auth.sasl"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.management,org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.blocks"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.protocols"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.atomic"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.nio,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.cs"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.logging,org.jgroups.protocols,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.executor"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.protocols,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.blocks.locking"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.net,javax.net.ssl,org.jgroups.annotations,org.jgroups.logging"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.client"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.logging,org.jgroups.util,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.conf"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.crypto,javax.management,javax.swing,org.jgroups,org.jgroups.annotations,org.jgroups.blocks,org.jgroups.blocks.cs,org.jgroups.blocks.executor,org.jgroups.blocks.locking,org.jgroups.client,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.demos"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.demos.applets"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.blocks"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.demos.wb"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.conf,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.fork"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.management,org.jgroups,org.jgroups.logging,org.jgroups.stack"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.jmx"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.apache.logging.log4j,org.slf4j"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.logging"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.nio"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.crypto,javax.crypto.spec,javax.net.ssl,javax.security.auth,javax.security.auth.callback,javax.sql,javax.swing,org.jgroups,org.jgroups.annotations,org.jgroups.auth,org.jgroups.auth.sasl,org.jgroups.blocks,org.jgroups.blocks.atomic,org.jgroups.blocks.cs,org.jgroups.blocks.executor,org.jgroups.blocks.locking,org.jgroups.conf,org.jgroups.fork,org.jgroups.jmx,org.jgroups.logging,org.jgroups.protocols.pbcast,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.protocols,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.dns"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.conf,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.pbcast"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols.relay.config,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.relay"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.stack,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.relay.config"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.jgroups.util,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.rules"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.protocols.tom"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.blocks.cs,org.jgroups.conf,org.jgroups.jmx,org.jgroups.logging,org.jgroups.protocols,org.jgroups.protocols.pbcast,org.jgroups.util,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.stack"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.blocks,org.jgroups.protocols,org.jgroups.stack,org.jgroups.tests.rt,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.tests"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.annotations,org.jgroups.blocks,org.jgroups.logging,org.jgroups.stack,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.tests.perf"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.tests.rt"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.jgroups,org.jgroups.blocks.cs,org.jgroups.logging,org.jgroups.tests.rt,org.jgroups.util"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.tests.rt.transports"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.management,javax.xml.parsers,javax.xml.transform,org.jgroups,org.jgroups.annotations,org.jgroups.blocks,org.jgroups.blocks.cs,org.jgroups.logging,org.jgroups.protocols,org.jgroups.stack,org.w3c.dom"/>
-      <attribute name="version" value="4.1.2.Final" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.jgroups.util"/>
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="2337449" type="Long"/>
@@ -352,96 +499,125 @@
       <attribute name="osgi.content" value="CC654AD4C16C64371DA7E830B4E823F70DB6A255C431DEDEBAF7DB682F2B8B8A"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j)(&amp;(version&gt;=2.11.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j)(version&gt;=2.11.0)(!(version&gt;=3.0.0)))"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.logging.log4j"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j.core)(&amp;(version&gt;=2.11.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j.core)(version&gt;=2.11.0)(!(version&gt;=3.0.0)))"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.logging.log4j.core"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j.simple)(&amp;(version&gt;=2.11.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j.simple)(version&gt;=2.11.0)(!(version&gt;=3.0.0)))"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.logging.log4j.simple"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.crypto))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+      <attribute name="osgi.wiring.package" value="javax.crypto"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.crypto.spec))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+      <attribute name="osgi.wiring.package" value="javax.crypto.spec"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.management))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+      <attribute name="osgi.wiring.package" value="javax.management"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.naming))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.naming)"/>
+      <attribute name="osgi.wiring.package" value="javax.naming"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.naming.directory))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.directory)"/>
+      <attribute name="osgi.wiring.package" value="javax.naming.directory"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.net))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+      <attribute name="osgi.wiring.package" value="javax.net"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.net.ssl))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <attribute name="osgi.wiring.package" value="javax.net.ssl"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.script))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.script)"/>
+      <attribute name="osgi.wiring.package" value="javax.script"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.security.auth))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth)"/>
+      <attribute name="osgi.wiring.package" value="javax.security.auth"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.security.auth.callback))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.callback)"/>
+      <attribute name="osgi.wiring.package" value="javax.security.auth.callback"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.security.auth.login))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.login)"/>
+      <attribute name="osgi.wiring.package" value="javax.security.auth.login"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.security.sasl))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.security.sasl)"/>
+      <attribute name="osgi.wiring.package" value="javax.security.sasl"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.sql))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
+      <attribute name="osgi.wiring.package" value="javax.sql"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.swing))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.swing)"/>
+      <attribute name="osgi.wiring.package" value="javax.swing"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.swing.table))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.swing.table)"/>
+      <attribute name="osgi.wiring.package" value="javax.swing.table"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.parsers))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.transform))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.transform.dom))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.dom)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform.dom"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.xml.transform.stream))"/>
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.stream)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform.stream"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.ietf.jgss))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.ietf.jgss)"/>
+      <attribute name="osgi.wiring.package" value="org.ietf.jgss"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.w3c.dom))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+      <attribute name="osgi.wiring.package" value="org.w3c.dom"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.xml.sax))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.xml.sax.helpers))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.helpers"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.jce.provider))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.bouncycastle.jce.provider)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.jce.provider"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.apache.log4j)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.log4j"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>

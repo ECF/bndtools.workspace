@@ -41,39 +41,49 @@
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="AD2F3C107190E63BB7A6037418F5B7A3837B6AEAAD6999225BC0E660332EABAA"/>
     </capability>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.9.0))"/>
-    </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=3.3.1))"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.examples.protobuf.hello))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.examples.protobuf.hello)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.protobuf.hello"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.direct)(version&gt;=2.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.direct"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.py4j))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.provider.py4j)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.py4j"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.py4j.protobuf)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.py4j.protobuf"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.remoteserviceadmin"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.9.0))"/>
     </requirement>
   </resource>
   <resource>
@@ -153,21 +163,23 @@
       <attribute name="bundle-version" value="1.2.4.201904011807" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.protobuf.hello.provider"/>
     </capability>
-    <capability namespace="osgi.remoteserviceadmin.distribution">
-      <attribute name="configs" value="ecf.py4j.host.pb,ecf.py4j.consumer.pb" type="List&lt;String&gt;"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="2757" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.protobuf.hello.provider/org.eclipse.ecf.examples.protobuf.hello.provider-1.2.4.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="62089ABCFE93FEB72DC9B5FB232AC87EE7D0D4CE3162ADF52DF8813537F8135F"/>
     </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.py4j.host.pb,ecf.py4j.consumer.pb" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.py4j.protobuf))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.provider.py4j.protobuf)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.py4j.protobuf"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
   </resource>
   <resource>
@@ -175,6 +187,13 @@
       <attribute name="osgi.identity" value="org.eclipse.ecf.examples.protobuf.hello"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.2.1.201904011807" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.protobuf.hello"/>
+      <attribute name="bundle-version" value="1.2.1.201904011807" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.protobuf.hello"/>
+      <attribute name="bnd.hashes" value="1165,212260567,75064166,604623730,-728012401,-2135429623" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.2.1.201904011807" type="Version"/>
@@ -184,10 +203,6 @@
       <attribute name="bundle-version" value="1.2.1.201904011807" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.protobuf.hello"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.protobuf.hello"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="17337" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.protobuf.hello/org.eclipse.ecf.examples.protobuf.hello-1.2.1.jar"/>
@@ -196,9 +211,11 @@
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=3.2.0))"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
     </requirement>
   </resource>
   <resource>
@@ -223,22 +240,28 @@
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=3.2.0))"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.examples.protobuf.hello))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.examples.protobuf.hello)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.protobuf.hello"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.python.protobuf)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.python.protobuf"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=py4j)(version&gt;=0.10.6))"/>
+      <attribute name="osgi.wiring.package" value="py4j"/>
     </requirement>
   </resource>
   <resource>
@@ -246,6 +269,13 @@
       <attribute name="osgi.identity" value="org.eclipse.ecf.examples.hello"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.1.1.201904011807" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.hello"/>
+      <attribute name="bundle-version" value="1.1.1.201904011807" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.hello"/>
+      <attribute name="bnd.hashes" value="-2135429623" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.1.1.201904011807" type="Version"/>
@@ -255,10 +285,6 @@
       <attribute name="bundle-version" value="1.1.1.201904011807" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.hello"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.hello"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="1598" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.hello/org.eclipse.ecf.examples.hello-1.1.1.jar"/>
@@ -267,6 +293,7 @@
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
     </requirement>
   </resource>
   <resource>
@@ -311,14 +338,17 @@
       <attribute name="osgi.content" value="E5E8830F9FE7FF95C6A5F706E993922B465C57E565869A6CEEB909E036E1CE34"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.examples.hello))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.examples.hello)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.hello"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
     </requirement>
   </resource>
   <resource>
@@ -335,21 +365,23 @@
       <attribute name="bundle-version" value="1.2.4.201904011807" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.hello.provider"/>
     </capability>
-    <capability namespace="osgi.remoteserviceadmin.distribution">
-      <attribute name="configs" value="ecf.py4j.host,ecf.py4j.consumer" type="List&lt;String&gt;"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="2504" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.hello.provider/org.eclipse.ecf.examples.hello.provider-1.2.4.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="FAA8D4F90A94F7CCFFDDAC5D2798E8902798563DDA600D2433EC7A8032A5CD39"/>
     </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.py4j.host,ecf.py4j.consumer" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.py4j)(version&gt;=2.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.py4j"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
   </resource>
   <resource>

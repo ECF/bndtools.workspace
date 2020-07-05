@@ -6,6 +6,13 @@
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.0.0.201909301610" type="Version"/>
     </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
+      <attribute name="bundle-version" value="1.0.0.201909301610" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
+      <attribute name="bnd.hashes" value="-218418382" type="List&lt;Long&gt;"/>
+    </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.0.0.201909301610" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
@@ -13,10 +20,6 @@
     <capability namespace="osgi.wiring.host">
       <attribute name="bundle-version" value="1.0.0.201909301610" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="2117" type="Long"/>
@@ -46,11 +49,13 @@
       <attribute name="osgi.content" value="0EA984E9A5D3E163FA753534DB5B93DF78D8B5B07D145A0AFDAA8FE517641FD9"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.examples.provider.dubbo.demo.api))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.examples.provider.dubbo.demo.api)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
   </resource>
   <resource>
@@ -58,6 +63,13 @@
       <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.dubbo.demo.impl"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.0.1.201909301610" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.provider.dubbo.demo.impl"/>
+      <attribute name="bundle-version" value="1.0.1.201909301610" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.provider.dubbo.demo.impl"/>
+      <attribute name="bnd.hashes" value="-821223310" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.0.1.201909301610" type="Version"/>
@@ -67,10 +79,6 @@
       <attribute name="bundle-version" value="1.0.1.201909301610" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.dubbo.demo.impl"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.provider.dubbo.demo.impl"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="4507" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.provider.dubbo.demo.impl/org.eclipse.ecf.examples.provider.dubbo.demo.impl-1.0.1.jar"/>
@@ -78,11 +86,13 @@
       <attribute name="osgi.content" value="A258D0A1EBBC50D98740216864F94E0FAAA033192ED4138570C6B9E826517596"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.examples.provider.dubbo.demo.api))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.examples.provider.dubbo.demo.api)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.examples.provider.dubbo.demo.api"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
   </resource>
 </repository>

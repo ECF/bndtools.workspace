@@ -6,6 +6,27 @@
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.10.100.201806152009" type="Version"/>
     </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jms"/>
+      <attribute name="bundle-version" value="1.10.100.201806152009" type="Version"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.channel"/>
+      <attribute name="bnd.hashes" value="1165,-595589510,-1361632971,378572138,-388483825,933624562,-444454430,-1472781732,1165327956,1185831978,-1452644481,2146777719,352041463,2487698,133807091,-1958072091,-1150288967" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jms"/>
+      <attribute name="bundle-version" value="1.10.100.201806152009" type="Version"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.container"/>
+      <attribute name="bnd.hashes" value="-1110227238,-1425473191,528558033,-323978840,-973587247,434246486,-1471244073,-115252845,1165,296534877,1361462334,-768699529,996035993,-1372402094" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jms"/>
+      <attribute name="bundle-version" value="1.10.100.201806152009" type="Version"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.identity"/>
+      <attribute name="bnd.hashes" value="70716555,-133647413" type="List&lt;Long&gt;"/>
+    </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.10.100.201806152009" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jms"/>
@@ -14,86 +35,94 @@
       <attribute name="bundle-version" value="1.10.100.201806152009" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jms"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.5.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.channel"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.5.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.container"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="1.5.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.identity"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="70497" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.provider.jms/org.eclipse.ecf.provider.jms-1.10.100.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="E951CB7E6C704E03ED679ACEB928F4E178F1DFD6D9069F1C5129AC36AF96D4FF"/>
     </capability>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(&amp;(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0))))"/>
-    </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.jms)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.jms"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.core.runtime.jobs))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.jobs"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.events)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.events)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.events"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.provider"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.security)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.security)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.security"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.sharedobject"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject.util)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject.util)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.sharedobject.util"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.util"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.comm"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.generic)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.generic)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.generic"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.remoteservice.generic)(&amp;(version&gt;=4.0.0)(!(version&gt;=5.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.remoteservice.generic)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.remoteservice.generic"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(&amp;(version&gt;=6.0.0)(!(version&gt;=9.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=6.0.0)(!(version&gt;=9.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)(&amp;(version&gt;=6.0.0)(!(version&gt;=7.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)(version&gt;=6.0.0)(!(version&gt;=7.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.events"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(&amp;(version&gt;=1.3.2)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.2)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
     </requirement>
   </resource>
   <resource>
@@ -101,6 +130,14 @@
       <attribute name="osgi.identity" value="javax.jms"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.1.0.v201205091237" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.transaction.xa"/>
+      <attribute name="bundle-symbolic-name" value="javax.jms"/>
+      <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.jms"/>
+      <attribute name="bnd.hashes" value="-763957956,1217813246,1602577684,1610527788,1719390317,846070743,238021614,863599107,1467328436,-1069284430,-1049507752,1828365849,95760063,-931557537,-1230221525,-1675388953,-765482755,-1577086918,-1211010255,1148447163,73085491,-2024906462,-1201474407,-1732325464,78391537,134863095,1300023983,-1585616037,-1307118080,-1871507775,756086406,1968910437,-1315061695,-535692877,778957935,-645326218,-2067986361,1366933856,1369535870,1782857210,80993551,-916426419,-1337149699,1027220909,273751139,-884719993,-1360544041,-258606497,-1993057522,-1145530713,-73746333,1307209894,413036932,-1461901874,825993069,-909240508,661503270,-20565008" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
@@ -110,11 +147,6 @@
       <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
       <attribute name="osgi.wiring.host" value="javax.jms"/>
     </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.transaction.xa"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.jms"/>
-    </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="47372" type="Long"/>
       <attribute name="url" value="javax.jms/javax.jms-1.1.0.jar"/>
@@ -122,8 +154,9 @@
       <attribute name="osgi.content" value="47D72799605FC5715EE0893B5014239944A30837E399B05CCDA09CCCC7659DC1"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.transaction.xa)(&amp;(version&gt;=1.0.1)(!(version&gt;=2.0.0))))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.transaction.xa)(version&gt;=1.0.1)(!(version&gt;=2.0.0)))"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.transaction.xa"/>
     </requirement>
   </resource>
 </repository>

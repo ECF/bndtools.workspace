@@ -6,6 +6,13 @@
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="2.1.0.v20180314-1732" type="Version"/>
     </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.mycorp.examples.timeservice.async"/>
+      <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
+      <attribute name="version" value="2.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.timeservice"/>
+      <attribute name="bnd.hashes" value="893946655,1107731101" type="List&lt;Long&gt;"/>
+    </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.timeservice.async"/>
@@ -13,10 +20,6 @@
     <capability namespace="osgi.wiring.host">
       <attribute name="bundle-version" value="2.1.0.v20180314-1732" type="Version"/>
       <attribute name="osgi.wiring.host" value="com.mycorp.examples.timeservice.async"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="2.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.mycorp.examples.timeservice"/>
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="8596" type="Long"/>
@@ -47,12 +50,15 @@
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.timeservice)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.timeservice"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.remoteserviceadmin"/>
     </requirement>
   </resource>
   <resource>
@@ -77,10 +83,12 @@
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.timeservice)(version&gt;=2.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.timeservice"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
   </resource>
 </repository>
