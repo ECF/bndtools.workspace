@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF gRPC Distribution Provider" increment="1594685577231">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF gRPC Distribution Provider" increment="1594697111838">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.reactivestreams.reactive-streams"/>
@@ -689,10 +689,10 @@
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="3671" type="Long"/>
+      <attribute name="size" value="3455" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.impl/org.eclipse.ecf.examples.provider.grpc.health.impl-1.1.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="0BB25D36A9275F84FC8C30DA92041ED271CD910171A815CCE3B50D4D033B45F5"/>
+      <attribute name="osgi.content" value="A6A4660915FE63ABF9C0DF012B64AA8AB6C982861419D4394F9902007A6A47BF"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
@@ -991,10 +991,10 @@
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.grpc"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="2569378" type="Long"/>
+      <attribute name="size" value="2568655" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.provider.grpc/org.eclipse.ecf.provider.grpc-1.2.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="C6223E64FA77CA83050800D92FB5DC30A17897223FDBA542B8933045AD2D73FD"/>
+      <attribute name="osgi.content" value="B0DFDD346304A1CF0B38127C95D5E455240C99460304D8C75E6C0507D67CFCD8"/>
     </capability>
     <capability namespace="osgi.remoteserviceadmin.distribution">
       <attribute name="configs" value="ecf.grpc.server,ecf.grpc.client" type="List&lt;String&gt;"/>
