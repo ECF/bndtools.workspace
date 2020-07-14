@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF gRPC Dstribution Provider" increment="1594671526649">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF gRPC Distribution Provider" increment="1594685577231">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.reactivestreams.reactive-streams"/>
@@ -24,12 +24,1027 @@
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="2097" type="Long"/>
-      <attribute name="url" value="org.reactivestreams.reactive-streams_1.0.2.jar"/>
+      <attribute name="url" value="org.reactivestreams.reactive-streams/org.reactivestreams.reactive-streams-1.0.2.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="CC09AB0B140E0D0496C2165D4B32CE24F4D6446C0A26C5DC77B06BDF99EE8FAE"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.google.gson"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.7.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.gson.reflect,com.google.gson.stream"/>
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson"/>
+      <attribute name="bnd.hashes" value="-632563258,465196865,1190096337,1165,1166,1167,1168,1169,-1947485740,-1982130283,1170,1174861102,2229227,1708479792,-1555834441,893486641,1620733128,-1560805893,-1281188652,-791282751,-1910450513,-1980888473,-293016060,-1952931001,-142969665,-1838132025,309397690,-1417068313,1085774212,-1219577594,1244503701,-350779211" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.annotations"/>
+      <attribute name="bnd.hashes" value="2089680868,-768859865,1934151247,79889178,81891134" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.reflect"/>
+      <attribute name="bnd.hashes" value="-1781936449" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.stream"/>
+      <attribute name="bnd.hashes" value="1165,-1892499477,909660716,910937553,-1737094245,-2085367700" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.google.gson"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.7.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.google.gson"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="231952" type="Long"/>
+      <attribute name="url" value="com.google.gson/com.google.gson-2.7.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="2D43EB5EA9E133D2EE2405CC14F5EE08951B8361302FDD93494A3A997B508D32"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.gson.annotations)"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="com.google.guava.failureaccess"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="documentation" value="https://github.com/google/guava/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.guava.failureaccess"/>
+      <attribute name="bundle-version" value="1.0.1" type="Version"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.util.concurrent.internal"/>
+      <attribute name="bnd.hashes" value="1069467758,1423644019" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.1" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.google.guava.failureaccess"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.1" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.google.guava.failureaccess"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="4617" type="Long"/>
+      <attribute name="url" value="com.google.guava.failureaccess/com.google.guava.failureaccess-1.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="A171EE4C734DD2DA837E4B16BE9DF4661AFAB72A41ADAF31EB84DFDAF936CA26"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.codec-socks"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-socks"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.socks"/>
+      <attribute name="bnd.hashes" value="-1474942785,292168504,1165,1110854349,-1528655380,520222904,-1168667540,1421396956,1436902953,-1328628124,-572699328,1815134988,-1598801000,-555043459,-1059759227,-2031676169,-1976895792,433128276,-1101293536,-482916348,-988937224,1480995332,-970765486,-2091479535,-848169344,1052424666,-470512016,-1588602422,-1543060952,-1578546262,-1637359994" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.socksx.v5"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-socks"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.socksx"/>
+      <attribute name="bnd.hashes" value="370935098,-988937224,1165,143203570,-1592254263" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.socksx"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-socks"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.socksx.v4"/>
+      <attribute name="bnd.hashes" value="2062938688,-1024184118,-1632002714,1165,1110854349,1180743924,-1969057332,1215503657,-921158425,-611522024,-568198432,-1438397630,1735796348,-1414004908" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.socksx"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-socks"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.socksx.v5"/>
+      <attribute name="bnd.hashes" value="-489218273,483367691,-2142536891,-959125262,384821822,-847841211,-460339893,1165,695772246,1840938286,-355147672,1287951951,1820351339,-1571911830,1110854349,1258320250,-1431692602,-671768930,-1117080649,-439115713,1280562513,-1207303757,1095666111,203298181,304412705,1619521350,-1455965666,-1281511830,1084713594,1756815451,-1919563533" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.codec-socks"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.codec-socks"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="119389" type="Long"/>
+      <attribute name="url" value="io.netty.codec-socks/io.netty.codec-socks-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="16D932D76D06992923CE640609D297FE35D9F7B219EA5F0514A4259F1F1F2146"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.netty.handler.codec)"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="org.jsr-305"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.0.2" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.annotation.meta"/>
+      <attribute name="bundle-symbolic-name" value="org.jsr-305"/>
+      <attribute name="bundle-version" value="3.0.2" type="Version"/>
+      <attribute name="version" value="3.0.2" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+      <attribute name="bnd.hashes" value="-574683160,1912184125,621294617,30966464,723629809,-78014723,903168482,-506340940,-1841323135,-1462442223,-1236586880,800481471,-1269521366,78838855,-1818600644,-1803610109,118286945,-2125564504,200044838,-1849214196,-1421114121" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.jsr-305"/>
+      <attribute name="bundle-version" value="3.0.2" type="Version"/>
+      <attribute name="version" value="3.0.2" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation.concurrent"/>
+      <attribute name="bnd.hashes" value="1817824603,-694011550,-1446791222,808454359" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.annotation"/>
+      <attribute name="bundle-symbolic-name" value="org.jsr-305"/>
+      <attribute name="bundle-version" value="3.0.2" type="Version"/>
+      <attribute name="version" value="3.0.2" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation.meta"/>
+      <attribute name="bnd.hashes" value="-604381570,1690834830,-1743965584,-605643343,2126302974,-1810319678,2695002" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="3.0.2" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.jsr-305"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="3.0.2" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.jsr-305"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="19936" type="Long"/>
+      <attribute name="url" value="org.jsr-305/org.jsr-305-3.0.2.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="766AD2A0783F2687962C8AD74CEECC38A28B9F72A2D085EE438B7813E928D0C7"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.buffer"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.buffer"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+      <attribute name="bnd.hashes" value="-1484128855,1165,677988962,38634576,1179039410,974516775,-2005104277,-999372794,-1449933181,-296409929,-984202382,-19449731,2020032555,-56509920,-1394572304,-1697382911,1104080311,378815167,-376472660,36163,1166,1167,1168,1169,1170,1171,1172,1173,-1505219417,797432057,1588602469,321903647,1968019149,-606934105,2119509305,-308438890,-1842054172,675036470,-1827333838,423292510,2100251448,-1797139135,351185370,-678534985,-304891341,200117291,-93625925,201681809,1836539855,-142022049,-291791711,-2082434829,1558818947,1097764526,-174830231,-947831230,91463746,-2106800708,142248432,-1578168575,-1078682117,-1041115253,1682337287,845066423,-1203521564,-85875522,1684431425,-1301843298,1319678825,307703433,-1920131526,146568450,-1507342099,-1459780935,-1817423313,-31430220,-384835580,-3439327,1444913790,-251814373,-1676441711,-965208120,507526100,-806992178,-1522086402,-1916725653,1719762309,-1111733816,625971173,-1979878521,1943598362,776378695,291814718,-1467207807,1922324518,-674025911,-143616445" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.buffer"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="276305" type="Long"/>
+      <attribute name="url" value="io.netty.buffer/io.netty.buffer-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="A3DCB49108F83B195E66CDAD70B2D4A127C17F1BE7F5B228A88CE18908C30B3E"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="https://github.com/salesforce/grpc-java-contrib/blob/master/LICENSE"/>
+      <attribute name="osgi.identity" value="com.salesforce.servicelibs.reactive-grpc-common"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.grpc.stub,org.reactivestreams"/>
+      <attribute name="bundle-symbolic-name" value="com.salesforce.servicelibs.reactive-grpc-common"/>
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
+      <attribute name="bnd.hashes" value="-1761268728,1165,1645248896,1784841565,-694699766,660500161,874318303,-667943806,-1574478422,-1392273027,-503125994,1445582840,-2017500812" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.salesforce.servicelibs.reactive-grpc-common"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.salesforce.servicelibs.reactive-grpc-common"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="23585" type="Long"/>
+      <attribute name="url" value="com.salesforce.servicelibs.reactive-grpc-common/com.salesforce.servicelibs.reactive-grpc-common-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="666F0A527C2F5A39621DD1D4CB672E8EDC669FCEF7C8784BFE813CB7E7262C12"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=26.0.0)(!(version&gt;=27.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc.stub)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.reactivestreams)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.reactivestreams"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.handler"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.address"/>
+      <attribute name="bnd.hashes" value="1165,-362817227" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.flow"/>
+      <attribute name="bnd.hashes" value="1165,1906821015,444602395" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.flush"/>
+      <attribute name="bnd.hashes" value="1165,-51381118" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ipfilter"/>
+      <attribute name="bnd.hashes" value="29498948,1878364987,-2007269099,1165,1550383386,-37964516,430410040,-888474986,-1045535088" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.util.internal.logging"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.logging"/>
+      <attribute name="bnd.hashes" value="2060375744,-1194772725" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.util,io.netty.util.concurrent,javax.crypto,javax.net.ssl"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl"/>
+      <attribute name="bnd.hashes" value="1165,1289232350,1541039695,-1568370980,-647648055,937801561,-180006582,281028672,-2069985743,281171186,1810407434,1630511251,1682067813,-1199619021,1566508221,1299573035,941727848,647418929,-304507479,1076730952,337899493,-643085115,-540233075,1787040839,1639105616,-1425816997,795662508,-1910837513,1166,1167,1168,1169,1170,1061695836,889999910,665893101,1009093080,-1011117650,-104394012,1144024454,-1983493413,574071215,1643747137,-506544063,-1535460506,-491476967,1556546085,-12779910,412276592,1118360642,867877879,1040996649,1817671476,114750493,1596049073,-942591001,414353344,-1713096859,401447746,-194848528,1407691610,-1693484583,1519657690,-153649342,1302029325,12019891,929400868,-1872821608,1930623261,1457547268,-606014711,1577618965,870267112,1829443169,-1243792706,294940991,401403082,425163454,-1959481100,-1404877058,-1615601125,1331665931,-1773825761,-1226277654,1231058931,-693931889,1443977051,-1166979819,-1625102610,1566203520,-1602053676,1454538202,-403443372,1170098070,1488959294,339565814,-26759948,1760224219,337462105,955641881,-672438471,1619647696,101725235,2042018466,-1182278473,275773445,-613712057,187508245,643093025,1042443024,1564446641,587528222,1613763777,-1358588485,1142710639,830825869,1567293609,-208268048,-2008682119,1803450824,286701084,-1333780718,731710610,1031554595,370058232,1171,1172,1173,1359837808,698028548,-468820565,139037686,772827070,-1158611661,1618565565,2144820729,1493238781,782085669,-254784873" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.handler.ssl"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl.ocsp"/>
+      <attribute name="bnd.hashes" value="-1067146962" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.net.ssl"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl.util"/>
+      <attribute name="bnd.hashes" value="1624286963,1165,1166,1025086897,1087696505,-2112587584,1640821455,-916105491,-2129681949,11633280,241397016" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.stream"/>
+      <attribute name="bnd.hashes" value="1777308488,-735087746,-2047612828,-278386584,-1021007284,1165,1166,1167,1168,-1652522292,608362551" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.timeout"/>
+      <attribute name="bnd.hashes" value="-574916355,-127066211,1165,1166,339701247,1894612341,-1109047029,1988831067,217763725,1531053508,-1631164929,126968846,-1247842867,-1396647573,1883257928" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.traffic"/>
+      <attribute name="bnd.hashes" value="-331451725,-1585122937,1165,100326887,2094501766,608350035,743552287,1166,-1750706070,1154747593,-1302511450,1190373254,2118570335" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.handler"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.handler"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="439798" type="Long"/>
+      <attribute name="url" value="io.netty.handler/io.netty.handler-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="B49B57DBDC88A2C77E3EA9B9D00D3136F28771E059B74A7BE7458D7A86BFCCD1"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.security.util)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.security.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.security.x509)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.security.x509"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.base64)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.base64"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.internal.tcnative)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="io.netty.internal.tcnative"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+      <attribute name="osgi.wiring.package" value="javax.crypto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+      <attribute name="osgi.wiring.package" value="javax.crypto.spec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <attribute name="osgi.wiring.package" value="javax.net.ssl"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.x500)"/>
+      <attribute name="osgi.wiring.package" value="javax.security.auth.x500"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+      <attribute name="osgi.wiring.package" value="javax.security.cert"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.asn1.x500)(version&gt;=1.54.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.asn1.x500"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.cert)(version&gt;=1.54.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.cert"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.cert.jcajce)(version&gt;=1.54.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.cert.jcajce"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.jce.provider)(version&gt;=1.54.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.jce.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.operator)(version&gt;=1.54.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.operator"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bouncycastle.operator.jcajce)(version&gt;=1.54.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.bouncycastle.operator.jcajce"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.conscrypt)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.conscrypt"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.resolver"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.resolver"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.resolver"/>
+      <attribute name="bnd.hashes" value="366976888,-1457831942,1165,-3296603,1166,478110648,2051982918,1228395792,1837791346,-609209655,-493127185,-1795005754,1397661317,494181331,881800145,935225400,-894435033,-1836174051,712816234,-1008458077" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.resolver"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.resolver"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="32843" type="Long"/>
+      <attribute name="url" value="io.netty.resolver/io.netty.resolver-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="3692C12A0035E566D5CD1DC1529D4F61725304C5E88817AE78B5C2F7F6D86CAD"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.0.202005311428" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.0.202005311428" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.0.202005311428" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3671" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.impl/org.eclipse.ecf.examples.provider.grpc.health.impl-1.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="0BB25D36A9275F84FC8C30DA92041ED271CD910171A815CCE3B50D4D033B45F5"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc.health.v1)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.1.10))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="com.google.guava"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="26.0.0.android" type="Version"/>
+      <attribute name="documentation" value="https://github.com/google/guava/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.annotations"/>
+      <attribute name="bnd.hashes" value="2066960,1982096216,-150604483,1362665209" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
+      <attribute name="bnd.hashes" value="1954926425,1165,1110854349,-7643440,63553329,1166,1167,1168,1169,935770059,602412903,1138451,1138472,1094074143,1094202765,983878041,-1996238684,1096679273,-1653255566,603376946,1907855956,1617610729,36974,-1208067373,1101570949,-1643975577,761804318,802101292,1237182270,693565451,1431596332,-310957951,1812144350,1833982328,35680636,37159,365395896,280432538,2004637121,993781980,1501113543,-1397016409,1265998597,1236311598,961752681,-822527298,1434775842,1654237568,708925042,67115890,-326254333,-1080659218,-714968830,1576823759,1652039948,2140248953,-776576065,600994154,-314299854,-1686133856,312823939,1593191782,-57013817,-1990621984,2003349842,1445582840,-927582455,-314747936,530552068,-799222802,857168625,118761210,-1186273557,-1003699704,341080744,1863395195,2022970565,656757759,-125211633,-2070662281,275553209,628263550,-1220653089,5004532,-14372992,1116108718,1441621039,-564071198,1939328147,2093771131,655935895,211136484,1191229809,786145967,1993897098,-1462132914,-275833081,1928889910,1243011688,575162484,-144993200,693371658,-1140823620,1346375835,322239893,-594645633,-1828109870,1208591287,-1861944601,-1975476895,-639267347,-217105822,-1598661140,-42031997,-406834369,862139451,1452068218,2089768008,-1815100996,902651623,1981112327,1721084755,-1790093526,2646929,-1736084327,1141086134,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base,com.google.common.collect,com.google.common.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.cache"/>
+      <attribute name="bnd.hashes" value="1993444979,-2047621471,-1225931680,-1385326328,64864098,1165,1166,1167,-553339489,-1331620569,-1892870695,1435235227,-2014201740,1348645911,468251673,-1384985287,-203495365,957751551,-1943881220,946763827,-384052023,666257610,491850284,-293604147,1836930510,1689513268,-1008125442,-1197580230,2113994890,550234771,2020559381,2011456093,208862383,1930918501,1486240217,-1099889821,1549768646,-149169146,102941165,974592841,1168,1169,1170,1171,1172,-1964639620,-103125700,1622085332,1647082976,1940137257,-165456185,406141686,611663730,-1246053651,-1945843915,-815441144,243513191,1955038831,1700366056,1212108933,-1379587437,519560786,-1942679209,-743963243,-1224895986,216434491,-809461218,145415782,434780690,-212097485,2134862870,-1066511946,-196536657,-1672030113,1083626828,-143940819,1078715318,1543070312,-1024219401,-1081717953,-1047560447,826481940,2103900114,1368816647,725832701,-624079712,2128365523,1634548439,35343270,1816477333,-1399872759,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.collect"/>
+      <attribute name="bnd.hashes" value="1165,-935353055,1622085332,1941226092,-165456185,-1989381771,-1226638221,1090687771,1110854349,-7643440,-1033140829,1166,-2144860246,1210509460,1094181382,1146339,-1363868813,944399098,-153398408,-323063735,-1150381852,1313834831,-115017409,1767687565,-292370433,-1990122904,1098953953,-231523932,-1557241156,-1557235262,-1035287848,-1610257460,145415782,-536350747,-1991314678,-536344853,122849664,32717411,-937329593,390242927,1029746275,2110175400,-850493874,1183817544,-1162060570,644452060,-1210232660,-1651841753,-1272940262,-1191779761,1167,-1872105337,-385608550,1373280866,1154838,44117606,770262293,859331124,64157557,853437880,1409360995,-586757018,1165199508,1428353201,919105369,-698669605,-1658836245,819966016,-1617032560,232772677,1800397149,1112290201,-207271412,-424317766,-506336725,2007766251,2007772145,79910610,79916504,872439018,1252783677,2035851145,-1139290088,374652095,-1098929560,1872591626,1031729966,-276493434,-86943590,65298671,1040604424,-687458536,1059142644,-52098300,68130,1859770401,-1899575221,-1040512432,-1463672261,572393981,-1810955327,289680070,-1715771938,626964900,-1898953411,371216812,2005423245,471602102,-584281616,-2076214540,800684806,-22188854,-1725856392,-967458744,-1741175120,-2040240433,35582008,-1232337782,1417901854,1887285386,-158797559,1165035588,-1486432260,2092891723,1473592893,-1287187238,-2097081700,1049520462,1880525944,356387534,-1493564594,1523136923,1539936264,1931975043,-1708414109,-1098717917,-1975104457,-1975098563,-1182781781,1863679323,-218997015,-747704322,-377749327,-498263068,-187391101,1029950719,2084541107,-1711489088,312926631,-1711483194,-686605885,446697085,318153918,-686599991,318159812,73610428,1944445940,1029956613,761859240,-317233470,1334232194,610393827,-317227576,1351889771,1946617521,1636623701,-1072891514,-1110566842,956809129,504150308,-832827658,1874921756,35912937,-2008494329,-1204017967,-1135581818,-1204012073,-1932776460,-841360398,212260567,-303609005,580054390,-1901409891,1854075296,-300651472,1570839309,-1162520359,-1162514465,1430356930,-1887458758,-563684064,-543507773,-724618949,51889844,674554010,-549983140,101458312,1301223754,-9842929,-45119811,265752156,-309454868,-998273344,1046394117,1046400011,362566080,645409377,1094187276,1759417492,-2014164768,645415271,674559904,404451844,-1863953085,1115462205,-722200035,-1070463589,-725218200,-67331930,-722194141,-1847436767,-287203444,736765681,635054943,-109128040,-571380613,-1768479677,-1788133132,36163,1168,1169,1170,1171,1172,1173,1165771315,7268897,36164,-1872108590,-90658783,169552123,638592447,1534851235,7808421,-1764399471,-548092731,845206287,-330749558,-1523873089,-330743664,-215495677,1180675213,-834379047,35680326,-1480771884,-1318838159,-1519744742,1901954145,-1538606641,-61283509,1620448667,1719606054,-228551990,3551455,-615011499,-753983524,-1143188455,-404642657,-2031407081,-1009776779,73429877,1019917514,-1449303143,1097042660,226525288,-1622113436,-1099431152,450921585,-1789116671,-1430030543,-103125700,1647082976,1581222385,-166621953,1940137257,888855445,1955038831,599482274,1212108933,-251703054,-758712539,292007206,912810012,307410013,-29393731,1087712446,1454539708,216434491,492325574,-51209081,1040285851,-1742360292,-1235963652,1215188285,-1812068259,-1066511946,1493523702,1543070312,1555949527,36165,36166,-36101249,1056185803,-1348978993,95279270,-561640053,667952894,1734781701,1963339128,-228513720,-2100538184,-595692157,-618467079,-1287220811,2096677048,-1942760818,1605555064,-443825069,-1427264534,448106262,1457990004,-483734865,-2110419887,305371714,-1148054006,-131098268,2390711,35491888,-684106170,-336105765,1259163931,718470563,-829971009,-1118757943,1327617436,-1201310397,121874567,926329174,-1552515122,872524570,354263479,1659234572,-2086503304,906684822,-435862184,1092321296,1089239251,1985769531,1801844522,-24232724,-760486526,637081412,2008372900,1801982055,797751088,1097764526,718476457,2051045292,1339017008,187327492,-1863361196,638267675,637087306,-1450960750,797933802,2061705754,1164583165,835074136,-281324458,-1634397831,1553645150,-1078206971,-1305736670,-415489426,-586423615,1298958836,2101244437,1939328147,-1864829534,421941993,339300314,1162329640,78727453,-148938798,317485823,317491717,262515358,-18760458,1939683791,-214225116,1111691149,-699646442,1290959887,-699640548,-2056345236,-1730772577,1956089352,20716027,-1249537354,808801527,-1929813163,1721768912,16048101,1749283262,122855558,-335578622,1134987271,-1583638454,232380048,279339361,1966362979,77668166,305377608,2573425,-567343349,244678711,545258095,-276868124,478418214,1848758034,-665176392,1661809628,16574086,1423112623,199142845,513796781,1838277864,837289420,-1784029463,-1939074796,844542516,219299749,314795874,-319960333,1793571517,1273137938,1584157220,-1474638344,-1204417807,373817170,839294174,-468303084,374442781,-765788138,376205864,377400314,-818906090,-1381432391,-857699612,1655957755,1655963649,-315574151,-315568257,-910593865,388676761,-1798911811,-857693718,-1475340915,994403559,994409453,1976056976,390848342,-1302275788,35343270,80563118,1728662248,-1584197568,-198121017,-189616807,1821070822,1474395565,-1797510523,-1333649483,-1322301831,-896213065,-1082349416,2075885113,-554809503,-600373765,-644726603,-1700706425,-554803609,-1316959309,-480311537,575989263,-707732869,-955794243,-1901037076,1186309482,-743781452,911137517,-707726975,22667275,-955788349,-1419370634,1083338072,-1773856788,-665296835,-1838844126,2147090443,1533313097,953231427,907696356,1933420689,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.escape"/>
+      <attribute name="bnd.hashes" value="27202177,-1562599387,450205198,-1311707205,338609692,797736800,1165,200026097,1166,212260567,1905841826,1939328147,362083988,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.eventbus"/>
+      <attribute name="bnd.hashes" value="-474295559,-962744318,401130614,1165,-940739980,-777179068,706688374,1166,1097988310,-2112547747,780924615,1537484847,342735270,-1776157398,-244245024,773695624,-1786596600,-2045324125,2009395374,1225209061,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.collect"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.graph"/>
+      <attribute name="bnd.hashes" value="1165,1166,-333163892,-794970331,238432111,-79439141,-397709167,-1221732820,-748312625,1167,3977100,1038094698,722125887,165315805,-1190337599,110013409,-1446122550,180437141,603237014,-1477469036,2134978991,461349848,-2118006065,-1645811314,35869054,-423704110,-1225793623,-270859280,-686459345,2507709,1935117361,1490090065,990579034,69062958,-2108184947,1810254663,-1855873729,-2057940031,-1494594836,-1148632321,1534079903,1526817612,2140951813,-298703604,-2023176596,1321517407,-1291440168,1732626772,-1564641014,1204490069,32847336,-1230303160,-506078717,-786828786,1820248493,-645472665,-978228062,-1826553051,-1419370634,-1899896162,49300607,-1929241386,1107103114,1408034000,649734187,-1649115382,1435881854,-1021867744,1767685448,99977759,1395184680,-280405379,1347212894,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.hash"/>
+      <attribute name="bnd.hashes" value="-1135579323,1165,244676619,882966632,794446109,-113544263,2056486326,2058763805,-794719077,1128686620,1208591287,-910862533,1166,-612851481,1894779116,2020821410,1024738057,490275887,-1115560234,400410238,2115478486,970517635,-1652930352,689806486,1388676569,-1026615223,371216812,216530125,-1297210206,1155323741,1676656610,-1117048218,236116219,212340795,-476905690,-2140557733,-1096956831,-363382471,-737889991,-72036090,1565850197,913978615,-1735019501,-2144738950,-1932776460,955862870,332136949,-1270737586,885487860,1042553078,1167,1517761127,-24550688,-1081717953,-1047560447,826481940,2103900114,1152246950,-1136206379,-1679599614,-49619151,-1408041278,-1217786127,1843670026,1927590001,1857733626,-1392318479,50396384,35343270,1816477333,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.escape"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.html"/>
+      <attribute name="bnd.hashes" value="-1554753683,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base,com.google.common.collect,com.google.common.graph,com.google.common.hash"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.io"/>
+      <attribute name="bnd.hashes" value="-1758153433,1165,1166,1167,1168,1169,1341318839,-485632659,2146708742,634548640,1214353857,701444325,206277476,-1237094609,483126844,797631562,-352884577,-1803004965,186097447,-2021796464,1018973750,-434462804,166260281,-1810191517,1828593587,1616985400,130891060,-141375829,749319418,1500163881,-178331815,1205372140,1383403012,-70033542,2051548742,-1445762255,-522333154,-1728970595,-66777215,-848485293,-153709951,1187699356,2021313946,444552535,1661385748,-1231717466,563713411,-1262369818,-648983653,-897273053,2070858199,67881559,1296497141,1320568180,-2009948450,1763707383,1591384911,-1441516260,-1071588079,1364865852,702395375,-206202105,-966575026,20897285,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.math"/>
+      <attribute name="bnd.hashes" value="1165,-1167457178,-1522957671,40896320,-672982153,-1268272279,534973029,2000480390,-1486420888,1162329518,1166,336299530,-2009987132,-1313910957,-1209725178,-662961760,1110347654,-738698527,-1219677361,823536820,80204927,1637041799,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base,com.google.common.collect,com.google.common.escape"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.net"/>
+      <attribute name="bnd.hashes" value="-1463689200,290747606,-1524280073,-977306178,1765871745,1824935246,515031984,1165,1166,-633426093,-150535906,-454875092,924542193,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.primitives"/>
+      <attribute name="bnd.hashes" value="-2075439707,-1056862374,430768815,2070707563,824507581,64671819,999419311,65071037,-2144036012,233296907,-785344862,694972401,-648664088,2107184567,1165,-440137420,212260567,-1857626554,929735468,-614941189,1940656510,-902116171,2284164,-1102270253,1499358921,-1903691584,73603415,-704912260,948989068,219838929,2059218376,-1819281513,1340349071,41514228,-1017370784,-621691589,1817225814,-95052695,1305744153,1305834289,-1465101452,1826157410,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.collect,com.google.common.io"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.reflect"/>
+      <attribute name="bnd.hashes" value="-566072200,1165,-785576318,1350375873,2102010912,1892277562,1994139037,1816284,212260567,-1105098576,-640757807,457579458,266310727,1166,1460947537,1852190604,-336538743,627165259,-1347370356,1458435439,-356698784,-266913552,1205112293,1759624746,889596288,22155730,1167,1168,-413976583,113215502,-406135123,828330121,-1559810638,367225007,-77499754,-871785980,-1781936449,-1433194572,1471813946,1640273435,-504136800,1169,1170,-621434478,-2032636944,1431153295,-1296276646,-1213070944,1132713144,81291353,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.base,com.google.common.collect"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.util.concurrent"/>
+      <attribute name="bnd.hashes" value="-362461502,-1478405842,1251547340,-1337719000,1165,1166,-839532555,-1809349635,1365821255,-1105258298,766952696,-1474565590,-557323007,-1108157146,-1884273706,1540859331,173954598,755700901,-673833812,-1118356507,-2138775905,-1436967287,-1876621101,-420438039,-1277127973,418680710,-936261385,1167,35846089,-146379114,-217070166,1168,1169,1170,1434860258,863825751,-1538994037,-267099034,1139697585,144645139,1296977015,1062440843,-208356435,-979125162,-1183669182,1174804785,-1376024209,-1413084364,140103252,58197500,-1584277059,307871861,985040776,959219355,-544088022,373049591,-1763455497,1721547589,1253211681,-709349206,1109633726,720609102,-1368630626,-646784696,-673647576,905663099,-1519895247,-807656092,-147534246,-1672064797,-927264319,-32312940,-13441418,-261289914,1977016146,-558913690,1798492656,587418702,1720783798,-1162195783,2025741158,684571423,-1493564594,-1481093697,1781497975,-1079121875,-1171648898,-1745605243,-1965087044,-2010323402,-166191296,-1094809225,-1079673343,1478580324,1863684584,-1898550456,2009903197,393471802,2074025036,-1168064280,-1983070112,1200142525,1161085680,1314001027,-1203889739,-583386900,-1081992177,451919489,-1707911403,28839134,871703239,1200813536,789234925,1669872931,2028720906,1513857204,1235202619,430490682,-969989849,1208767128,-509794076,192790665,-2143641905,1097988310,811509476,1419452127,2105372743,-658240080,1099801825,-1393994438,-720834932,-975061728,516005237,71996676,1608265965,-179148533,-491284855,-122935797,-1349965671,203594414,1939328147,605578462,-643429240,1945940182,1231974699,1122718708,-228062446,1110854349,-646160747,1938088251,1805649423,380458437,945020599,1250685724,1396058485,2089723736,-894500433,-7054103,-1430232853,-1971813402,615259642,-2134210984,1756973484,1693325087,-108337968,-2076449565,-1052033482,-1464887200,-1214219342,-613108684,-1619876917,-217103977,-1935496197,-1747193349,35436666,1798810212,-917731358,1612310308,-392127520,-320129137,1296226275,-257509499,500628188,376274135,-1896659482,1873484529,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.escape"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="version" value="26.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.xml"/>
+      <attribute name="bnd.hashes" value="811222937,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.google.guava"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="26.0.0.android" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.google.guava"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="2597954" type="Long"/>
+      <attribute name="url" value="com.google.guava/com.google.guava-26.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="1D044EBB866EF08B7D04E998B4260C9B52FAB6E6D6B68D207859486BB3686CD5"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.crypto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.crypto.spec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.misc"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.202005311428" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.inprocess"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.internal"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.netty"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.protobuf"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.protobuf.lite"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.stub.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bnd.hashes" value="1165,1166,-2086606091,1916071633" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.client"/>
+      <attribute name="bnd.hashes" value="-191938312,1165,-1872597780" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.host"/>
+      <attribute name="bnd.hashes" value="793387067" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.identity"/>
+      <attribute name="bnd.hashes" value="-704400675" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.grpc"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.grpc"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="2569378" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.grpc/org.eclipse.ecf.provider.grpc-1.2.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="C6223E64FA77CA83050800D92FB5DC30A17897223FDBA542B8933045AD2D73FD"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.grpc.server,ecf.grpc.client" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(version&gt;=3.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.4.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
     </requirement>
   </resource>
   <resource>
@@ -57,7 +1072,7 @@
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="1635813" type="Long"/>
-      <attribute name="url" value="com.google.protobuf_3.9.0.jar"/>
+      <attribute name="url" value="com.google.protobuf/com.google.protobuf-3.9.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="6C96D85EAC237FEA84D9D5E7413C85B62F2DF0B9F7B17B0168BD1E28B09FF0E8"/>
     </capability>
@@ -72,6 +1087,725 @@
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.common"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+      <attribute name="bnd.hashes" value="-1757988346,1165,161728645,1166,2068467962,348703914,-1667100349,298662083,-1014357342,-1003585838,2017053308,-852264381,-852262592,1739184628,1167,1168,-2051926442,-1268472691,797631562,-1966187897,473294670,-503167036,74895872,-1838945889,103728609,212973809,-729316289,-1598204351,1914867292,571835636,-992250985,187143362,-469955881,1058340743,984750069,1014906555,-1792757586,-787837153,-61976494,-809691978,419907077,-255348884,1110853828,35491876,35615294,1207256383,-725793697,-1346408219,-676841786,-572770237,-220302159,-1097081170,1103962560,34319765,-53432425,-1298305578,1322365299,1689072286,-1067120936,-1241480889,-1024177232,-1818600760,268308644,1097764526,1107280120,1303270386,350741825,80811813,2057217610,504312166,2016261304" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.collection"/>
+      <attribute name="bnd.hashes" value="1165,621906195,-1255252498,-1281280526,1109906171,-624644275,1166,1622085332,-165456185,-424317766,-1780490458,406171313,-955202329,179683599,402777429,-449732545,-368754343,-562402617,854853190,-792313440,-69425522,50207065,-963126285,-2023333279,391784345,875125299,-1812922207" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.util.internal"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+      <attribute name="bnd.hashes" value="139521131,471278804,755700901,1165,1166,1167,-1884567358,-61653027,-276764548,504108268,2049393825,-1465928894,461178715,-2127158029,1105351515,-397375727,1168,1780016305,692906938,-596690177,933152109,1922441522,774652444,-1007510254,1746501760,-1646785179,1942294434,16099279,2115664355,-380170313,-407640786,21157387,-1625028519,-660747638,-419267107,1353792622,-539197060,-703392892,-861903179,2064367762,969533064,93903424,1818145038,722272048,1355436283,-1964889308,-2014563026,183256001,468322478,1360725280,1773500880,-856047453,-388039504,853069397,1169,25713274,-1399994853,-1062279324,-1739955285,-2034616579,1471929042,207719919,-1454221996,743765939" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.util,io.netty.util.concurrent,io.netty.util.internal.logging,javax.security.cert"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+      <attribute name="bnd.hashes" value="-881495317,-1773540202,1165,1166,-1421792418,-1421792415,2074976011,535616128,-1454378089,1198429484,-1961163577,-575127136,-581041046,-1891661224,-651434550,1024314304,1516281191,365628234,-55929418,1990479287,-1611061594,-1903625371,-1717450820,-1830476713,-1234621439,-2045428039,320051368,1167,-2117203727,35651959,1136794097,-1477553236,36163,1168,1169,1170,1171,1172,1173,1440489988,1627473325,-830355121,-695615832,1011048720,-322234517,958460805,-1819865363,1796126631,36164,36165,36166,-1656858402,420425683,-1552682428,1746404198,-455037185,1365099396,-484422334,911523827,-1805778749,1607667745,-857973178" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+      <attribute name="bnd.hashes" value="1165,409168783,1657640824,-239379854,1408872259,1609749661,-758074675,1171768701,334840641,-277247351,809960618,1166,593827432,-529257086,-1282611478,-616880448,-22532957,1420625875,1739120055" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.netty.common"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.svm"/>
+      <attribute name="bnd.hashes" value="-1560386181,-942763231,689670345,-725024499" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.common"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.common"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="598213" type="Long"/>
+      <attribute name="url" value="io.netty.common/io.netty.common-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="710DF7C27FE5BA4B15689AE10668CD10AB3B618A1291F3A47B2CC292A0FA67DA"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.misc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.oracle.svm.core.annotate)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.oracle.svm.core.annotate"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.security.cert"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.logging)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.log4j"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.logging.log4j"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j.message)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.logging.log4j.message"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.logging.log4j.spi)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.logging.log4j.spi"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.helpers)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j.spi"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.handler-proxy"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.handler.codec.http,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.handler-proxy"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.proxy"/>
+      <attribute name="bnd.hashes" value="1220136359,-1585561148,786735347,-1878403538,1165,1166,1359837808,-952532708,797585057,504182050" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.handler-proxy"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.handler-proxy"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="22090" type="Long"/>
+      <attribute name="url" value="io.netty.handler-proxy/io.netty.handler-proxy-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="9DAB309A0422DD9858F431D503B58B854B37D2545C50AD7B4771F34D2288E5C0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.base64)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.base64"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.socksx.v4)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.socksx.v4"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.socksx.v5)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.socksx.v5"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="https://github.com/salesforce/grpc-java-contrib/blob/master/LICENSE"/>
+      <attribute name="osgi.identity" value="com.salesforce.servicelibs.rxgrpc-stub"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.reactivex,io.reactivex.functions,org.reactivestreams"/>
+      <attribute name="bundle-symbolic-name" value="com.salesforce.servicelibs.rxgrpc-stub"/>
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc"/>
+      <attribute name="bnd.hashes" value="1335871946,1165,1166,1167,-782679555,-579434744,849383868,865970442" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.salesforce.reactivegrpc.common,io.grpc.stub,io.reactivex,org.reactivestreams"/>
+      <attribute name="bundle-symbolic-name" value="com.salesforce.servicelibs.rxgrpc-stub"/>
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc.stub"/>
+      <attribute name="bnd.hashes" value="1165,1166,1167,1168,1169,1170,1467759786,-1079393957,299848236,-588601436,-1988146074,-1961390114,882863154,1238123504,-1113481725,-1665067901" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.salesforce.servicelibs.rxgrpc-stub"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.salesforce.servicelibs.rxgrpc-stub"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="44107" type="Long"/>
+      <attribute name="url" value="com.salesforce.servicelibs.rxgrpc-stub/com.salesforce.servicelibs.rxgrpc-stub-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="6D00ABBDE3509E2F07DD014EF5E112C8CC06384F4657598D22970C1FB9C09E50"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=26.0.0)(!(version&gt;=27.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.reactivegrpc.common)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc.stub)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.disposables)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex.disposables"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.exceptions)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex.exceptions"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.functions)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex.functions"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.internal.fuseable)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex.internal.fuseable"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.internal.queue)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex.internal.queue"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.reactivestreams)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.reactivestreams"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.202005311428" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
+      <attribute name="bnd.hashes" value="1856003700,371024875,-1743644577,274745465,-775463303,1487833732,-33845738,-2143874130,1165155882,1165,212260567,35181827,1162076789,1478153562,1143570509,16665195,923642153,-257910580,1166,1167,1168,1169,1170,2093302768,-667157756" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="46878" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.api/org.eclipse.ecf.examples.provider.grpc.health.api-1.2.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="6932A53DB3948A23BFDD8CBF47FE34C43884E22494D72ACB4A48A619638C39C9"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.protobuf)"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.reactivegrpc.common)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.rxgrpc.stub)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc.stub"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.1.10))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)(bundle-version&gt;=1.2.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=com.google.guava)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.codec-http"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.embedded,io.netty.handler.codec,io.netty.handler.codec.compression,io.netty.handler.codec.http.cookie,io.netty.handler.stream,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http"/>
+      <attribute name="bnd.hashes" value="94511085,1165,1166,2119249346,-1272611179,-1977354887,-1880842551,2024076932,-146951904,413563046,1309968357,-2104286601,-755441319,456680944,1167,1582601568,-996430661,300458237,460075390,761784040,600843270,1499206058,-1814011554,-1292994054,764897353,1541069425,2044183600,-2110015816,-933046984,-1368116186,1523749760,-1626051496,1724843331,1909225975,1123792286,1125849122,835685121,1197601159,-821083471,-783229354,-1854224301,339270999,34802017,1110854349,-709058261,1263162185,-849797958,-849797957,787741818,-1202534669,1605149399,1105681796,145415782,-977306178,617827710,-817689025,1051474657,35680326,-164619316,-1550378071,-1496191481,-1930682553,-1789914673,400153857,-2138969808,94006096,1437536375,706138173,1851304213,-676921145,229320061,1374486101,543214857,1788963579,-1360837677,639491675,-1380810643,906120644,-1854856084,1139946699,1897206207,-391647731,-260299380,-1361750919,1007239902,-68399926,-1421006064,-1298723269,1694185259,-1455615997,-1809409740,1139249125,-254244888,-765069319,-344382980,1686194037" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.cookie"/>
+      <attribute name="bnd.hashes" value="1816284883,-1050654955,1165,94511085,2024076932,-146951904,998214136,-832255081,413563046,1309968357,541027997,1686194037" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.handler.codec.http"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.cors"/>
+      <attribute name="bnd.hashes" value="212260567,-773757196,-1220819601,1165,-1055526294,-2088003796,550984381" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.handler.stream,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.multipart"/>
+      <attribute name="bnd.hashes" value="528990833,-1323745612,-38273707,2017053308,1962313653,-642817033,-128783009,1752102970,-446447939,-68912033,-68924302,-648546248,-1933259678,378253015,642346572,1165,1698796537,1087618979,-1485622631,2065647386,1520008500,-1617932739,-335860197,-1313092415,-210489129,825713254,-472766699,-523951526,700035312,1713221771,-1376251242,932546623,1142412923,-1790496098,31282433,-1875802920" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.handler.stream,io.netty.util,io.netty.util.internal.logging"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.websocketx"/>
+      <attribute name="bnd.hashes" value="1875771463,-312596034,299482109,1182540861,28582904,-441493506,824919155,947513942,-1501807935,-1167102018,-21935978,1074044229,-2075757027,1165,1110854349,780641222,1925807262,1742097632,-1407703624,-382785339,1166,1167,1168,1169,-422719635,1788325421,1788325428,1788325429,1788325455,-1193331491,30278225,-730712896,1786463901,1020456387,212260567,1558248479,1786533350,-288405937,-379543682,765622358,532945471,-362058037,-93513652,-480045851,-1762560603,-1762560596,-1762560595,-1762560569,-1118873499,-856017268,-1430035495,-131753400,-2134009323,-1881583511,-169505007" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http.websocketx"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.websocketx.extensions"/>
+      <attribute name="bnd.hashes" value="1381336557,139809949,-837312216,1108993080,498953218,-467160852,678005188,1165,1166,-1477865008,-1302254623,499477594,-2084195979,1527685141,1997341360" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.channel,io.netty.handler.codec.http.websocketx.extensions"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http.websocketx.extensions.compression"/>
+      <attribute name="bnd.hashes" value="1941147065,-1208654191,1055043982,-1935576787,1884478742,899076789,1887379497,-1262421759,1282333698,-564835922,81460355,1226626395,-2025149642,-273420010,2034777742" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec.http,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.rtsp"/>
+      <attribute name="bnd.hashes" value="787629829,1932795869,1281484540,1300333550,1105681796,145415782,40503879,200730227,-153218554,991947486,-640934700,504231340,580869764,1726035804,1574976992,385825786" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.spdy"/>
+      <attribute name="bnd.hashes" value="-1726663760,-977206364,1165,-996430661,154807955,685420186,-1741979928,369102285,1967256972,81042519,-2068673958,1090857688,1623596600,-2059428127,-2035328634,-1297619919,19718331,1524464667,1110854349,1027287817,-1141353554,-2122513439,-982935579,180623766,1325789806,812970485,567560298,1712726338,-2134944181,-989778141,-611976228,-1122956460,507814521,-757265220,-1281812630,-136646590,1105681796,-2028938580,1768822452,-1312936087,1962802917,1488750060,-1652522292,1949865146,-658694611,66723428,1166,1167,1168,-733304823,-226387898,-645038218,-1129765800,-2074403173,492044420,-119950631,-1551722921,-1566656346,-1348583838" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.codec-http"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.codec-http"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="592520" type="Long"/>
+      <attribute name="url" value="io.netty.codec-http/io.netty.codec-http-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="B35C4AC78ED3AAEFEB782965CE9F22901E5302BF5E75B75FBED79434CE007E8C"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.jcraft.jzlib)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.jcraft.jzlib"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.embedded)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.embedded"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.netty.handler.codec)"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.base64)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.base64"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.compression)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.compression"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.stream)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.codec"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.socket,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec"/>
+      <attribute name="bnd.hashes" value="1165,105679914,-207981061,-536155065,-1626051496,-1162081870,1166,-168528220,531410656,-1108911002,-1885117191,2087619728,-697295518,1731057109,-1636078642,1524835067,-1624966189,19190940,2046432395,-352826015,-12073358,-1115115743,140259167,1427236675,216434491,1797431845,-147989019,900410947,-1477626004,863221145,-2076004685,1810367121,-1835006106,-774175692,1867546859,485360669,1992360875,1501096163,-1237399317,191587894,-1567906425,1765740470,-1576617452,112245520,-1228982062,-424111567,1051267999,-2098533257,1879512748,1534772522,-1334611484,-515276471,1506831042,-1601062062,865908515,-2145913692,1328673615" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.base64"/>
+      <attribute name="bnd.hashes" value="1165,1523749760,1982630255,-886960171,-774379081,258205869" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.bytes"/>
+      <attribute name="bnd.hashes" value="598530291,1743696331" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,net.jpountz.lz4"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.compression"/>
+      <attribute name="bnd.hashes" value="1165,1690358639,-2028190039,-2078562930,1189042429,1344447661,681083967,-1204900608,1177085468,1110854349,167563345,-10593565,-554915314,1484843911,-1647073020,1166,1167,1168,1312729385,2092397425,807857216,1953023256,1336878128,1001563396,795372344,-922485335,-924954008,65368851,2026434480,1897740202,2097162026,-388128159,757037881,-198617265,946548775,1894972307,1733982952,-1415818304,988541865,-1747722883,-602556843,566294867,1363845292,-1785955964,1838519249,-1814159501,1253126019,-1914407638,-769241598,1541913338,-1607887918,-192353377,-1160803879,-15637839,-1895497075,-1107729880" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.json"/>
+      <attribute name="bnd.hashes" value="1691617245" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec,org.jboss.marshalling"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.marshalling"/>
+      <attribute name="bnd.hashes" value="-356868129,2000343948,-1699413212,-554247172,645419764,-1616561971,923875046,1081212256,-659915525,-496914196,607691056,1752857096,-816596467,891578406,-1131404475" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.protobuf,com.google.protobuf.nano,io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.protobuf"/>
+      <attribute name="bnd.hashes" value="-1978569191,690989165,-833403151,1420383557,269750217,-296675047" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.serialization"/>
+      <attribute name="bnd.hashes" value="-1261400001,1292822483,1562509694,1193160373,-485859736,-1411590877,-416773559,-1144816667,-370716987,349373,929645886,-338232783,369247099,1304914377" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.string"/>
+      <attribute name="bnd.hashes" value="447543912,817640753,-1860563245,-715397205" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.handler.codec"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.xml"/>
+      <attribute name="bnd.hashes" value="-2105342034" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.codec"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.codec"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="318190" type="Long"/>
+      <attribute name="url" value="io.netty.codec/io.netty.codec-4.1.38.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="8A4CB96E2131EEB8A824014F0EE338B11C6041405446ACF73181199ED05744AC"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.protobuf.nano)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf.nano"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.jcraft.jzlib)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.jcraft.jzlib"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.ning.compress)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.ning.compress"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.ning.compress.lzf)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.ning.compress.lzf"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.ning.compress.lzf.util)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.ning.compress.lzf.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=lzma.sdk)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="lzma.sdk"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=lzma.sdk.lzma)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="lzma.sdk.lzma"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=net.jpountz.lz4)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="net.jpountz.lz4"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=net.jpountz.xxhash)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="net.jpountz.xxhash"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.jboss.marshalling)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.jboss.marshalling"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
     </requirement>
   </resource>
   <resource>
@@ -328,7 +2062,7 @@
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="2355899" type="Long"/>
-      <attribute name="url" value="io.reactivex.rxjava2.rxjava_2.2.19.jar"/>
+      <attribute name="url" value="io.reactivex.rxjava2.rxjava/io.reactivex.rxjava2.rxjava-2.2.19.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="153FB4934A135E949354BD777260A70922B6A790B224268FEE3EFC867E422220"/>
     </capability>
@@ -462,255 +2196,267 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.codec-http2"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.1.0.202005311428" type="Version"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.embedded,io.netty.handler.codec,io.netty.handler.codec.http,io.netty.handler.logging,io.netty.util,io.netty.util.collection,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.codec-http2"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http2"/>
+      <attribute name="bnd.hashes" value="917659927,1165,1166,1167,1168,-1464147246,-306595005,379584959,1227033708,1231725755,1237868325,-891787134,1186106501,-1672851950,-2011766762,2133280705,-1849790439,-1693100730,-547934690,-362124800,1012363593,1500977218,1542812210,-327973235,-917508989,752494429,1097988310,-1205627933,1826962119,2062998195,-1446727707,-1160270979,2098005905,2098065514,-1837123898,-15104939,944350938,-1116368336,-1350955495,-1105712697,-950307465,1772442702,1533522719,1181049917,592580935,1737746975,25195312,-66406904,1825373460,2008377407,-1007028591,34901484,929034770,345550510,-462293286,-257712647,903041351,-533601072,1088907905,98406636,-1047836661,-1643199295,1540588044,823801817,985291081,-589703509,1575189619,35823831,1586857635,-1592523824,-1115115743,-1562943621,1922232652,-1316990824,1361482328,-566033758,-171824784,1636361439,-1583056024,-537179645,384082641,1432808687,1154845079,622099406,1161895385,766952696,-917510778,1821232904,1003090727,-598934500,546231540,1169,1170,1568803183,-733304823,1590547547,1812074984,-1448564958,-897452519,-1967887026,1359808121,-308680473,1941999518,-12225281,-1847895104,1986137964,514623871,-1349813183,-1337721877,-1067003163,1942727709,1052527252,1942906627,935885516,-1114675978,820000736,-1457283203,-683427798,-1994612013,-849501880,1599855831,-1797980892,-1738141765,-1445676429,1711472434,-1283318362,1069565942,-1240329117,35869054,319665143,53287724,-196177269,-1978602698,-1127913130,1594837037,-827881638,225058716,941923592,2029156545,2087089632,-1185613007,393011790,1288994189,-1686621493,525242543,-295522376,-2015414077,-1584417413,-778201492,-1164264937,1713949539,1344491953,1160036530,770497696,-2085317382,897312136,1038297356,-2118077337,936775373,177243217,-2086411616,-876578332,1110854349,475088042,-247063303,-1042261643,-1204630540,503369443,-1101701679,-519252892,-1112401683,-486500182,-780202688,-802108720,1532702976,-456261595,737805238,677633019,-1180922149,-1268409280,-762907839,-1933465197,-1809409740,-765069319,-1629158626,-1162081249,1098788777,1071074251,152930118,908170547,199000627,-1115896102,-658694611,189654455,-2052967937,519324907,265541972,-1604170289,-688906418,-700098039" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.1.0.202005311428" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.codec-http2"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.1.0.202005311428" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.codec-http2"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="3671" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.impl_1.1.0.202005311428.jar"/>
+      <attribute name="size" value="449727" type="Long"/>
+      <attribute name="url" value="io.netty.codec-http2/io.netty.codec-http2-4.1.38.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="0BB25D36A9275F84FC8C30DA92041ED271CD910171A815CCE3B50D4D033B45F5"/>
+      <attribute name="osgi.content" value="7E2D792407D2DA34D3338A3E8F8ED421570FDBF845941B8EE0AA952FE0E07026"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
-      <attribute name="osgi.wiring.package" value="io.grpc"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.grpc.health.v1)"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.1.10))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.embedded)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.embedded"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="filter" value="(osgi.wiring.package=io.netty.handler.codec)"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.base64)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.base64"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.compression)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.compression"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.codec.http)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.codec.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.handler.ssl"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.collection)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.collection"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
       <directive name="resolution" value="optional"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)"/>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
     </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0"/>
+      <attribute name="osgi.identity" value="io.netty.transport"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.2.0.202005311428" type="Version"/>
+      <attribute name="version" value="4.1.38.Final" type="Version"/>
+      <attribute name="documentation" value="https://netty.io/"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc"/>
+      <directive name="uses" value="io.netty.channel,io.netty.resolver,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.bootstrap"/>
+      <attribute name="bnd.hashes" value="1165,1166,-65479089,-234798004,33311406,1167,9956942,-1791497424,1384906407,-1067169656,-450502170,1753322418,-2006584757,-2067776147" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.inprocess"/>
+      <directive name="uses" value="io.netty.bootstrap,io.netty.buffer,io.netty.util,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel"/>
+      <attribute name="bnd.hashes" value="1165,1166,1167,1168,1169,1170,1171,1172,1173,-384085588,-1291633799,1388925080,1640216232,1821697815,-1100557727,36163,36164,36165,-1181991874,1111228874,2122280013,2113077824,1729425350,521220171,1790395964,-1922742877,1249703142,1719606046,-580063316,799592380,-1925059485,128981738,-1891363613,1773145605,-910216377,-2030851412,1384906407,-1756157841,-528129304,1063197120,1864767622,1131895642,-1323082780,-1125374745,-1497885592,604153544,35825603,1863701619,-829263522,994591060,1688507227,-2032978684,1587830271,-978951886,2117800760,1097764526,-1454374769,-24211693,-285755689,265385080,981641863,-901017435,751716650,-2136957301,-228455329,-1626816173,-2127395144,-1625024351,-187339650,-604051635,-1819835838,1259748844,-1780761651,1835507928,-714251166,1344101764,-106690745,-1864804259,-1273328405,-299756178,-475129764,-538046834,-1093007237,-895288220,200788562,1752114969,999610173,789523778,1715327121,-775429426,-606477745,1667014805,-1260311175,1322642704,1582041562,-1013608416,2035150910,-2132056655,1204980961,-34804420,218577105,342677321,-542648400,-855457414,352321581,-1031892266,-255348884,979376600,332701700,1521381781,1145775324,-31106050,-776705180,-1652522292,1690679625,681773660,-1984284146,-1807878651,-2056799194,-1161937790,1738099887,-2002081445,-1781730272,2074237634,-10270204,1930913765,1631877100,379889637,225590094,-1057838127,577061228,-390124955" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.internal"/>
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.embedded"/>
+      <attribute name="bnd.hashes" value="1165,1166,-977027049,1445531156,1110854349,-217013511,1903415796,472862932,-1527729545" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.netty"/>
+      <directive name="uses" value="io.netty.channel,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.group"/>
+      <attribute name="bnd.hashes" value="60983132,1198256211,741936191,-379877869,-977316145,1165,-931750178,117937391,1352078873,-987812168,-232029308,823428787,1016974333,1812283637,-377711584,728190195" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.protobuf"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.internal"/>
+      <attribute name="bnd.hashes" value="73965966" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.protobuf.lite"/>
+      <directive name="uses" value="io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.local"/>
+      <attribute name="bnd.hashes" value="1879738921,1165,1166,1167,1168,1169,1170,-806219219,1110854349,-528585928,1720862613,607083756,2078308021" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.util,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.nio"/>
+      <attribute name="bnd.hashes" value="1165,-1114126274,-726390519,1166,-448408812,-1448306410,337244721,-1302108387,2135640590,1167,1168,1169,1170,1911079269,-820793142,1451967445,-677985895,-1487680012,223408627" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.stub.annotations"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.oio"/>
+      <attribute name="bnd.hashes" value="-1231949144,1165,1166,1167,-37273890,140731216,-806017009,-962880506,-1489690154" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.util"/>
+      <directive name="uses" value="io.netty.bootstrap,io.netty.channel,io.netty.util.concurrent"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.pool"/>
+      <attribute name="bnd.hashes" value="642809453,-1046096385,1165,-2077382250,1941895071,-835979605,2081627453,1166,1167,1168,1169,1170,1171,1537031910,-1036019529,-952074235,-47953982,-139664437,-612932979" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.util"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket"/>
+      <attribute name="bnd.hashes" value="-1028009859,-878066260,2128399488,1228588853,432719010,1375580804,102634761,664736515,2017566222,-2078990959,-774298365,2075491805,-1561121939,189961487,2045865456,-1729648302" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bnd.hashes" value="1165,1166,-2086606091,1916071633" type="List&lt;Long&gt;"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.nio,io.netty.channel.socket"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket.nio"/>
+      <attribute name="bnd.hashes" value="47558084,-500634578,-590675696,1165,-1984307265,966438137,1166,1167,1168,-1635207166,-1120661914,-24377220,1571478724" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.client"/>
-      <attribute name="bnd.hashes" value="-191938312,1165,-1872597780" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.host"/>
-      <attribute name="bnd.hashes" value="793387067" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.identity"/>
-      <attribute name="bnd.hashes" value="-704400675" type="List&lt;Long&gt;"/>
+      <directive name="uses" value="io.netty.buffer,io.netty.channel,io.netty.channel.oio,io.netty.channel.socket"/>
+      <attribute name="bundle-symbolic-name" value="io.netty.transport"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="version" value="4.1.38" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.netty.channel.socket.oio"/>
+      <attribute name="bnd.hashes" value="1063840528,1746315163,-1801480994,-1497706931,-657682449,-1071618152,-1420901126,1165,1166,1167,1168,-534911397,-1240144515" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.netty.transport"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="4.1.38.Final" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.netty.transport"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="2569378" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.grpc_1.2.0.202005311428.jar"/>
+      <attribute name="size" value="474581" type="Long"/>
+      <attribute name="url" value="io.netty.transport/io.netty.transport-4.1.38.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="C6223E64FA77CA83050800D92FB5DC30A17897223FDBA542B8933045AD2D73FD"/>
-    </capability>
-    <capability namespace="osgi.remoteserviceadmin.distribution">
-      <attribute name="configs" value="ecf.grpc.server,ecf.grpc.client" type="List&lt;String&gt;"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.content" value="5F826976585A49AAE9B495290125A60A59DC6887FBE4C70DA3182A83FB8BFA88"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.buffer"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.resolver)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.resolver"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(version&gt;=3.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.provider"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.4.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.util"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.concurrent"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.internal.logging)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.netty.util.internal.logging"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
+      <directive name="filter" value="(osgi.wiring.package=sun.nio.ch)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.nio.ch"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.npn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.npn"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.alpn)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.jetty.alpn"/>
     </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.2.0.202005311428" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
-      <attribute name="bnd.hashes" value="1856003700,371024875,-1743644577,274745465,-775463303,1487833732,-33845738,-2143874130,1165155882,1165,212260567,35181827,1162076789,1478153562,1143570509,16665195,923642153,-257910580,1166,1167,1168,1169,1170,2093302768,-667157756" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.2.0.202005311428" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="46878" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.api_1.2.0.202005311428.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="6932A53DB3948A23BFDD8CBF47FE34C43884E22494D72ACB4A48A619638C39C9"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=com.google.protobuf)"/>
-      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.reactivegrpc.common)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.rxgrpc.stub)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc.stub"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.1.10))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)(bundle-version&gt;=1.2.0))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=com.google.guava)"/>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
     </requirement>
   </resource>
   <resource>
@@ -729,7 +2475,7 @@
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="3698" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.consumer_1.1.0.202005311428.jar"/>
+      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.consumer/org.eclipse.ecf.examples.provider.grpc.health.consumer-1.1.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="0DA1A6CDDDE16202726ABAFAAC2838AEA2417C41C3661B9B736D7AA18085C774"/>
     </capability>
@@ -752,274 +2498,5 @@
     <requirement namespace="osgi.wiring.bundle">
       <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
     </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="https://github.com/salesforce/grpc-java-contrib/blob/master/LICENSE"/>
-      <attribute name="osgi.identity" value="com.salesforce.servicelibs.reactive-grpc-common"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="io.grpc.stub,org.reactivestreams"/>
-      <attribute name="bundle-symbolic-name" value="com.salesforce.servicelibs.reactive-grpc-common"/>
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
-      <attribute name="bnd.hashes" value="-1761268728,1165,1645248896,1784841565,-694699766,660500161,874318303,-667943806,-1574478422,-1392273027,-503125994,1445582840,-2017500812" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.salesforce.servicelibs.reactive-grpc-common"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.salesforce.servicelibs.reactive-grpc-common"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="23585" type="Long"/>
-      <attribute name="url" value="com.salesforce.servicelibs.reactive-grpc-common_1.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="666F0A527C2F5A39621DD1D4CB672E8EDC669FCEF7C8784BFE813CB7E7262C12"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=26.0.0)(!(version&gt;=27.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
-      <attribute name="osgi.wiring.package" value="io.grpc"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.grpc.stub)"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.reactivestreams)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.reactivestreams"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="https://github.com/salesforce/grpc-java-contrib/blob/master/LICENSE"/>
-      <attribute name="osgi.identity" value="com.salesforce.servicelibs.rxgrpc-stub"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="io.reactivex,io.reactivex.functions,org.reactivestreams"/>
-      <attribute name="bundle-symbolic-name" value="com.salesforce.servicelibs.rxgrpc-stub"/>
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc"/>
-      <attribute name="bnd.hashes" value="1335871946,1165,1166,1167,-782679555,-579434744,849383868,865970442" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="com.salesforce.reactivegrpc.common,io.grpc.stub,io.reactivex,org.reactivestreams"/>
-      <attribute name="bundle-symbolic-name" value="com.salesforce.servicelibs.rxgrpc-stub"/>
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc.stub"/>
-      <attribute name="bnd.hashes" value="1165,1166,1167,1168,1169,1170,1467759786,-1079393957,299848236,-588601436,-1988146074,-1961390114,882863154,1238123504,-1113481725,-1665067901" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.salesforce.servicelibs.rxgrpc-stub"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.salesforce.servicelibs.rxgrpc-stub"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="44107" type="Long"/>
-      <attribute name="url" value="com.salesforce.servicelibs.rxgrpc-stub_1.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="6D00ABBDE3509E2F07DD014EF5E112C8CC06384F4657598D22970C1FB9C09E50"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=26.0.0)(!(version&gt;=27.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.reactivegrpc.common)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
-      <attribute name="osgi.wiring.package" value="io.grpc"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.grpc.stub)"/>
-      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.disposables)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex.disposables"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.exceptions)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex.exceptions"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.functions)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex.functions"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.internal.fuseable)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex.internal.fuseable"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex.internal.queue)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="io.reactivex.internal.queue"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.reactivestreams)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.reactivestreams"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.google.gson"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.7.0" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="com.google.gson.reflect,com.google.gson.stream"/>
-      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
-      <attribute name="bundle-version" value="2.7.0" type="Version"/>
-      <attribute name="version" value="2.7.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.google.gson"/>
-      <attribute name="bnd.hashes" value="-632563258,465196865,1190096337,1165,1166,1167,1168,1169,-1947485740,-1982130283,1170,1174861102,2229227,1708479792,-1555834441,893486641,1620733128,-1560805893,-1281188652,-791282751,-1910450513,-1980888473,-293016060,-1952931001,-142969665,-1838132025,309397690,-1417068313,1085774212,-1219577594,1244503701,-350779211" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
-      <attribute name="bundle-version" value="2.7.0" type="Version"/>
-      <attribute name="version" value="2.7.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.google.gson.annotations"/>
-      <attribute name="bnd.hashes" value="2089680868,-768859865,1934151247,79889178,81891134" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
-      <attribute name="bundle-version" value="2.7.0" type="Version"/>
-      <attribute name="version" value="2.7.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.google.gson.reflect"/>
-      <attribute name="bnd.hashes" value="-1781936449" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
-      <attribute name="bundle-version" value="2.7.0" type="Version"/>
-      <attribute name="version" value="2.7.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.google.gson.stream"/>
-      <attribute name="bnd.hashes" value="1165,-1892499477,909660716,910937553,-1737094245,-2085367700" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.7.0" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.google.gson"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.7.0" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.google.gson"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="231952" type="Long"/>
-      <attribute name="url" value="com.google.gson_2.7.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="2D43EB5EA9E133D2EE2405CC14F5EE08951B8361302FDD93494A3A997B508D32"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=com.google.gson.annotations)"/>
-      <attribute name="osgi.wiring.package" value="com.google.gson.annotations"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-      <attribute name="osgi.identity" value="com.google.guava.failureaccess"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.1" type="Version"/>
-      <attribute name="documentation" value="https://github.com/google/guava/"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.google.guava.failureaccess"/>
-      <attribute name="bundle-version" value="1.0.1" type="Version"/>
-      <attribute name="version" value="1.0.1" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.google.common.util.concurrent.internal"/>
-      <attribute name="bnd.hashes" value="1069467758,1423644019" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.1" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.google.guava.failureaccess"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.1" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.google.guava.failureaccess"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="4617" type="Long"/>
-      <attribute name="url" value="com.google.guava.failureaccess_1.0.1.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="A171EE4C734DD2DA837E4B16BE9DF4661AFAB72A41ADAF31EB84DFDAF936CA26"/>
-    </capability>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-      <attribute name="osgi.identity" value="org.jsr-305"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="3.0.2" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.annotation.meta"/>
-      <attribute name="bundle-symbolic-name" value="org.jsr-305"/>
-      <attribute name="bundle-version" value="3.0.2" type="Version"/>
-      <attribute name="version" value="3.0.2" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.annotation"/>
-      <attribute name="bnd.hashes" value="-574683160,1912184125,621294617,30966464,723629809,-78014723,903168482,-506340940,-1841323135,-1462442223,-1236586880,800481471,-1269521366,78838855,-1818600644,-1803610109,118286945,-2125564504,200044838,-1849214196,-1421114121" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.jsr-305"/>
-      <attribute name="bundle-version" value="3.0.2" type="Version"/>
-      <attribute name="version" value="3.0.2" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.annotation.concurrent"/>
-      <attribute name="bnd.hashes" value="1817824603,-694011550,-1446791222,808454359" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.annotation"/>
-      <attribute name="bundle-symbolic-name" value="org.jsr-305"/>
-      <attribute name="bundle-version" value="3.0.2" type="Version"/>
-      <attribute name="version" value="3.0.2" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.annotation.meta"/>
-      <attribute name="bnd.hashes" value="-604381570,1690834830,-1743965584,-605643343,2126302974,-1810319678,2695002" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="3.0.2" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.jsr-305"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="3.0.2" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.jsr-305"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="19936" type="Long"/>
-      <attribute name="url" value="org.jsr-305_3.0.2.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="766AD2A0783F2687962C8AD74CEECC38A28B9F72A2D085EE438B7813E928D0C7"/>
-    </capability>
   </resource>
 </repository>

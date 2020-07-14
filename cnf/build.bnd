@@ -143,7 +143,7 @@
 
 -plugin.24.ECFGRPC: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF gRPC Dstribution Provider; \
+		name = ECF gRPC Distribution Provider; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/grpc
 	

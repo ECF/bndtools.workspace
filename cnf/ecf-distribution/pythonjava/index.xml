@@ -27,27 +27,6 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.py4j.source"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.3.0.201904011807" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.3.0.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.py4j.source"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.3.0.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.py4j.source"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="8970" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.py4j.source/org.eclipse.ecf.provider.py4j.source-2.3.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="261F0E47BF34F6E6FE0F70BCFBBB36ED68E8FB3E60CEBB0AA774AA2A52286773"/>
-    </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
       <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
       <attribute name="osgi.identity" value="org.apache.commons.exec"/>
       <attribute name="type" value="osgi.bundle"/>
@@ -446,48 +425,6 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.python.protobuf.source"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.1.2.201904011807" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.1.2.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.python.protobuf.source"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.1.2.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.python.protobuf.source"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="19946" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.python.protobuf.source/org.eclipse.ecf.python.protobuf.source-1.1.2.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="B618A874431DA6E7A9CF77BD1A8EE3616E2EBA025ACF87EC9428D3B2E446D849"/>
-    </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.direct.protobuf.source"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.2.1.201904011807" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.2.1.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.direct.protobuf.source"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.2.1.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.direct.protobuf.source"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="5552" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.direct.protobuf.source/org.eclipse.ecf.provider.direct.protobuf.source-2.2.1.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="E19DA2DBA2D9E1FBC1A78AD52A1904599DB24F3AD679532E404231A00BCB77A8"/>
-    </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.python.protobuf"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.1.2.201904011807" type="Version"/>
@@ -684,27 +621,6 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.py4j.protobuf.source"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.5.0.201904011807" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.5.0.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.py4j.protobuf.source"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.5.0.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.py4j.protobuf.source"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="5434" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.py4j.protobuf.source/org.eclipse.ecf.provider.py4j.protobuf.source-1.5.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="6CE9A39C1BC0EAAD109157EA5ECF759607980E1631215506D3E311F34C747569"/>
-    </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.python"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.0.3.201904011807" type="Version"/>
@@ -845,48 +761,6 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="license" value="https://opensource.org/licenses/BSD-3-Clause"/>
-      <attribute name="osgi.identity" value="com.google.protobuf"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="3.7.0" type="Version"/>
-      <attribute name="documentation" value="https://developers.google.com/protocol-buffers/"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.google.protobuf"/>
-      <attribute name="bundle-version" value="3.7.0" type="Version"/>
-      <attribute name="version" value="3.7.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
-      <attribute name="bnd.hashes" value="212260567,-384168351,-884583067,130891060,1808220083,1023460097,963725355,803262031,1165,65996,-646510644,-298772612,66042,-1096197282,1018168334,-1913100909,-1596427104,-246429561,-1089690767,972810095,-1465540069,-1919198135,1166,-317513444,1167086085,1327279602,879143839,1626309594,230079944,-1674386821,1966473604,-36283835,1267470448,-1805671591,-917747738,955252466,-1684510225,2002197821,-845324833,1376773097,1794248416,-1857777821,-1506423949,-130690569,-539344185,826857711,-1647729480,455254090,1939262263,599007522,-712611781,1310656888,1772665218,-2017223466,-328990415,1140623879,-121389323,-214169405,-1260124240,-191733144,-1587797580,-709014300,1158938521,1547714719,78446829,-1974370869,1875912658,1661683846,2078084796,1799522524,1103824176,35869054,1763201443,-1915315755,1095147641,-211774137,1364889224,-1945497968,-1247454247,1976740959,-1900734829,925917925,1389856868,-1625805122,-786543846,172681843,1002105605,1863111462,-34071630,1337857499,-75623267,2063878868,-1520343100,1984395255,898058425,-1214432385,1195252096,-1012442472,195068773,1922908755,127671688,1427726224,-1557721235,-1107312821,1321836537,-261551041,-501545286,-156717410,1261245794,-164061962,-836506172,-476966188,-942610438,979358387,1575404854,-100937583,-2070446716,-1943581329,716814883,867595412,1371747771,-1160917824,-1163277499,-285177012,81751335,-2136950961,-137190174,-1415506060,-1919693496,-1074437056,-56671548,2140046404,357226918,41256960,1772370968,-1927368268,1406975204,925702292,258150120,67081517,788640139,920418491,2165025,466710551,-2057952048,1600063816,-1646472206,1442738773,1146786077,1391410207,-1832240787,1442400201,-856473220,-347659282,-1750070938,-1235072950,-1429874998,35585496,67875034,-1026019610,282589170,1345063586,1359308926,1857865107,-864375512,-161385541,967734421,-1267488989,1167,1168,1169,-1763914719,-648613695,1489097155,-723243826,-2081889745,-2066618679,289252492,1589440413,-1451556439,-315255200,-1168925246,-285910461,1345929592,-278414651,-1152487226,534077845,1143981173,1572247089,-1838125388,1646736280,-1446013664,882827073,-1001033237,851359306,563693327,-1145450928,80394264,371216812,448076714,-841495450,1965602869,1417349027,-2027904043,-157848924,-544402956,-4973688,184690210,-1788719277,1644777875,-1704128823,-348011205,1407828310,1938625641,-1125281316,1181427213,1641106814,-2023265087,-35166659,-744084527,693573015,1926246669,635054813,1104000189,-980912544,1170318832,-1020684902,125864518,1759593926,-406775916,614602224,601701888,-672457902,-1857450237,771015507,-572060123,-1958881445,-1029211277,219533462,-166479260,-964957385,-1206158835,-1024728163,1492344787,1492338893,1494098938,220293406,1578094316,-1675388953,794521909,1502142083,628499137,-1885593583,618550392,595732052,1745662359,-2071338715,1905388402,-1993687807,-951838665,74357857,-596278057,625295132,-145623987,-1256630262,-1926269803,-1038964957,-1911543745,-798218021,-674864340,636944336,1246354727,-766751872,1252137452,-1014517794,-1083041285,-1420586536,1790930266,1945547704,596343508,1949100523,-512741078,-657507458,-185479359,-1079104738,-1233568921,-646160747,135145786,1734025673,-48636378,621912089,1097764526,-103125700,1622085332,159503416,1845055732,2011252132,-1907097260,148655040,1581101144,-2009232742,-1808107531,-280662077,-1217916173,-1803610109,-628774822,409136160,-482590014,1144021268,-26182301,-333402282,340558434,-633426093,-836835056,-826429532,1793323821,410802125,651717627,-1920154044,2059094262,1114189794,-2022262126,2622298,-547494402,-1785536850,-999661128,1876742496,1720108217,-934723713,-1635593053,1098524470,-2123421870,1546343200,-920792896,577661562,1903284645,-486127700,989058792,518999636,-1870310194,-330996287,-514889715,-1793066808,2646929,-1134804696,82420049,1626934759,489660304,-874121202,1944533244,-141302936" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="3.7.0" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.google.protobuf"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="3.7.0" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.google.protobuf"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="1424558" type="Long"/>
-      <attribute name="url" value="com.google.protobuf/com.google.protobuf-3.7.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="DC7F93E3A3DC2C11BE5BA9672AF3E26410F0A3289312DBF2260D4D8A0C711A51"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
-      <directive name="resolution" value="optional"/>
-      <attribute name="osgi.wiring.package" value="sun.misc"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=3.7.0)(!(version&gt;=4.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.py4j.osgi"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" value="1.3.1.201903232149" type="Version"/>
@@ -944,27 +818,6 @@
       <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
       <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
     </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.direct.source"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.3.1.201904011807" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.3.1.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.direct.source"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.3.1.201904011807" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.direct.source"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="20491" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.direct.source/org.eclipse.ecf.provider.direct.source-2.3.1.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="8481484C38AE62F786E01092130372CB3925C41A6B6FE7EF9EA02D8A6C317DC4"/>
-    </capability>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
