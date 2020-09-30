@@ -1,3 +1,18 @@
+src:                    src,src-gen
+bin:                    target/classes
+target-dir:             target
+
+javac.source:           1.8
+javac.target:           1.8
+-runee:                 JavaSE-1.8
+
+-resolve.effective:     resolve, active
+-releaserepo:           Release
+
+-remoteworkspace: true
+
+copyright.year = ${tstamp;yyyy}
+
 # Configure Repositories
 -plugin.1.R7.API: \
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
