@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1601443121972">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1602540829650">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.10.1.202009300518" type="Version"/>
+      <attribute name="version" value="1.11.0.202010122152" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.10.1.202009300518" type="Version"/>
+      <attribute name="bundle-version" value="1.11.0.202010122152" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.10.1.202009300518" type="Version"/>
+      <attribute name="bundle-version" value="1.11.0.202010122152" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -93,16 +93,8 @@
       <attribute name="dir" value="templates/rsconsumerasync"/>
     </capability>
     <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/grpchealthexamples.xml"/>
-      <attribute name="name" value="gRPC Health Remote Service Examples"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/grpchealthexamples"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
       <attribute name="help" value="templates/grpcapigenerated.xml"/>
-      <attribute name="name" value="gRPC API Project (protoc code gen)"/>
+      <attribute name="name" value="gRPC Protoc-Generated API Project"/>
       <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
       <attribute name="org.bndtools.template" value="project"/>
       <attribute name="category" value="bbb/Remote Service Project Templates"/>
@@ -226,52 +218,17 @@
       <attribute name="dir" value="templates/launch/mqtt"/>
     </capability>
     <capability namespace="org.bndtools.template">
-      <attribute name="name" value="JGroups Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/jgroupsbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/jgroups"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
       <attribute name="name" value="Hazelcast Distribution Provider with Hazelcast Discovery"/>
       <attribute name="help" value="templates/hazelcast2bndrun.xml"/>
       <attribute name="org.bndtools.template" value="bndrun"/>
       <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
       <attribute name="dir" value="templates/launch/hazelcasthazelcast"/>
     </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Dubbo Server Distribution Provider with Hazelcast Discovery"/>
-      <attribute name="help" value="templates/dubboserverbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/dubboserver"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Dubbo Client Distribution Provider with Hazelcast Discovery"/>
-      <attribute name="help" value="templates/dubboclientbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/dubboclient"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="gRPC Health Service Example Service with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/grpchealthserver.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Example Templates"/>
-      <attribute name="dir" value="templates/launch/grpchealthserver"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="gRPC Health Service Example Consumer with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/grpchealthconsumer.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Example Templates"/>
-      <attribute name="dir" value="templates/launch/grpchealthconsumer"/>
-    </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="104817" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.10.1.jar"/>
+      <attribute name="size" value="98514" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.11.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="5EC44121EA72A544963828C04E2450D1FC588B332B01E10F05F347A61040E5B5"/>
+      <attribute name="osgi.content" value="73F0D47A98133F54BEEAA87FA3D76949637D407153FB0BA987F03943C2BC5007"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
