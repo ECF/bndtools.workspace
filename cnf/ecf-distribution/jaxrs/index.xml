@@ -1,5 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Jaxrs Distribution Providers" increment="1602820853948">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Jaxrs Distribution Providers" increment="1608593123113">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.mycorp.examples.student.client"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.1.0.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.1.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student.client"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.1.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student.client"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3871" type="Long"/>
+      <attribute name="url" value="com.mycorp.examples.student.client/com.mycorp.examples.student.client-2.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="3D127FB4F2E1E44E606A0148FA75351CED956EBD94451A97B64EDC72B391A0AA"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.student)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.student"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+  </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -107,93 +137,74 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jaxrs"/>
+      <attribute name="osgi.identity" value="com.mycorp.examples.student.client.filediscovery"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.4.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jaxrs"/>
-      <attribute name="bundle-version" value="1.4.0.202007181342" type="Version"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
-      <attribute name="bnd.hashes" value="-2007047315,1292097597,-252420033,568443831,-332552327,-841734091" type="List&lt;Long&gt;"/>
+      <attribute name="version" value="1.2.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.4.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jaxrs"/>
+      <attribute name="bundle-version" value="1.2.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student.client.filediscovery"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.4.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jaxrs"/>
+      <attribute name="bundle-version" value="1.2.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student.client.filediscovery"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="12219" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.jaxrs/org.eclipse.ecf.provider.jaxrs-1.4.0.jar"/>
+      <attribute name="size" value="1366" type="Long"/>
+      <attribute name="url" value="com.mycorp.examples.student.client.filediscovery/com.mycorp.examples.student.client.filediscovery-1.2.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="2D3438985B2DE5D4A974FAD5CE28F72DB71A7A3A8CAD27ED34BDCB768CCCA0A9"/>
+      <attribute name="osgi.content" value="A97FDF84F87E4C736C7B1376DDA6CDFCF0078F35C58874A50A4D9A266EE4979A"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.mycorp.examples.student.remoteservice.host"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.0.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student.remoteservice.host"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student.remoteservice.host"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="6285" type="Long"/>
+      <attribute name="url" value="com.mycorp.examples.student.remoteservice.host/com.mycorp.examples.student.remoteservice.host-2.2.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="4005B4E1786E88F2B1F9CC691472506A3137B2C88E23EA54001A9CA79B6D67D8"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.student)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.student"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.client)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.client"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.container)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
       <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.ext)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
       <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="javax.inject"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.v20091030" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="javax.inject"/>
-      <attribute name="bundle-version" value="1.0.0.v20091030" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.inject"/>
-      <attribute name="bnd.hashes" value="-2100193871,75032345,-922850799,756027530,79711796,509450219" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.v20091030" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="javax.inject"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.v20091030" type="Version"/>
-      <attribute name="osgi.wiring.host" value="javax.inject"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="14411" type="Long"/>
-      <attribute name="url" value="javax.inject/javax.inject-1.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="0016231E7908290153EC624DA0DFE62942C91E18AF0A57BD71555B7F9E6093D6"/>
-    </capability>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
@@ -615,30 +626,64 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jaxrs.client"/>
+      <attribute name="osgi.identity" value="org.eclipse.ecf.example.jersey.server.basicauth"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.6.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jaxrs.client"/>
-      <attribute name="bundle-version" value="1.6.0.202007181342" type="Version"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.client"/>
-      <attribute name="bnd.hashes" value="1273905734,-1262595948,1128904354,-776177168,351837760" type="List&lt;Long&gt;"/>
+      <attribute name="version" value="1.0.1.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.6.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jaxrs.client"/>
+      <attribute name="bundle-version" value="1.0.1.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.example.jersey.server.basicauth"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.6.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jaxrs.client"/>
+      <attribute name="bundle-version" value="1.0.1.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.example.jersey.server.basicauth"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="34821" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.jaxrs.client/org.eclipse.ecf.provider.jaxrs.client-1.6.0.jar"/>
+      <attribute name="size" value="5478" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.example.jersey.server.basicauth/org.eclipse.ecf.example.jersey.server.basicauth-1.0.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="68A85CF9D8DEC3201EE938997375A2DF8A070A46F8CC305EC965C05D19E30051"/>
+      <attribute name="osgi.content" value="E40855B6E7DF402D43D57D9015CC2A8A68E44C4C86DB0ADE5D6921584B2F56F6"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.container)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.core)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jaxrs"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.6.0.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jaxrs"/>
+      <attribute name="bundle-version" value="1.6.0.202012201802" type="Version"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
+      <attribute name="bnd.hashes" value="-2007047315,1292097597,-252420033,568443831,-332552327,-841734091" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.6.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jaxrs"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.6.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jaxrs"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="13104" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jaxrs/org.eclipse.ecf.provider.jaxrs-1.6.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="D7F3CF08D0D2DDBD8831D826AA01DB9E11A5E45FA1A27A830F638A5E77EC0B58"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.9.2))"/>
@@ -649,20 +694,8 @@
       <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.json)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.json"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.1.5))"/>
       <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.client)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.client"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
@@ -673,175 +706,176 @@
       <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)(version&gt;=6.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.events"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
       <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
     <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
     </requirement>
     <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
     </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jaxrs.server"/>
+      <attribute name="osgi.identity" value="org.eclipse.ecf.example.spacex.launch.api"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.9.1.202007181342" type="Version"/>
+      <attribute name="version" value="1.0.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jaxrs.server"/>
-      <attribute name="bundle-version" value="1.9.1.202007181342" type="Version"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.server"/>
-      <attribute name="bnd.hashes" value="1165,-433161188,-1715641798,-1191148006,-959349178,1321354088,-1714291768" type="List&lt;Long&gt;"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.example.spacex.launch.api"/>
+      <attribute name="bundle-version" value="1.0.0.202012201802" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.example.spacex.launch.api"/>
+      <attribute name="bnd.hashes" value="-2025975853,548891490" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.9.1.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jaxrs.server"/>
+      <attribute name="bundle-version" value="1.0.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.example.spacex.launch.api"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.9.1.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jaxrs.server"/>
+      <attribute name="bundle-version" value="1.0.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.example.spacex.launch.api"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="15716" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.jaxrs.server/org.eclipse.ecf.provider.jaxrs.server-1.9.1.jar"/>
+      <attribute name="size" value="3715" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.example.spacex.launch.api/org.eclipse.ecf.example.spacex.launch.api-1.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="6A3A26B781F705812D6D6C6D797BA86CEB2CCD29F5E5B6D6962029EF58FB42D9"/>
+      <attribute name="osgi.content" value="FDA748E844A2E0CFF50CF38C83C5BD477B828287BDDF3E2531CCF81319859520"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.10.1))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.9.2))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.10.1))"/>
       <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.annotation)(version&gt;=2.10.1))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.annotation"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.json)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.json"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=0.0.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=3.1.0))"/>
-      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.1.5))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.1.5))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
     </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=2.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)(version&gt;=6.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.events"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.equinox.concurrent.future)"/>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.equinox.concurrent"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.400.v20190621-0852" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.concurrent"/>
+      <attribute name="bundle-version" value="1.1.400.v20190621-0852" type="Version"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+      <attribute name="bnd.hashes" value="1165,852840245,755700901,224704806,236589578,-987495364,-1816043668,-502434003,536415955,-779987591,-1770330925,-703392892,-716386174,-1335425853,1832783740,126968846" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.400.v20190621-0852" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.equinox.concurrent"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.400.v20190621-0852" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.equinox.concurrent"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="26576" type="Long"/>
+      <attribute name="url" value="org.eclipse.equinox.concurrent/org.eclipse.equinox.concurrent-1.1.400.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="13844F1EE6A5DBDCFBE52D07BDAF8E8725714F956F299FD964FD859F32C26A2F"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.core.runtime)(version&gt;=3.4.0)(common=split))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
       <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.http)"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.http"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.1))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
       <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.example.jersey.client.basicauth"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.1.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.1.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.example.jersey.client.basicauth"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.1.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.example.jersey.client.basicauth"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3695" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.example.jersey.client.basicauth/org.eclipse.ecf.example.jersey.client.basicauth-1.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="BEA06A060E53F158E34758792A6A6A45C4AAFDF17C1CDDBA8054B8C64730C418"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.client)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.client"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.core)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
     </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=jakarta.ws.rs-api)(bundle-version&gt;=2.1.5))"/>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
     </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jersey.client"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.6.0.202007181342" type="Version"/>
+      <attribute name="version" value="1.7.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jersey.client"/>
-      <attribute name="bundle-version" value="1.6.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.7.0.202012201802" type="Version"/>
       <attribute name="version" value="1.1.0" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jersey.client"/>
       <attribute name="bnd.hashes" value="1165,1950172080" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.6.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.7.0.202012201802" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jersey.client"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.6.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.7.0.202012201802" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jersey.client"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="5288" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.jersey.client/org.eclipse.ecf.provider.jersey.client-1.6.0.jar"/>
+      <attribute name="size" value="5390" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jersey.client/org.eclipse.ecf.provider.jersey.client-1.7.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="674789DFF8B87D3CC436D4C18198CE0EDB9B4E8BE90A09A0C5C2BEF1059C1514"/>
+      <attribute name="osgi.content" value="A9E7574AF81749C75B29E1D615FE7039C795F4E3F6A804A016C33ECCAF5E9B13"/>
     </capability>
     <capability namespace="osgi.remoteserviceadmin.distribution">
       <attribute name="configs" value="ecf.jaxrs.jersey.client" type="List&lt;String&gt;"/>
@@ -934,6 +968,367 @@
     <requirement namespace="osgi.wiring.bundle">
       <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
     </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+      <attribute name="documentation" value="http://ws.apache.org/xmlschema/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema"/>
+      <attribute name="bnd.hashes" value="1524800395,-2006059837,1165,1166,444734106,422205289,-1091152511,382559352,-2017482231,-988301821,964262656,-172624441,-1697994374,-2017482156,613580456,-209185065,-357962492,-831284261,472875605,-7908680,61110459,1012954169,396631091,-928577222,-358893258,1315815489,178205950,-1846347573,310958194,1536618721,-2120057144,749213396,-483812421,-1802229488,793293090,-1077748892,-1735063480,1110577847,-862899101,-1765888993,1882712412,132368759,-1764447001,-1847613299,1464210988,1924136915,1189382717,-1767304944,726526914,-1221741133,-2017472825,1239523436,1520693977,508249765,1420045335,784016645,-1471672557,-559876987,1440932695,-1758712678,-807825598,1350810071,2146713374,1137809567,177669702,-1987557287,-245082029,1173954921,784433194,-2020967217,-1059932112,-1991084163,-49146204,213497141,1665288546,-1139812728,92788363,-1164506331,1883139026,1533649513,-2017462801,2050811330,-1749773531,-985218706" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.constants"/>
+      <attribute name="bnd.hashes" value="-579430660,1570516764,1581691183" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.extensions"/>
+      <attribute name="bnd.hashes" value="2000310033,-1809799344,-1583812974,-856473220,-1460456687" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.resolver"/>
+      <attribute name="bnd.hashes" value="1980911604,849641649,-428122766" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.utils"/>
+      <attribute name="bnd.hashes" value="1165,-393458580,-1738798012,1883163423,-1089050079,-383286805,2127736342,1337898491,854268872,-996970862,1304656108,-1758491231,866167649,-1273094293,805128235,-1846251192,-2017466117,1669099116" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.ws.xmlschema.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.ws.xmlschema.core"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="171989" type="Long"/>
+      <attribute name="url" value="org.apache.ws.xmlschema.core/org.apache.ws.xmlschema.core-2.2.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="A2C7A43319C213EEA338AC0D84CC1AA1DC37CD458886D618703E8BD91BB51993"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.namespace)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.namespace"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.dom)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform.dom"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.sax)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform.sax"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.stream)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.transform.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+      <attribute name="osgi.wiring.package" value="org.w3c.dom"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.cxf.server"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.8.2.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.cxf.server"/>
+      <attribute name="bundle-version" value="1.8.2.202012201802" type="Version"/>
+      <attribute name="version" value="1.3.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.cxf.server"/>
+      <attribute name="bnd.hashes" value="-2086606091,16048141,851025612,-349995476,924169837,-1414972350,1165,-1702387767,1693567257,1273643471,-1897205767,2031081194,1131716345,1007814757,-1208638792" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.8.2.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.cxf.server"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.8.2.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.cxf.server"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="30614" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.cxf.server/org.eclipse.ecf.provider.cxf.server-1.8.2.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="5C66118C9078E2BE45A9AF1F21E20482B1B35D0171E6FCCADDE76818D7290FA8"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.jaxrs.cxf.server" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.8))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.json)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.json"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=3.1.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.container)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.ext)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.binding)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.binding"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.bus)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.bus"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.bus.extension)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.bus.extension"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.common.classloader)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.common.classloader"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.common.logging)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.common.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.common.util)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.common.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.endpoint)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.endpoint"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.feature)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.feature"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.helpers)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.interceptor)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.interceptor"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs)(version&gt;=3.3.4))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.lifecycle)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.lifecycle"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.model)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.model"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.provider)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.servlet)(version&gt;=3.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.utils)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.utils"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.message)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.message"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.phase)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.phase"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.service.invoker)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.service.invoker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.transport)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.transport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.transport.http)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.transport.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.transport.servlet)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.cxf.transport.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs.server)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.server"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=2.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.3.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.http)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.6.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.mycorp.examples.student"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.0.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.mycorp.examples.student"/>
+      <attribute name="bundle-version" value="2.0.0.202012201802" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.mycorp.examples.student"/>
+      <attribute name="bnd.hashes" value="516961236,-214492645,-38551526" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3738" type="Long"/>
+      <attribute name="url" value="com.mycorp.examples.student/com.mycorp.examples.student-2.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="2399181E8523859C7DEF3BF55A030E94A7E521F47A253FF2CB324C4A67B3116D"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="javax.inject"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.v20091030" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="javax.inject"/>
+      <attribute name="bundle-version" value="1.0.0.v20091030" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.inject"/>
+      <attribute name="bnd.hashes" value="-2100193871,75032345,-922850799,756027530,79711796,509450219" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.v20091030" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="javax.inject"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.v20091030" type="Version"/>
+      <attribute name="osgi.wiring.host" value="javax.inject"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="14411" type="Long"/>
+      <attribute name="url" value="javax.inject/javax.inject-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="0016231E7908290153EC624DA0DFE62942C91E18AF0A57BD71555B7F9E6093D6"/>
+    </capability>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
@@ -1052,98 +1447,6 @@
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.example.spacex.launch.api"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.example.spacex.launch.api"/>
-      <attribute name="bundle-version" value="1.0.0.202007181342" type="Version"/>
-      <attribute name="version" value="0.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.example.spacex.launch.api"/>
-      <attribute name="bnd.hashes" value="-2025975853,548891490" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.example.spacex.launch.api"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.example.spacex.launch.api"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="3716" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.example.spacex.launch.api/org.eclipse.ecf.example.spacex.launch.api-1.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="3D680207EC00F3AC5664DD46DFCE2201477C2EF1A7152029FBE308D59251C93C"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.10.1))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.10.1))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.annotation)(version&gt;=2.10.1))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.annotation"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=0.0.0))"/>
-      <attribute name="osgi.wiring.package" value="javax.annotation"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.1.5))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.1.5))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.equinox.concurrent"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.1.400.v20190621-0852" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.concurrent"/>
-      <attribute name="bundle-version" value="1.1.400.v20190621-0852" type="Version"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
-      <attribute name="bnd.hashes" value="1165,852840245,755700901,224704806,236589578,-987495364,-1816043668,-502434003,536415955,-779987591,-1770330925,-703392892,-716386174,-1335425853,1832783740,126968846" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.1.400.v20190621-0852" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.equinox.concurrent"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.1.400.v20190621-0852" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.equinox.concurrent"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="26576" type="Long"/>
-      <attribute name="url" value="org.eclipse.equinox.concurrent/org.eclipse.equinox.concurrent-1.1.400.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="13844F1EE6A5DBDCFBE52D07BDAF8E8725714F956F299FD964FD859F32C26A2F"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.core.runtime)(version&gt;=3.4.0)(common=split))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
     </requirement>
   </resource>
   <resource>
@@ -1384,113 +1687,125 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-      <attribute name="osgi.identity" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jaxrs.client"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.2.1" type="Version"/>
-      <attribute name="documentation" value="http://ws.apache.org/xmlschema/"/>
+      <attribute name="version" value="1.8.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema"/>
-      <attribute name="bnd.hashes" value="1524800395,-2006059837,1165,1166,444734106,422205289,-1091152511,382559352,-2017482231,-988301821,964262656,-172624441,-1697994374,-2017482156,613580456,-209185065,-357962492,-831284261,472875605,-7908680,61110459,1012954169,396631091,-928577222,-358893258,1315815489,178205950,-1846347573,310958194,1536618721,-2120057144,749213396,-483812421,-1802229488,793293090,-1077748892,-1735063480,1110577847,-862899101,-1765888993,1882712412,132368759,-1764447001,-1847613299,1464210988,1924136915,1189382717,-1767304944,726526914,-1221741133,-2017472825,1239523436,1520693977,508249765,1420045335,784016645,-1471672557,-559876987,1440932695,-1758712678,-807825598,1350810071,2146713374,1137809567,177669702,-1987557287,-245082029,1173954921,784433194,-2020967217,-1059932112,-1991084163,-49146204,213497141,1665288546,-1139812728,92788363,-1164506331,1883139026,1533649513,-2017462801,2050811330,-1749773531,-985218706" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.constants"/>
-      <attribute name="bnd.hashes" value="-579430660,1570516764,1581691183" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.extensions"/>
-      <attribute name="bnd.hashes" value="2000310033,-1809799344,-1583812974,-856473220,-1460456687" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.resolver"/>
-      <attribute name="bnd.hashes" value="1980911604,849641649,-428122766" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.apache.ws.xmlschema.core"/>
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.apache.ws.commons.schema.utils"/>
-      <attribute name="bnd.hashes" value="1165,-393458580,-1738798012,1883163423,-1089050079,-383286805,2127736342,1337898491,854268872,-996970862,1304656108,-1758491231,866167649,-1273094293,805128235,-1846251192,-2017466117,1669099116" type="List&lt;Long&gt;"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jaxrs.client"/>
+      <attribute name="bundle-version" value="1.8.0.202012201802" type="Version"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.client"/>
+      <attribute name="bnd.hashes" value="1273905734,-1262595948,1128904354,-776177168,351837760" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="1.8.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jaxrs.client"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.2.1" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.apache.ws.xmlschema.core"/>
+      <attribute name="bundle-version" value="1.8.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jaxrs.client"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="171989" type="Long"/>
-      <attribute name="url" value="org.apache.ws.xmlschema.core/org.apache.ws.xmlschema.core-2.2.1.jar"/>
+      <attribute name="size" value="34805" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jaxrs.client/org.eclipse.ecf.provider.jaxrs.client-1.8.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="A2C7A43319C213EEA338AC0D84CC1AA1DC37CD458886D618703E8BD91BB51993"/>
+      <attribute name="osgi.content" value="98CBECD44795B3C528E04079904351A74B157D71079615575E8F48162A7C8E29"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.namespace)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.namespace"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.transform"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.dom)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.transform.dom"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.json)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.json"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.sax)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.transform.sax"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.stream)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.transform.stream"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.client)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.client"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
-      <attribute name="osgi.wiring.package" value="org.w3c.dom"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
-      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.ext)(version&gt;=2.0.1))"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)(version&gt;=6.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.events"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
     </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.cxf.client"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.5.0.202007181342" type="Version"/>
+      <attribute name="version" value="1.5.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.5.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.5.0.202012201802" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.cxf.client"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.5.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.5.0.202012201802" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.cxf.client"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="6274" type="Long"/>
+      <attribute name="size" value="6272" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.provider.cxf.client/org.eclipse.ecf.provider.cxf.client-1.5.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="4844FD45F57EBCCC05A4F5BA6930427694AC1B934FAAB739C7B393AAF90207FB"/>
+      <attribute name="osgi.content" value="8DC5E937738D0F55E7FDB2DE724F84754E13050CE665BEF75E1E7DCF4ABA0CA1"/>
     </capability>
     <capability namespace="osgi.remoteserviceadmin.distribution">
       <attribute name="configs" value="ecf.jaxrs.cxf.client" type="List&lt;String&gt;"/>
@@ -1578,73 +1893,23 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.mycorp.examples.student.remoteservice.host"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student.remoteservice.host"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student.remoteservice.host"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="6285" type="Long"/>
-      <attribute name="url" value="com.mycorp.examples.student.remoteservice.host/com.mycorp.examples.student.remoteservice.host-2.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="284DDE9D2D13C9E4195D23EE7F2EB8E595CB61587BF903232B963C67D708EB38"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.student)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="com.mycorp.examples.student"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.client)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.client"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.container)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
-      <directive name="resolution" value="optional"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.example.spacex.launch.api.consumer"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202007181342" type="Version"/>
+      <attribute name="version" value="1.0.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.202012201802" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.example.spacex.launch.api.consumer"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202007181342" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.202012201802" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.example.spacex.launch.api.consumer"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="3902" type="Long"/>
+      <attribute name="size" value="3898" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.example.spacex.launch.api.consumer/org.eclipse.ecf.example.spacex.launch.api.consumer-1.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="FA9A3FF61CE50B8D9697544F1D529D57F6717194FBD81D503A4E4E4CC1C04242"/>
+      <attribute name="osgi.content" value="DC04EF43F84FC243713B3AF7000F74387271A0D1FEAAE09A866C5B794F9727AC"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.example.spacex.launch.api)"/>
@@ -1653,163 +1918,6 @@
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
       <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jersey.server"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.8.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jersey.server"/>
-      <attribute name="bundle-version" value="1.8.0.202007181342" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jersey.server"/>
-      <attribute name="bnd.hashes" value="1185710728,1488401022,1110477774,1165,-369880280" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.8.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jersey.server"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.8.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jersey.server"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="9220" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.jersey.server/org.eclipse.ecf.provider.jersey.server-1.8.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="CE3A65C7DF03718ABF3F36B79E9D5974DFD5BEBE53E817777A86F1FC81293682"/>
-    </capability>
-    <capability namespace="osgi.remoteserviceadmin.distribution">
-      <attribute name="configs" value="ecf.jaxrs.jersey.server" type="List&lt;String&gt;"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.json)(version&gt;=2.9.2))"/>
-      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.json"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=1.3.0))"/>
-      <attribute name="osgi.wiring.package" value="javax.annotation"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
-      <attribute name="osgi.wiring.package" value="javax.servlet"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.container)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.ext)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.osgi.services.remoteserviceadmin)(version&gt;=1.2.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs.server)(version&gt;=1.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.server"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=2.1.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.equinox.concurrent.future)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.jackson)(version&gt;=2.22.1))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.jackson"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.message.filtering)(version&gt;=2.22.1))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.message.filtering"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server)(version&gt;=2.14.0))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server.model)(version&gt;=2.22.1))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server.model"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server.spi)(version&gt;=2.14.0))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server.spi"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server.spi.internal)(version&gt;=2.22.1))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server.spi.internal"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.servlet)(version&gt;=2.22.1))"/>
-      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.servlet"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
-      <directive name="resolution" value="optional"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.1))"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.http"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.identity)"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.glassfish.jersey.core.jersey-common)(bundle-version&gt;=2.30.1))"/>
     </requirement>
   </resource>
   <resource>
@@ -2328,55 +2436,30 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.mycorp.examples.student.client.filediscovery"/>
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jaxrs.server"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.1.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.1.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student.client.filediscovery"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.1.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student.client.filediscovery"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="1226" type="Long"/>
-      <attribute name="url" value="com.mycorp.examples.student.client.filediscovery/com.mycorp.examples.student.client.filediscovery-1.1.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="940CCFF1F9CA9FCAF6DD85FEBCC933077A41732A16B2067DB07CCDE8C40DC0CC"/>
-    </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.cxf.server"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.8.2.202007181342" type="Version"/>
+      <attribute name="version" value="1.11.0.202012201802" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.cxf.server"/>
-      <attribute name="bundle-version" value="1.8.2.202007181342" type="Version"/>
-      <attribute name="version" value="1.3.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.cxf.server"/>
-      <attribute name="bnd.hashes" value="-2086606091,16048141,851025612,-349995476,924169837,-1414972350,1165,-1702387767,1693567257,1273643471,-1897205767,2031081194,1131716345,1007814757,-1208638792" type="List&lt;Long&gt;"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jaxrs.server"/>
+      <attribute name="bundle-version" value="1.11.0.202012201802" type="Version"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.server"/>
+      <attribute name="bnd.hashes" value="1165,-433161188,-1715641798,-1191148006,-959349178,1321354088,-1714291768,-661899187" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.8.2.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.cxf.server"/>
+      <attribute name="bundle-version" value="1.11.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jaxrs.server"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.8.2.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.cxf.server"/>
+      <attribute name="bundle-version" value="1.11.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jaxrs.server"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="30615" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.provider.cxf.server/org.eclipse.ecf.provider.cxf.server-1.8.2.jar"/>
+      <attribute name="size" value="17456" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jaxrs.server/org.eclipse.ecf.provider.jaxrs.server-1.11.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="6E018BAF2AF81EF69980C64C9DB2DE6142EC347722FB2766BC086E58A449BD67"/>
-    </capability>
-    <capability namespace="osgi.remoteserviceadmin.distribution">
-      <attribute name="configs" value="ecf.jaxrs.cxf.server" type="List&lt;String&gt;"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.content" value="97396296D68725230566A5BCA26C384B1438D1846D42A88545582F84A1EFE242"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.9.2))"/>
@@ -2387,7 +2470,7 @@
       <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.8))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.2))"/>
       <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
@@ -2399,123 +2482,161 @@
       <attribute name="osgi.wiring.package" value="javax.servlet"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.1.5))"/>
       <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.container)(version&gt;=2.0.1))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.container)(version&gt;=2.1.5))"/>
       <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.1.5))"/>
       <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.ext)(version&gt;=2.0.1))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.ext)(version&gt;=2.1.5))"/>
       <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.binding)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.binding"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.bus)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.bus"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.bus.extension)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.bus.extension"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.common.classloader)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.common.classloader"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.common.logging)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.common.logging"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.common.util)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.common.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.endpoint)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.endpoint"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.feature)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.feature"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.helpers)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.helpers"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.interceptor)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.interceptor"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs)(version&gt;=3.3.4))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.lifecycle)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.lifecycle"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.model)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.model"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.provider)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.provider"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.servlet)(version&gt;=3.0.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.servlet"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.jaxrs.utils)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.jaxrs.utils"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.message)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.message"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.phase)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.phase"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.service.invoker)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.service.invoker"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.transport)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.transport"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.transport.http)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.transport.http"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.cxf.transport.servlet)(version&gt;=3.3.0))"/>
-      <attribute name="osgi.wiring.package" value="org.apache.cxf.transport.servlet"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.0.0))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.1.0))"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs.server)(version&gt;=1.0.0))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)(version&gt;=2.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.events)(version&gt;=6.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.events"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.equinox.concurrent.future)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.jackson)(version&gt;=2.30.1))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.jackson"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.http)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.1))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jersey.server"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.10.0.202012201802" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jersey.server"/>
+      <attribute name="bundle-version" value="1.10.0.202012201802" type="Version"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jersey.server"/>
+      <attribute name="bnd.hashes" value="1185710728,1488401022,1110477774,1165,-369880280" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.10.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jersey.server"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.10.0.202012201802" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jersey.server"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="10102" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jersey.server/org.eclipse.ecf.provider.jersey.server-1.10.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="0F03AB0B677831F2845C3163F6DB80C20306400B076D0B9B68F30679EF228317"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.jaxrs.jersey.server" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.base)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.base"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.jaxrs.json)(version&gt;=2.9.2))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.jaxrs.json"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
+      <attribute name="osgi.wiring.package" value="javax.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.container)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.container"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.core)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.ext)"/>
+      <attribute name="osgi.wiring.package" value="javax.ws.rs.ext"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.osgi.services.remoteserviceadmin)(version&gt;=1.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.osgi.services.remoteserviceadmin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jaxrs.server)(version&gt;=1.1.0))"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jaxrs.server"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice)"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
@@ -2531,93 +2652,61 @@
       <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.equinox.concurrent.future)"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.jackson)(version&gt;=2.22.1))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.jackson"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.message.filtering)(version&gt;=2.22.1))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.message.filtering"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server)(version&gt;=2.14.0))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server.model)(version&gt;=2.22.1))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server.model"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server.spi)(version&gt;=2.14.0))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server.spi"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.server.spi.internal)(version&gt;=2.22.1))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.server.spi.internal"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.glassfish.jersey.servlet)(version&gt;=2.22.1))"/>
+      <attribute name="osgi.wiring.package" value="org.glassfish.jersey.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
       <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.3.0))"/>
-      <directive name="resolution" value="optional"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.http)"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.http"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.6.0))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.bundle">
-      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.mycorp.examples.student"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.mycorp.examples.student"/>
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.mycorp.examples.student"/>
-      <attribute name="bnd.hashes" value="516961236,-214492645,-38551526" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="3741" type="Long"/>
-      <attribute name="url" value="com.mycorp.examples.student/com.mycorp.examples.student-2.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="94F502CAE562A839C04B79B02242416CFD35A5F971A987F30C006B74D4BC5467"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=2.0.1))"/>
-      <attribute name="osgi.wiring.package" value="javax.ws.rs.core"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.mycorp.examples.student.client"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.0.202007181342" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.student.client"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.0.202007181342" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.mycorp.examples.student.client"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="3874" type="Long"/>
-      <attribute name="url" value="com.mycorp.examples.student.client/com.mycorp.examples.student.client-2.0.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="B1D278C0E33647AD2ACEF54FD5308A057B10C28A6D3DFC7185CFB268223FD661"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.student)(version&gt;=1.0.0))"/>
-      <attribute name="osgi.wiring.package" value="com.mycorp.examples.student"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
       <directive name="resolution" value="optional"/>
       <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.1))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.identity)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.glassfish.jersey.core.jersey-common)(bundle-version&gt;=2.30.1))"/>
     </requirement>
   </resource>
 </repository>
