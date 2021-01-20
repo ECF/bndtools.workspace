@@ -84,12 +84,6 @@ copyright.year = ${tstamp;yyyy}
 		pretty = true; \
 		local = ${build}/ecf-discovery/hazelcast
 
--plugin.12.ECFTIMESVCEXAMPLE: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Timeservice Example; \
-		pretty = true; \
-		local = ${build}/ecf-examples/timeservice
-
 -plugin.13.ECFPYTHONJAVA: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Python.Java Distribution Provider; \
