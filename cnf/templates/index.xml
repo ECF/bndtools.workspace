@@ -1,5 +1,81 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1602703495546">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1613017637256">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.212.3.202102110426" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.212.3.202102110426" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.212.3.202102110426" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/rsapihelp.xml"/>
+      <attribute name="name" value="Remote Service API Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/rsapi"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/rsapihelpasync.xml"/>
+      <attribute name="name" value="Async Remote Service API Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/rsapiasync"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/rsimplhelp.xml"/>
+      <attribute name="name" value="Remote Service Impl Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.xml"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/rsimpl"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/rsimplhelpasync.xml"/>
+      <attribute name="name" value="Async Remote Service Impl Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.xml"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/rsimplasync"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/rsconsumerhelp.xml"/>
+      <attribute name="name" value="Remote Service Consumer Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.consumer.xml"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/rsconsumer"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/rsconsumerhelpasync.xml"/>
+      <attribute name="name" value="Async Remote Service Consumer Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
+      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.consumer.xml"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/Remote Service Project Templates"/>
+      <attribute name="dir" value="templates/rsconsumerasync"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="32775" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.212.3.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="53152184010D65D7C2DB62D804779278AE2EC95ADE3B01B4CD24E635EDA6FE19"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.bndtools.templates.osgi"/>
@@ -92,257 +168,5 @@
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="274A856A7D66B1B56D976F1619B5DE2253635305EC8D1BA271389F8AB5623495"/>
     </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.12.3.202010141924" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.12.3.202010141924" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.12.3.202010141924" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/rsapihelp.xml"/>
-      <attribute name="name" value="Remote Service API Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/rsapi"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrsapihelp.xml"/>
-      <attribute name="name" value="JaxRS Remote Service Hello API Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/jaxrsapi"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/rsimplhelp.xml"/>
-      <attribute name="name" value="Remote Service Impl Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/rsimpl"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrsimplhelp.xml"/>
-      <attribute name="name" value="JaxRS Remote Service Hello Impl Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.host.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/jaxrsimpl"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/rsconsumerhelp.xml"/>
-      <attribute name="name" value="Remote Service Consumer Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.consumer.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/rsconsumer"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrsconsumerhelp.xml"/>
-      <attribute name="name" value="JaxRS Remote Service Hello Consumer Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.consumer.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/jaxrsconsumer"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/rsapihelpasync.xml"/>
-      <attribute name="name" value="Async Remote Service API Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/rsapiasync"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/rsimplhelpasync.xml"/>
-      <attribute name="name" value="Async Remote Service Impl Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/rsimplasync"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/rsconsumerhelpasync.xml"/>
-      <attribute name="name" value="Async Remote Service Consumer Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.consumer.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/rsconsumerasync"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/grpcapigenerated.xml"/>
-      <attribute name="name" value="gRPC Protoc-Generated HealthCheck API Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/grpcapigenerated"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/grpcapigeneratedimpl.xml"/>
-      <attribute name="name" value="gRPC Protoc-Generated HealthCheck Impl Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.host.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/grpcapigeneratedimpl"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/grpcapigeneratedconsumer.xml"/>
-      <attribute name="name" value="gRPC Protoc-Generated HealthCheck Consumer Project"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.host.xml"/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/grpcapigeneratedconsumer"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/hellopythonexamples.xml"/>
-      <attribute name="name" value="Python.Java Hello Remote Service Examples"/>
-      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQANUAAH5weoJ1g4h8kY+EoZaMsZyTv6CYyGd9qWqArG+Fr3aLs3yRuIKXvYmdwY2hxIaUroiVrIyXqoidwZGlx4+aqJScpfr9//f8//b8//n9/9Xz/+v5/5ifovH7/+n5/+36//D7//T8/+r6/+v6//P8//f9//b9//r+//n+/56inqKlm6iol62rlP7xevzndvjQasiYQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAaEwJhwSCwOYcikEkmEtZ7QKKzpMhgKhIEgAHBNj6+wePwVsjTotJpFXGk88Hh8RVRpJo4GY6FIIDwqRCkaIxuFIoUjIylEHHd5e30IHxxEFRogIB2ZmpoVRBR3EgsJByGnJBREERolFyWwJhgmJRFEEBonFigoFhYZvRBED8TFxsRGyUVBADs="/>
-      <attribute name="org.bndtools.template" value="project"/>
-      <attribute name="category" value="bbb/Remote Service Project Templates"/>
-      <attribute name="dir" value="templates/hellopythonexamples"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Generic Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/genericbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/generic"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Generic Distribution Provider with Etcd Discovery"/>
-      <attribute name="help" value="templates/genericetcdbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/genericetcd"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="ROSGi Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/rosgibndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/rosgi"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="ROSGi Distribution Provider with Etcd Discovery"/>
-      <attribute name="help" value="templates/rosgietcdbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/rosgietcd"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="XmlRpc Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/xmlrpcbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/xmlrpc"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="XmlRpc Distribution Provider with Etcd Discovery"/>
-      <attribute name="help" value="templates/xmlrpcetcdbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/xmlrpcetcd"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Python.Java Hello Example"/>
-      <attribute name="help" value="templates/pythonjavahello.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Example Templates"/>
-      <attribute name="dir" value="templates/launch/pythonjavahello"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Python.Java Protobuf Hello Example"/>
-      <attribute name="help" value="templates/pythonjavaprotobufhello.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Example Templates"/>
-      <attribute name="dir" value="templates/launch/pythonjavaprotobufhello"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrsjerseyserverbndrun.xml"/>
-      <attribute name="name" value="JaxRS Jersey Server Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.host.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/jaxrsjerseyserver"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrsjerseyclientbndrun.xml"/>
-      <attribute name="name" value="JaxRS Jersey Client Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.consumer.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/jaxrsjerseyclient"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrscxfserverbndrun.xml"/>
-      <attribute name="name" value="JaxRS CXF Server Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.host.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/jaxrscxfserver"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="help" value="templates/jaxrscxfclientbndrun.xml"/>
-      <attribute name="name" value="JaxRS CXF Client Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="metaType" value="OSGI-INF/metatype/org.eclipse.ecf.bndtools.templates.remoteservices.async.consumer.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/jaxrscxfclient"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="ActiveMQ Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/activemqbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/activemq"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Hazelcast Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/hazelcastbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/hazelcast"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="MQTT Distribution Provider with Zeroconf Discovery"/>
-      <attribute name="help" value="templates/mqttbndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/mqtt"/>
-    </capability>
-    <capability namespace="org.bndtools.template">
-      <attribute name="name" value="Hazelcast Distribution Provider with Hazelcast Discovery"/>
-      <attribute name="help" value="templates/hazelcast2bndrun.xml"/>
-      <attribute name="org.bndtools.template" value="bndrun"/>
-      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
-      <attribute name="dir" value="templates/launch/hazelcasthazelcast"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="105260" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.12.3.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="D467440B6949E6B2B0D689F027F829A7CB4455067B02728533AAA298B86E9BF1"/>
-    </capability>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
-    </requirement>
   </resource>
 </repository>
