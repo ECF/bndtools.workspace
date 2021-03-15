@@ -1,5 +1,5 @@
 # bndtools.workspace
-Bndtools Remote Service Workspace
+Bndtools Remote Service Workspace Template
 
 NEW: [This is a video tutorial](https://youtu.be/uw1ERzGtKr4) showing how to create a bndtools workspace for remote services development.
 
