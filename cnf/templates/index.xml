@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1615951283268">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1615963566147">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.bndtools.templates.osgi"/>
@@ -94,17 +94,18 @@
     </capability>
   </resource>
   <resource>
+    <capability namespace="${launch-template-generic}"/>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.212.4.202103170320" type="Version"/>
+      <attribute name="version" value="1.212.4.202103170645" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.212.4.202103170320" type="Version"/>
+      <attribute name="bundle-version" value="1.212.4.202103170645" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.212.4.202103170320" type="Version"/>
+      <attribute name="bundle-version" value="1.212.4.202103170645" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -160,10 +161,10 @@
       <attribute name="dir" value="templates/rsconsumerasync"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="32842" type="Long"/>
+      <attribute name="size" value="54299" type="Long"/>
       <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.212.4.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="5A4011BC9C3F158A7268F2BD8D790154454187CA03C6BAFC53472791ADE9951A"/>
+      <attribute name="osgi.content" value="D9355D6D9449BCCCBEE698376AE9A71E7B40E37CDDD69FD6B6807A6570CCB4EF"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
