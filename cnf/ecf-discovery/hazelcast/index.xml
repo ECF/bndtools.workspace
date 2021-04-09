@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Hazelcast Discovery Provider" increment="1617927788084">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.discovery.provider.hazelcast"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.202002231808" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.discovery.provider.hazelcast"/>
+      <attribute name="bundle-version" value="1.2.0.202002231808" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.discovery.provider.hazelcast.container"/>
+      <attribute name="bnd.hashes" value="37470008,-80616294,1800592214,-1546025892" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.discovery.provider.hazelcast"/>
+      <attribute name="bundle-version" value="1.2.0.202002231808" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.discovery.provider.hazelcast.identity"/>
+      <attribute name="bnd.hashes" value="-1826709772,1021853737,653172227" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.202002231808" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.discovery.provider.hazelcast"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.202002231808" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.discovery.provider.hazelcast"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="32132" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.discovery.provider.hazelcast/org.eclipse.ecf.discovery.provider.hazelcast-1.2.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="C615414316E6E38378F18F1165982AC317F3E31A0E2457A21B363E460CC6D226"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.discovery">
+      <attribute name="protocols" value="hazelast,ecf.discovery.hazelcast,ecf.discovery.hazelcast.locator,ecf.discovery.hazelcast.advertiser" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.3.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.hazelcast.cluster)(version&gt;=4.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.hazelcast.cluster"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.hazelcast.config)(version&gt;=3.12.2))"/>
+      <attribute name="osgi.wiring.package" value="com.hazelcast.config"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.hazelcast.core)(version&gt;=3.12.2))"/>
+      <attribute name="osgi.wiring.package" value="com.hazelcast.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.hazelcast.map)(version&gt;=4.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.hazelcast.map"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.hazelcast.osgi)(version&gt;=3.12.2))"/>
+      <attribute name="osgi.wiring.package" value="com.hazelcast.osgi"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.hazelcast.replicatedmap)(version&gt;=4.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.hazelcast.replicatedmap"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.jobs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.events)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.events"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.security)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.4.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.discovery)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.discovery"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.discovery.identity)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.discovery.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.1)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.0.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+</repository>

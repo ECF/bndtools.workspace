@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF gRPC Distribution Provider" increment="1617930794530">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.google.gson"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.8.6" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.gson.reflect,com.google.gson.stream"/>
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.8.6" type="Version"/>
+      <attribute name="version" value="2.8.6" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson"/>
+      <attribute name="bnd.hashes" value="-632563258,465196865,1190096337,-1947485740,-1982130283,-1585239854,2229227,1708479792,-1555834441,893486641,1620733128,-1560805893,-1281188652,-791282751,-1910450513,-1980888473,-293016060,-1952931001,-142969665,-1838132025,309397690,-1417068313,1085774212,-1219577594,1244503701,-350779211" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.8.6" type="Version"/>
+      <attribute name="version" value="2.8.6" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.annotations"/>
+      <attribute name="bnd.hashes" value="2089680868,-768859865,1934151247,79889178,81891134" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.8.6" type="Version"/>
+      <attribute name="version" value="2.8.6" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.reflect"/>
+      <attribute name="bnd.hashes" value="-1781936449" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.gson"/>
+      <attribute name="bundle-version" value="2.8.6" type="Version"/>
+      <attribute name="version" value="2.8.6" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.stream"/>
+      <attribute name="bnd.hashes" value="-1892499477,909660716,910937553,-1737094245,-2085367700" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.8.6" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.google.gson"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.8.6" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.google.gson"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="240255" type="Long"/>
+      <attribute name="url" value="com.google.gson/com.google.gson-2.8.6.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="C8FB4839054D280B3033F800D1F5A97DE2F028EB8BA2EB458AD287E536F3F25F"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.gson.annotations)"/>
+      <attribute name="osgi.wiring.package" value="com.google.gson.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=9.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="com.google.guava.failureaccess"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="documentation" value="https://github.com/google/guava/"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.google.guava.failureaccess"/>
+      <attribute name="bundle-version" value="1.0.1" type="Version"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.util.concurrent.internal"/>
+      <attribute name="bnd.hashes" value="1069467758,1423644019" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.1" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.google.guava.failureaccess"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.1" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.google.guava.failureaccess"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="4617" type="Long"/>
+      <attribute name="url" value="com.google.guava.failureaccess/com.google.guava.failureaccess-1.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="A171EE4C734DD2DA837E4B16BE9DF4661AFAB72A41ADAF31EB84DFDAF936CA26"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.3.0.202104081550" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+      <attribute name="bundle-version" value="1.3.0.202104081550" type="Version"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
+      <attribute name="bnd.hashes" value="-701969896,-1511699313,-6650877,630327837,1057306909,-3498712,1165515450,-581164406,1165155882,1895597947,35181827,1162076789,-1796572418,1143570509,16665195,923642153,-257910580,-666798188,-667157756" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.3.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.3.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.api"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="49274" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.api/org.eclipse.ecf.examples.provider.grpc.health.api-1.3.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="19362FE9472EF1E194AB9FA262FE5FE2CFF012B40E11090A397B76B84CFC46F6"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.protobuf)"/>
+      <attribute name="osgi.wiring.package" value="com.google.protobuf"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.reactivegrpc.common)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.reactivegrpc.common"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.salesforce.rxgrpc.stub)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="com.salesforce.rxgrpc.stub"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.1.10))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)(bundle-version&gt;=1.2.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=com.google.guava)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.4.0.202104081550" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.inprocess"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.internal"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.netty"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.protobuf"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.protobuf.lite"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.protobuf.services"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.services"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.services.internal"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.stub"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.stub.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.36.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="6.0.53" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bnd.hashes" value="-2086606091,1916071633" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.client"/>
+      <attribute name="bnd.hashes" value="-191938312,-1872597780" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.host"/>
+      <attribute name="bnd.hashes" value="793387067" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.grpc"/>
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.identity"/>
+      <attribute name="bnd.hashes" value="-704400675" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.grpc"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.4.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.grpc"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3492566" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.grpc/org.eclipse.ecf.provider.grpc-1.4.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="DFCF04EB9B8164D7B3F3C16E9C7287D3B2819A26FA9DD25BA2F6D88D9BA415BE"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.grpc.server,ecf.grpc.client" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core)(version&gt;=3.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.identity)(version&gt;=3.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.provider)(version&gt;=3.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.util)(version&gt;=3.4.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.ecf.remoteservice.asyncproxy)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.asyncproxy"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.client)(version&gt;=8.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.client"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.concurrent.future)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.concurrent.future"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.grpc.console"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.202104081550" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.grpc.console"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.grpc.console"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="6070" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.grpc.console/org.eclipse.ecf.provider.grpc.console-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="CAEC0819F4442670C1078C4476C3369E8DC48CCC4CE08B43DF1E546175DD7D5E"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.felix.service.command)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.felix.service.command"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.console)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.console"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.grpc)(version&gt;=1.4.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.grpc.host)(version&gt;=1.4.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.host"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.grpc.identity)(version&gt;=1.4.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.grpc.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.4.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.component.annotations)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.0.202104081550" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.impl"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3671" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.impl/org.eclipse.ecf.examples.provider.grpc.health.impl-1.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="630975C88BF6BFE16FE4786039025CE36A0A4E8017D564998C48BD7503300B06"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc.health.v1)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.1.10))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.examples.provider.grpc.health.consumer"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.0.202104081550" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.examples.provider.grpc.health.consumer"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.0.202104081550" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.examples.provider.grpc.health.consumer"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="3582" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.examples.provider.grpc.health.consumer/org.eclipse.ecf.examples.provider.grpc.health.consumer-1.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="58DE05F930D83602935299F5B20C4BDCA0762CA5231BB7D7B141A0C9CEDD98A8"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.grpc.health.v1)"/>
+      <attribute name="osgi.wiring.package" value="io.grpc.health.v1"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.reactivex)(version&gt;=2.2.19))"/>
+      <attribute name="osgi.wiring.package" value="io.reactivex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.3.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf.provider.grpc)(bundle-version&gt;=1.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.google.protobuf)(bundle-version&gt;=3.9.0))"/>
+    </requirement>
+  </resource>
+</repository>
