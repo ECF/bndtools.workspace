@@ -1,7 +1,7 @@
 # bndtools.workspace
 Bndtools Remote Service Workspace Template
 
-NEW: [This is a video tutorial](https://youtu.be/uw1ERzGtKr4) showing how to create a bndtools workspace for remote services development.
+NEW: [This is a video tutorial](https://www.youtube.com/watch?v=rqWTHB17Pc4) showing how to create a bndtools workspace for remote services development.
 
 NOTE:  There is now a branch named minimal, which when provided as the branch for the workspace template as described in video and documentation below, will provide a *minimal* workspace template, with only a small subset of the workspace repos and project templates.   The minimal branch is useful to use for an initial exposure to [ECF Remote Services](https://wiki.eclipse.org/ECF).
 
