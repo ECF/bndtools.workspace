@@ -31,7 +31,7 @@ org.eclipse.ecf:org.eclipse.ecf.provider.jmdns:4.3.301
 org.eclipse.ecf:org.eclipse.ecf.provider.jslp:3.2.301
 org.eclipse.ecf:ch.ethz.iks.slp:1.4.0
 
-org.eclipse.ecf:org.eclipse.ecf.bndtools.grpc:1.0.2
+org.eclipse.ecf:org.eclipse.ecf.bndtools.grpc:1.0.3
 
 #timeservice example
 org.eclipse.ecf:com.mycorp.examples.timeservice.async:2.1.100
