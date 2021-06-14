@@ -73,12 +73,6 @@ copyright.year = ${tstamp;yyyy}
 		index=${.}/ecfatcentral.maven; \
 		name="ECF Remote Services"
 
--plugin.10.ETCDDISCOVERY: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Etcd Discovery Provider; \
-		pretty = true; \
-		local = ${build}/ecf-discovery/etcd
-		
 -plugin.11.HAZELCASTDISCOVERY: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF Hazelcast Discovery Provider; \
@@ -121,23 +115,11 @@ copyright.year = ${tstamp;yyyy}
 		pretty = true; \
 		local = ${build}/ecf-distribution/jms
 
--plugin.21.ECFACTIVEMQ: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF ActiveMQ Distribution Provider; \
-		pretty = true; \
-		local = ${build}/ecf-distribution/activemq
-
 -plugin.22.ECFMQTT: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
 		name = ECF MQTT Dstribution Provider; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/mqtt
-
--plugin.23.ECFJGROUPS: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF JGroups (JavaGroups) Dstribution Provider; \
-		pretty = true; \
-		local = ${build}/ecf-distribution/jgroups
 
 -plugin.24.ECFGRPC: \
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
@@ -150,10 +132,6 @@ copyright.year = ${tstamp;yyyy}
 
 # Always use contracts
 -contract: *
-
-# Set Git revision information in the manifests of built bundles
-Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}
-Git-SHA:                  ${system-allow-fail;git rev-list -1 HEAD}
 
 # JUnit
 junit: org.apache.servicemix.bundles.junit; version=4.12
