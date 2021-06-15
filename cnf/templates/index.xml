@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1616280022060">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1623718900507">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.212.6.202103202239" type="Version"/>
+      <attribute name="version" value="1.12.15.202106150100" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.212.6.202103202239" type="Version"/>
+      <attribute name="bundle-version" value="1.12.15.202106150100" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.212.6.202103202239" type="Version"/>
+      <attribute name="bundle-version" value="1.12.15.202106150100" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -73,11 +73,18 @@
       <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
       <attribute name="dir" value="templates/launch/generic"/>
     </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="name" value="Generic Distribution Provider with Etcd3 Discovery"/>
+      <attribute name="help" value="templates/genericetcdbndrun.xml"/>
+      <attribute name="org.bndtools.template" value="bndrun"/>
+      <attribute name="category" value="bbb/Remote Service Bndrun Templates"/>
+      <attribute name="dir" value="templates/launch/genericetcd"/>
+    </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="33453" type="Long"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.212.6.jar"/>
+      <attribute name="size" value="39832" type="Long"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-1.12.15.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="2AA967EDF3BA110BEB85156D582FBD8EA86D4557211836022453A8F88E6D103C"/>
+      <attribute name="osgi.content" value="F7D725A17116C0F4C4A937E953832EEFA7391AEB98FCD6BEF4EFB44FA0320DB5"/>
     </capability>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>

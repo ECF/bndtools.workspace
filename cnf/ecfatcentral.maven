@@ -18,3 +18,5 @@ org.eclipse.ecf:org.eclipse.ecf.provider:4.8.301
 org.eclipse.ecf:org.eclipse.ecf.provider.remoteservice:4.4.201
 org.eclipse.ecf:org.eclipse.ecf.provider.jmdns:4.3.301
 
+org.eclipse.ecf:org.eclipse.ecf.provider.etcd3:1.0.6
+org.eclipse.ecf:org.json:1.0.0.v201011060100
