@@ -2,11 +2,6 @@ src:                    src,src-gen
 bin:                    target/classes
 target-dir:             target
 
--runee:                 JavaSE-11
-javac.source=11
-javac.target=11
-javac.compliance=11
-
 -resolve.effective:     resolve, active
 -releaserepo:           Release
 
@@ -67,6 +62,11 @@ copyright.year = ${tstamp;yyyy}
 		pretty = true; \
 		local = ${build}/release
 
+-plugin.11.ECFRSSDK: \
+ 	aQute.bnd.repository.p2.provider.P2Repository; \
+ 	url = https://download.eclipse.org/rt/ecf/latest/site.p2; \
+ 	name = ECF Remote Services SDK
+
 -plugin.9.ECFATCENTRAL: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository; \
 		releaseUrl=https://repo1.maven.org/maven2/; \
@@ -79,12 +79,12 @@ copyright.year = ${tstamp;yyyy}
 		pretty = true; \
 		local = ${build}/ecf-discovery/etcd
 
--plugin.24.ECFGRPC: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF gRPC Distribution Provider; \
-		pretty = true; \
-		local = ${build}/ecf-distribution/grpc
-	
+-plugin.15.ECFGRPC: \
+ 	aQute.bnd.repository.p2.provider.P2Repository; \
+ 	url = https://raw.githubusercontent.com/ECF/grpc-RemoteServicesProvider/master/build/; \
+	pretty = true; \
+	name = ECF gRPC Distribution Provider
+
 -releaserepo: Release
 -baselinerepo: Release
 
