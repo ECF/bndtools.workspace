@@ -17,13 +17,6 @@ copyright.year = ${tstamp;yyyy}
 		revision=org.osgi.enroute:osgi-api:7.0.0; \
 		readOnly=true; \
 		name="OSGi R7 API"
--plugin.2.R7.Impl: \
-	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
-		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
-		releaseUrls=https://repo.maven.apache.org/maven2/; \
-		revision=org.osgi.enroute:impl-index:7.0.0; \
-		readOnly=true; \
-		name="OSGi R7 Reference Implementations"
 -plugin.3.Test: \
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
 		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
