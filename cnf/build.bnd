@@ -73,12 +73,6 @@ copyright.year = ${tstamp;yyyy}
 		index=${.}/ecfatcentral.maven; \
 		name="ECF Remote Services"
 
--plugin.10.ETCDDISCOVERY: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
-		name = ECF Etcd Discovery Provider; \
-		pretty = true; \
-		local = ${build}/ecf-discovery/etcd
-
 -plugin.15.ECFGRPC: \
  	aQute.bnd.repository.p2.provider.P2Repository; \
  	url = https://raw.githubusercontent.com/ECF/grpc-RemoteServicesProvider/master/build/; \
