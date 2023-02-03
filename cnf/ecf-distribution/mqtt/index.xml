@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF MQTT Dstribution Provider" increment="1652393148294">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.paho.client.mqttv3"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.paho.client.mqttv3"/>
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+      <attribute name="bnd.hashes" value="-1275931128,1484020643,1737846135,-872097766,-464122568,229959768,-1253088498,-553369876,-12744611,-107589160,-707792548,2037158787,-482232407,1981403138,1864307759,-1738951952,1527654072,1797505,461186411,2053303331,1611711306,-361967148,-780633941,-2014963189,907214101,907219019,1303542479,230541031,-363559369,-1434766516" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.paho.client.mqttv3"/>
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3.logging"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+      <attribute name="bnd.hashes" value="-1157127908,-2013470288,971415866,-1808473896" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.paho.client.mqttv3"/>
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3.persist"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+      <attribute name="bnd.hashes" value="1658516158,-1411825818,-329683593,935422050" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.paho.client.mqttv3"/>
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3.util"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+      <attribute name="bnd.hashes" value="65906227,-217105822" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.paho.client.mqttv3"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.1" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.paho.client.mqttv3"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="237777" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.paho.client.mqttv3/org.eclipse.paho.client.mqttv3-1.2.1.jar"/>
+      <attribute name="osgi.content" value="364E9F617C9B77C269E0A797078B193A2C8C3D34B8EC468E7CD71202D0FED615"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.net"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.net.ssl"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jms.mqtt"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.3.1.201908132239" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jms.mqtt"/>
+      <attribute name="bundle-version" value="1.3.1.201908132239" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.mqtt"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2086606091" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.ecf.provider.jms.mqtt"/>
+      <attribute name="bundle-version" value="1.3.1.201908132239" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.mqtt.container"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="752740409,1820412995,1837328671,219249730,-37835668,-82563042,421938602,517216756,1251373362" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.3.1.201908132239" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.provider.jms.mqtt"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.3.1.201908132239" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.ecf.provider.jms.mqtt"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="29255" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.ecf.provider.jms.mqtt/org.eclipse.ecf.provider.jms.mqtt-1.3.1.jar"/>
+      <attribute name="osgi.content" value="EF810EF2FBF6AE09359A4D71999A62A8B47B080A29C2529031D423E615430DF6"/>
+    </capability>
+    <capability namespace="osgi.remoteserviceadmin.distribution">
+      <attribute name="configs" value="ecf.jms.mqtt.manager,ecf.jms.mqtt.client" type="List&lt;String&gt;"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.jms)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.jms"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+      <attribute name="osgi.wiring.package" value="javax.net"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.core.sharedobject)(version&gt;=2.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.core.sharedobject"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.comm)(version&gt;=4.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.comm"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.generic)(version&gt;=4.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.generic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jms.channel)(version&gt;=1.5.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.channel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jms.container)(version&gt;=1.5.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.container"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.jms.identity)(version&gt;=1.5.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.jms.identity"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.provider.remoteservice.generic)(version&gt;=4.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.provider.remoteservice.generic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice)(version&gt;=7.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.provider)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.provider"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.ecf.remoteservice.util)(version&gt;=8.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.ecf.remoteservice.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.paho.client.mqttv3)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.paho.client.mqttv3"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.equinox.common)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ecf)(bundle-version&gt;=3.2.0))"/>
+    </requirement>
+  </resource>
+</repository>
