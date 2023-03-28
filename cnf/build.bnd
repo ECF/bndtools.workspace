@@ -98,10 +98,10 @@ copyright.year = ${tstamp;yyyy}
 	name = ECF Python.Java Distribution Provider
 
 -plugin.23.ECFMQTT: \
-	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+	aQute.bnd.repository.p2.provider.P2Repository; \
+	url = https://raw.githubusercontent.com/ECF/Mqtt-Provider/master/build/; \
 	pretty = true; \
-	name = ECF MQTT Dstribution Provider; \
-	local = /ecf-distribution/mqtt
+	name = ECF MQTT Dstribution Provider
 
 -plugin.25.ECFXMLRPC: \
  	aQute.bnd.repository.p2.provider.P2Repository; \
