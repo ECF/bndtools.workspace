@@ -1,0 +1,11 @@
+-buildpath: \
+	osgi.annotation,\
+	osgi.core,\
+	org.osgi.service.component.annotations,\
+	com.pkriens.jaxrsservices;version=latest
+
+-testpath: \
+	${junit},\
+	${mockito},\
+	${mockito-deps}
+

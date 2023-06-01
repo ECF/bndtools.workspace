@@ -1,0 +1,2 @@
+Export-Package: com.pkriens.jaxrsservices
+-buildpath: jakarta.ws.rs-api
