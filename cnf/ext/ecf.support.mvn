@@ -1,0 +1,8 @@
+org.eclipse.persistence:javax.persistence:2.2.1
+com.google.guava:guava:31.1-android
+# javax.annotation jsr305
+org.apache.tomcat:annotations-api:6.0.53
+# org.eclipse.ecf:grpc-osgi-generator for bndtools
+org.eclipse.ecf:org.eclipse.ecf.bndtools.grpc:1.3.0
+#etcd3 discovery provider
+org.eclipse.ecf:org.eclipse.ecf.provider.etcd3:1.1.0
