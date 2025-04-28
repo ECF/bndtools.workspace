@@ -89,9 +89,9 @@ org.osgi:osgi.annotation:8.1.0
 org.osgi:osgi.core:8.0.0
 org.osgi:osgi.enterprise:7.0.0
 org.osgi:osgi.promise:8.1.0
-org.osgi:slf4j.osgi:2.0.0
 
-org.slf4j:slf4j-api:2.0.9
+org.ops4j.pax.logging:pax-logging-api:2.3.0
+org.ops4j.pax.logging:pax-logging-logback:2.3.0
 
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit:4.12_1
 org.mockito:mockito-core:2.13.0
