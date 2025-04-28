@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1745868939773">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Templates" increment="1745878136991">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.6.0.202504281935" type="Version"/>
+      <attribute name="version" value="2.6.1.202504282206" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.6.0.202504281935" type="Version"/>
+      <attribute name="bundle-version" value="2.6.1.202504282206" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.6.0.202504281935" type="Version"/>
+      <attribute name="bundle-version" value="2.6.1.202504282206" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.eclipse.ecf.bndtools.templates.remoteservices"/>
     </capability>
     <capability namespace="org.bndtools.template">
@@ -190,10 +190,10 @@
       <attribute name="dir" value="templates/hellopythonexamples"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="213468" type="Long"/>
+      <attribute name="size" value="213660" type="Long"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-2.6.0.jar"/>
-      <attribute name="osgi.content" value="F13DFAD166F2568A9713C6E1920093AC8FE7A945C4840BC5A5331E508C8C0DC4"/>
+      <attribute name="url" value="org.eclipse.ecf.bndtools.templates.remoteservices/org.eclipse.ecf.bndtools.templates.remoteservices-2.6.1.jar"/>
+      <attribute name="osgi.content" value="2919E35C21208726A40CD99AB58D5AC874C0004A00350A558E78000D35AA678C"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
