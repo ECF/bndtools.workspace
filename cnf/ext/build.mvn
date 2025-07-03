@@ -1,10 +1,10 @@
 # OSGi R8
 
-biz.aQute.bnd:biz.aQute.bndlib:7.0.0
-biz.aQute.bnd:aQute.libg:7.0.0
-biz.aQute.bnd:biz.aQute.launchpad:7.0.0
-biz.aQute.bnd:biz.aQute.bnd.runtime.gogo:7.0.0
-biz.aQute.bnd:biz.aQute.bnd.runtime.snapshot:7.0.0
+biz.aQute.bnd:biz.aQute.bndlib:7.1.0
+biz.aQute.bnd:aQute.libg:7.1.0
+biz.aQute.bnd:biz.aQute.launchpad:7.1.0
+biz.aQute.bnd:biz.aQute.bnd.runtime.gogo:7.1.0
+biz.aQute.bnd:biz.aQute.bnd.runtime.snapshot:7.1.0
 biz.aQute:biz.aQute.osgi.templates:1.10.0
 
 org.osgi:org.osgi.annotation.bundle:2.0.0
