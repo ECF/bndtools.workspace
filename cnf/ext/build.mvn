@@ -90,6 +90,11 @@ org.osgi:osgi.core:8.0.0
 org.osgi:osgi.enterprise:7.0.0
 org.osgi:osgi.promise:8.1.0
 
+ch.qos.logback:logback-classic:1.5.18
+ch.qos.logback:logback-core:1.5.18
+
+org.slf4j:slf4j-api:1.7.36
+
 org.ops4j.pax.logging:pax-logging-api:2.3.0
 org.ops4j.pax.logging:pax-logging-logback:2.3.0
 
