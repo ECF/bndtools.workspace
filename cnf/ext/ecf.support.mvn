@@ -7,14 +7,14 @@ org.eclipse.ecf:org.eclipse.ecf.bndtools.grpc:2.0.5
 #etcd3 discovery provider
 org.eclipse.ecf:org.eclipse.ecf.provider.etcd3:1.3.2
 
-io.modelcontextprotocol.sdk:mcp:0.10.0
+io.modelcontextprotocol.sdk:mcp:0.11.0
 #mcp dependencies
 com.fasterxml.jackson.core:jackson-annotations:2.17.0
 com.fasterxml.jackson.core:jackson-databind:2.17.0
 com.fasterxml.jackson.core:jackson-core:2.17.0
 io.projectreactor:reactor-core:3.7.0
 jakarta.servlet:jakarta.servlet-api:6.1.0
-org.slf4j:slf4j-api:2.0.16
+org.slf4j:slf4j-api:2.0.17
 
 #
 biz.aQute.bnd:biz.aQute.launcher:7.1.0
