@@ -2,7 +2,7 @@
 
 This repo contains a Bndtools Workspace Template. In Bndtools 7.1+, when a Bnd workspace is created a workspace template can be used in order to support a specific kind of development.  This workspace template has project templates for OSGi Remote Services development, and Model Context Protocol Server and Client Development.
 
-To use this template, when creating a new Bnd Workspace, select the [ECF Bndtools Workspace Template](https://github.com/ECF/bndtools.workspace)
+To use this template, when creating a new Bnd Workspace (File->New->Other...->Bndtools->Bnd OSGi Workspace), select the ECF Bndtools Workspace template
 
 <img width="575" height="455" alt="toolgroups api" src="https://github.com/user-attachments/assets/95ec5792-6bc2-4c88-990d-4e8d3350627e" />
 
