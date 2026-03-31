@@ -14,7 +14,7 @@ MCP ToolGroups Example API Project - Declares an OSGi service interface with too
 
 MCP ToolGroups Example Servers Project - Implements the API as an OSGi service, and dynamically adds tools from the service to an MCP Server
 
-MCP ToolGroups Example Client Project = Implements a simple client that connects to running MCP Server and makes tool calls
+MCP ToolGroups Example Client Project - Implements a simple client that connects to running MCP Server and makes tool calls
 
 To create and run these projects in your bnd workspace and launch the example MCP servers and client:
 
