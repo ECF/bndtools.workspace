@@ -1,7 +1,7 @@
 # bndtools.workspace
 Bndtools Remote Service Workspace Template
 
-## NEW (3/31/2026) Project Templates for MCP ToolGroups Example API, Servers, and Clients
+## NEW (3/31/2026): New Project Templates for MCP ToolGroups API, MCP Servers, and MCP Clients
 
 Three project templates have been added to this workspace template:
 
@@ -11,7 +11,7 @@ MCP ToolGroups Example Servers Project - Implements the API as an OSGi service, 
 
 MCP ToolGroups Example Client Project = Implements a simple client that connects to running MCP Server and makes tool calls
 
-To create and run these projects in your bnd workspace:
+To create and run these projects in your bnd workspace and launch the example MCP servers and client:
 
 Create a new Bndtools Workspace using the [ECF Bndtools Workspace Template](https://github.com/ECF/bndtools.workspace)
 
@@ -19,19 +19,19 @@ Create a new Bndtools Workspace using the [ECF Bndtools Workspace Template](http
 
 Create a ToolGroups API project using the MCP ToolGroups Example API project template
 
-Menu:  File->New->Bnd OSGi Project
+Menu:  File->New->Bnd OSGi Project...
 
 <img width="575" height="455" alt="toolgroups api" src="https://github.com/user-attachments/assets/83d7cb4c-7478-413f-ac4d-dbb000f1e64f" />
 
 Create a ToolGroups Server project using the MCP ToolGroups Example Servers project template
 
-Menu:  File->New->Bnd OSGi Project
+Menu:  File->New->Bnd OSGi Project...
 
 <img width="575" height="455" alt="toolgroups server" src="https://github.com/user-attachments/assets/20ccecab-4950-4e9e-abf3-c2090cecb305" />
 
 Create an ToolGroups Client project using the MCP ToolGroups Example Client project template
 
-Menu:  File->New->Bnd OSGi Project
+Menu:  File->New->Bnd OSGi Project...
 
 <img width="575" height="455" alt="toolgroups client" src="https://github.com/user-attachments/assets/31d9d05c-2054-440b-9ee7-3a301f56f378" />
 
