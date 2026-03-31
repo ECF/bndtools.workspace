@@ -48,21 +48,17 @@ There has been a new project template added to the [ECF Bndtools Workspace Templ
 
 To try it out after installing Bndtools 7.1 and the ECF tools add ons
 
-1. Create a new Bndtools Workspace using the [ECF Bndtools Workspace Template](https://github.com/ECF/bndtools.workspace)
-
-![bndtoolsnewwkspace](https://github.com/user-attachments/assets/95ec5792-6bc2-4c88-990d-4e8d3350627e)
-
-2. Create a new Bnd OSGi project
+1. Create a new Bnd OSGi project
 
 ![bndtoolsnewproject](https://github.com/user-attachments/assets/fa2641e6-a074-4796-b761-f79999b9ba06)
 
-3. Open the projectName.hellopython.javahost.bndrun file in the project directory
+2. Open the projectName.hellopython.javahost.bndrun file in the project directory
    
 ![bndtoolsbndrun](https://github.com/user-attachments/assets/9bf8a380-9ee7-4e48-ac49-1627cf3ace75)
 
-4. Choose 'Resolve' and then 'Update'
+Choose 'Resolve' and then 'Update'
 
-5. Select Debug OSGi to start the example application (Java)
+3. Select Debug OSGi to start the example application (Java)
 
 ![bndtoolsdebug](https://github.com/user-attachments/assets/9fa2536f-9748-4f5f-94bc-b78374f436a8)
 
