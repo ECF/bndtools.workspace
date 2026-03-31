@@ -1,7 +1,7 @@
 # bndtools.workspace
 Bndtools Remote Service Workspace Template
 
-## NEW (3/31/2026): New Project Templates for MCP ToolGroups API, MCP Servers, and MCP Clients
+## NEW (3/31/2026): Project Templates for MCP ToolGroups API, MCP Servers, and MCP Clients
 
 Three project templates have been added to this workspace template:
 
