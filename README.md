@@ -1,5 +1,10 @@
-# bndtools.workspace
-Bndtools Remote Service Workspace Template
+# Bndtools Remote Service Workspace Template
+
+This repo contains a Bndtools Workspace Template. In Bndtools 7.1+, when a Bnd workspace is created a workspace template can be used in order to support a specific kind of development.  This workspace template has project templates for OSGi Remote Services development, and Model Context Protocol Server and Client Development.
+
+To use this template, when creating a new Bnd Workspace, select the [ECF Bndtools Workspace Template](https://github.com/ECF/bndtools.workspace)
+
+<img width="575" height="455" alt="toolgroups api" src="https://github.com/user-attachments/assets/95ec5792-6bc2-4c88-990d-4e8d3350627e" />
 
 ## NEW (3/31/2026): Project Templates for MCP ToolGroups API, MCP Servers, and MCP Clients
 
@@ -12,10 +17,6 @@ MCP ToolGroups Example Servers Project - Implements the API as an OSGi service, 
 MCP ToolGroups Example Client Project = Implements a simple client that connects to running MCP Server and makes tool calls
 
 To create and run these projects in your bnd workspace and launch the example MCP servers and client:
-
-Create a new Bndtools Workspace using the [ECF Bndtools Workspace Template](https://github.com/ECF/bndtools.workspace)
-
-<img width="575" height="455" alt="toolgroups api" src="https://github.com/user-attachments/assets/95ec5792-6bc2-4c88-990d-4e8d3350627e" />
 
 Create a ToolGroups API project using the MCP ToolGroups Example API project template
 
@@ -39,7 +40,7 @@ This will leave you with three complete projects in your Bndtools workspace
 
 <img width="245" height="352" alt="toolgroups wkspace" src="https://github.com/user-attachments/assets/361ad561-d89f-4db3-8205-0b24fa52d5d7" />
 
-See the Readme.md in the server project to start the servers, and Readme.md in the client project to start and connect the client.
+See the Readme.md in the server project to launch the servers, and after launching the server, see Readme.md in the client project to start and connect the client.
 
 ## NEW (4/28/2025) Bndtools Template for Python.Java Remote Services Development
 
