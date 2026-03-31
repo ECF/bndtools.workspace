@@ -1,4 +1,4 @@
-# Bndtools Remote Service Workspace Template
+# Bndtools ECF Remote Services Workspace Template
 
 This repo contains a Bndtools Workspace Template. In Bndtools 7.1+, when a Bnd workspace is created a workspace template can be used in order to support a specific kind of development.  This workspace template has project templates for OSGi Remote Services development, and Model Context Protocol Server and Client Development.
 
