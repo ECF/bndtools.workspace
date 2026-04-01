@@ -1,5 +1,46 @@
-# bndtools.workspace
-Bndtools Remote Service Workspace Template
+# Bndtools ECF Remote Services Workspace Template
+
+This repo contains a Bndtools Workspace Template. In Bndtools 7.1+, when a Bnd workspace is created a workspace template can be used in order to support a specific kind of development.  This workspace template has project templates for OSGi Remote Services development, and Model Context Protocol Server and Client Development.
+
+To use this template, when creating a new Bnd Workspace (Menu: File->New->Other...->Bndtools->Bnd OSGi Workspace), select the ECF Bndtools Workspace template
+
+<img width="575" height="455" alt="toolgroups api" src="https://github.com/user-attachments/assets/95ec5792-6bc2-4c88-990d-4e8d3350627e" />
+
+## NEW (3/31/2026): Project Templates for MCP ToolGroups API, MCP Servers, and MCP Clients
+
+Three project templates have been added to this workspace template:
+
+MCP ToolGroups Example API Project - Declares an OSGi service interface with tools and toolgroups annotations
+
+MCP ToolGroups Example Servers Project - Implements the API as an OSGi service, and dynamically adds tools from the service to an MCP Server
+
+MCP ToolGroups Example Client Project - Implements a simple client that connects to running MCP Server and makes tool calls
+
+To create and run these projects in your bnd workspace and launch the example MCP servers and client:
+
+Create a ToolGroups API project using the MCP ToolGroups Example API project template
+
+Menu:  File->New->Bnd OSGi Project...
+
+<img width="575" height="455" alt="toolgroups api" src="https://github.com/user-attachments/assets/83d7cb4c-7478-413f-ac4d-dbb000f1e64f" />
+
+Create a ToolGroups Server project using the MCP ToolGroups Example Servers project template
+
+Menu:  File->New->Bnd OSGi Project...
+
+<img width="575" height="455" alt="toolgroups server" src="https://github.com/user-attachments/assets/20ccecab-4950-4e9e-abf3-c2090cecb305" />
+
+Create an ToolGroups Client project using the MCP ToolGroups Example Client project template
+
+Menu:  File->New->Bnd OSGi Project...
+
+<img width="575" height="455" alt="toolgroups client" src="https://github.com/user-attachments/assets/31d9d05c-2054-440b-9ee7-3a301f56f378" />
+
+This will leave you with three complete projects in your Bndtools workspace
+
+<img width="245" height="352" alt="toolgroups wkspace" src="https://github.com/user-attachments/assets/361ad561-d89f-4db3-8205-0b24fa52d5d7" />
+
+See the Readme.md in the server project to launch the servers, and after launching the server, see Readme.md in the client project to start and connect the client.
 
 ## NEW (4/28/2025) Bndtools Template for Python.Java Remote Services Development
 
@@ -7,21 +48,17 @@ There has been a new project template added to the [ECF Bndtools Workspace Templ
 
 To try it out after installing Bndtools 7.1 and the ECF tools add ons
 
-1. Create a new Bndtools Workspace using the [ECF Bndtools Workspace Template](https://github.com/ECF/bndtools.workspace)
-
-![bndtoolsnewwkspace](https://github.com/user-attachments/assets/95ec5792-6bc2-4c88-990d-4e8d3350627e)
-
-2. Create a new Bnd OSGi project
+1. Create a new Bnd OSGi project
 
 ![bndtoolsnewproject](https://github.com/user-attachments/assets/fa2641e6-a074-4796-b761-f79999b9ba06)
 
-3. Open the projectName.hellopython.javahost.bndrun file in the project directory
+2. Open the projectName.hellopython.javahost.bndrun file in the project directory
    
 ![bndtoolsbndrun](https://github.com/user-attachments/assets/9bf8a380-9ee7-4e48-ac49-1627cf3ace75)
 
-4. Choose 'Resolve' and then 'Update'
+Choose 'Resolve' and then 'Update'
 
-5. Select Debug OSGi to start the example application (Java)
+3. Select Debug OSGi to start the example application (Java)
 
 ![bndtoolsdebug](https://github.com/user-attachments/assets/9fa2536f-9748-4f5f-94bc-b78374f436a8)
 
